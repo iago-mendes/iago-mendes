@@ -1,8 +1,13 @@
-### Hi there 👋
+# Hi there 👋
+
+My name is Iago and I am passionate about science. Since my goal for the future is to become a researcher in Cosmology. I focus my studies in Physics and Astronomy.
+
+Besides, I love coding, especially in the development area. I try to learn new languages and techniques every day. Currently, I can code in C++, Python, HTML, CSS, Javascript, LaTeX, and some variations and frameworks of them, such as TypeScript, Expo, NodeJS, et cetera.
+
+I have done a lot of projects during high school related to my interests and education, which I intend to keep doing in college. If you want to know some of my activities and achievement, take a look on my profile. 
 
 <!--
 **iago-mendes/iago-mendes** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
 Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ...

@@ -1,21 +1,10 @@
-# Hi there 👋
+# Iago Mendes
 
-### My name is Iago and I am passionate about science. Since my goal for the future is to become a researcher in Cosmology. I focus my studies in Physics and Astronomy.
+## Hi there 👋
+My name is Iago, I am Brazilian, and I study at **Oberlin College** (Oberlin, Ohio, USA).
+<br /> :heart: My two main passions are Cosmology :telescope: and Programming :computer:. Therefore, I plan on double majoring in Physics (with a concentration in Astrophysics) and Computer Science. :books:
+<br /> I love coding, especially in the development area. Currently, I am focusing in one Stack: ReactJS, Node.js, React Native & Typescript. However, I try to keep up to date and learn new technologies everyday.
 
-### Besides, I love coding, especially in the development area. I try to learn new languages and techniques every day. Currently, I can code in C++, Python, HTML, CSS, Javascript, LaTeX, and some variations and frameworks of them, such as TypeScript, Expo, NodeJS, et cetera.
-
-[LinkedIn]()
-
-<!--
-**iago-mendes/iago-mendes** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+ <br/> [![Linkedin Badge](https://img.shields.io/badge/-IagoMendes-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/iago-mendes-21a2361a2/)](https://www.linkedin.com/in/iago-mendes-21a2361a2/) 
+ [![Gmail Badge](https://img.shields.io/badge/-iagobrazmendes@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:iagobrazmendes@gmail.com)](mailto:iagobrazmendes@gmail.com)
+ [![Gmail Badge](https://img.shields.io/badge/-Iago.Braz.Mendes@oberlin.edu-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:Iago.Braz.Mendes@oberlin.edu)](mailto:Iago.Braz.Mendes@oberlin.edu)

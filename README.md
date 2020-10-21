@@ -15,6 +15,7 @@
 - Programming :computer:
 
 ## My technologies
+(names appear on hover)
 
 ### Advanced level
 
@@ -59,6 +60,16 @@
   height="30"
   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
  />
+ <img
+  title="LaTeX"
+  height="30"
+  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/latex/latex.png"
+ />
+ <img
+  title="Markdown"
+  height="30"
+  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/markdown/markdown.png"
+ />
 </code>
 
 ### Basic level
@@ -79,6 +90,11 @@
   height="30"
   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/cpp/cpp.png"
  />
+ <img
+  title="Matlab"
+  height="30"
+  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/matlab/matlab.png"
+ />
 </code>
 
 ### Interested
@@ -90,6 +106,11 @@
   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/docker/docker.png"
  />
  <img
+  title="Sass"
+  height="30"
+  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png"
+ />
+ <img
   title="Ruby"
   height="30"
   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ruby/ruby.png"
@@ -98,6 +119,11 @@
   title="Java"
   height="30"
   src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"
+ />
+ <img
+  title="Arduino"
+  height="30"
+  src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/arduino/arduino.png"
  />
 </code>
 

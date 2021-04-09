@@ -34,7 +34,6 @@ export default createGlobalStyle`
 	a
 	{
 		color: inherit;
-		text-decoration: none;
 	}
 	
 	#__next

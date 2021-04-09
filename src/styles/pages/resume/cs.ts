@@ -85,15 +85,34 @@ const Container = styled.div`
 		.verticalGroups
 		{
 			display: flex;
-			gap: 5rem;
+			justify-content: space-between;
+			/* gap: 1rem; */
 
 			margin-top: 0.5rem;
 
 			.group
 			{
+				width: 18rem;
+
 				display: flex;
 				flex-direction: column;
 				gap: 0.25rem;
+
+				.projectHeader
+				{
+					width: 100%;
+
+					display: flex;
+					align-items: center;
+					justify-content: space-around;
+					gap: 0.5rem;
+
+					img
+					{
+						max-width: 5rem;
+						max-height: 5rem;
+					}
+				}
 
 				h3
 				{
@@ -114,17 +133,24 @@ const Container = styled.div`
 						align-items: center;
 						gap: 1rem;
 
+						font-size: 1.5rem;
+
 						img
 						{
 							max-width: 1.5rem;
 							max-height: 1.5rem;
 						}
 
-						span
+						a
 						{
-							font-size: 1.5rem;
+							word-break: break-all;
 						}
 					}
+				}
+
+				p
+				{
+					font-size: 1.25rem;
 				}
 			}
 		}

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-import {FaCalendar, FaGithub, FaHome, FaLinkedinIn, FaPhone, FaTag, FaWhatsapp} from 'react-icons/fa'
+import {FaCalendar, FaGithub, FaHome, FaLink, FaLinkedinIn, FaPhone, FaTag, FaWhatsapp} from 'react-icons/fa'
 import {HiMail} from 'react-icons/hi'
 import {RiWhatsappFill} from 'react-icons/ri'
 
@@ -12,7 +12,7 @@ const CSResume: React.FC = () =>
 	return (
 		<Container>
 			<Head>
-				<title>Iago Mendes | Computer Science Resume</title>
+				<title>Iago Mendes (Computer Science Resume)</title>
 			</Head>
 
 			<header>
@@ -61,24 +61,24 @@ const CSResume: React.FC = () =>
 						<HiMail />
 						<ul>
 							<li>
-								<a href='mailto:contact@iago-mendes.me'>contact@iago-mendes.me</a>
+								<a target='_blank' rel='noreferrer' href='mailto:contact@iago-mendes.me'>contact@iago-mendes.me</a>
 							</li>
 							<li>
-								<a href='mailto:Iago.Braz.Mendes@oberlin.edu'>Iago.Braz.Mendes@oberlin.edu</a>
+								<a target='_blank' rel='noreferrer' href='mailto:Iago.Braz.Mendes@oberlin.edu'>Iago.Braz.Mendes@oberlin.edu</a>
 							</li>
 						</ul>
 					</div>
 
 					<div className='field'>
 						<FaLinkedinIn />
-						<a href='https://www.linkedin.com/in/iago-mendes-21a2361a2/'>
+						<a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/iago-mendes-21a2361a2/'>
 							Iago Mendes
 						</a>
 					</div>
 
 					<div className='field'>
 						<FaGithub />
-						<a href='https://github.com/iago-mendes'>
+						<a target='_blank' rel='noreferrer' href='https://github.com/iago-mendes'>
 							iago-mendes
 						</a>
 					</div>
@@ -86,7 +86,7 @@ const CSResume: React.FC = () =>
 					<div className='field'>
 						<FaPhone />
 						<RiWhatsappFill />
-						<a href='https://wa.me/5528984043111'>
+						<a target='_blank' rel='noreferrer' href='https://wa.me/5528984043111'>
 							+55 (38) 9 8404-3111
 						</a>
 					</div>
@@ -173,6 +173,106 @@ const CSResume: React.FC = () =>
 							<li>
 								<img src='https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png' alt='MATLAB' />
 								<span>MATLAB</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Programming projects</h2>
+
+				<div className='verticalGroups'>
+					<div className='group'>
+						<div className='projectHeader'>
+							<img src='https://cinephix.com/favicon.svg' alt='Cinephix' />
+							<h3>Cinephix</h3>
+						</div>
+						<p>
+							Cinephix is the application made for cinephiles. By now, I have developed the main website and the API, but I plan on creating a mobile app soon.
+						</p>
+						<ul>
+							<li>
+								<FaLink />
+								<a target='_blank' rel='noreferrer' href='https://cinephix.com'>
+									cinephix.com
+								</a>
+							</li>
+							<li>
+								<FaGithub />
+								<a target='_blank' rel='noreferrer' href='https://github.com/iago-mendes/cinephix'>
+									iago-mendes/cinephix
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div className='group'>
+						<div className='projectHeader'>
+							<img src='https://api.stemguy.club/public/logo.svg' alt='STEM Guy' />
+							<h3>STEM Guy</h3>
+						</div>
+						<p>
+							The STEM Guy club is a blog about science and technology. I have developed the main website, an admin system, the API, and more.
+						</p>
+						<ul>
+							<li>
+								<FaLink />
+								<a target='_blank' rel='noreferrer' href='https://stemguy.club'>stemguy.club</a>
+							</li>
+							<li>
+								<FaGithub />
+								<a target='_blank' rel='noreferrer' href='https://github.com/iago-mendes/stemguy'>iago-mendes/stemguy</a>
+							</li>
+						</ul>
+					</div>
+					<div className='group'>
+						<div className='projectHeader'>
+							<img src='https://textcounter.tools/faviconDark.svg' alt='Text Counter' />
+							<h3>Text Counter</h3>
+						</div>
+						<p>
+							Text Counter is an application that counts text. I have developed the minimalist website.
+						</p>
+						<ul>
+							<li>
+								<FaLink />
+								<a target='_blank' rel='noreferrer' href='https://textcounter.tools'>textcounter.tools</a>
+							</li>
+							<li>
+								<FaGithub />
+								<a
+									target='_blank'
+									rel='noreferrer'
+									href='https://github.com/iago-mendes/textcounter'
+									style={{fontSize: '1.25rem'}}
+								>
+									iago-mendes/textcounter
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div className='group'>
+						<div className='projectHeader'>
+							<img src='https://cruzrepresentacoes.com.br/favicon.svg' alt='Cruz Representações' />
+							<h3 style={{fontSize: '1.5rem'}} >Cruz Representações</h3>
+						</div>
+						<ul>
+							<li>
+								<FaLink />
+								<a
+									target='_blank'
+									rel='noreferrer'
+									href='https://cruzrepresentacoes.com.br'
+									style={{fontSize: '1.25rem'}}
+								>
+									cruzrepresentacoes.com.br
+								</a>
+							</li>
+							<li>
+								<FaGithub />
+								<a target='_blank' rel='noreferrer' href='https://github.com/iago-mendes/cruz'>
+									iago-mendes/cruz
+								</a>
 							</li>
 						</ul>
 					</div>

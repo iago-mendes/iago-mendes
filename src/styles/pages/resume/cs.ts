@@ -67,6 +67,68 @@ const Container = styled.div`
 			}
 		}
 	}
+
+	section
+	{
+		padding: 1rem;
+		padding-left: 3rem;
+
+		h2
+		{
+			border-left: ${p => p.theme.text} 5px solid;
+			padding-left: 1rem;
+			margin-left: -2rem;
+
+			font-size: 2rem;
+		}
+
+		.verticalGroups
+		{
+			display: flex;
+			gap: 5rem;
+
+			margin-top: 0.5rem;
+
+			.group
+			{
+				display: flex;
+				flex-direction: column;
+				gap: 0.25rem;
+
+				h3
+				{
+					font-size: 1.75rem;
+				}
+
+				ul
+				{
+					list-style: none;
+
+					display: flex;
+					flex-direction: column;
+					gap: 0.25rem;
+
+					li
+					{
+						display: flex;
+						align-items: center;
+						gap: 1rem;
+
+						img
+						{
+							max-width: 1.5rem;
+							max-height: 1.5rem;
+						}
+
+						span
+						{
+							font-size: 1.5rem;
+						}
+					}
+				}
+			}
+		}
+	}
 `
 
 export default Container

@@ -92,6 +92,92 @@ const CSResume: React.FC = () =>
 					</div>
 				</div>
 			</header>
+
+			<section>
+				<h2>Technologies</h2>
+
+				<div className='verticalGroups'>
+					<div className='group'>
+						<h3>Development stack</h3>
+						<ul>
+							<li>
+								<img src='https://cdn.worldvectorlogo.com/logos/logo-javascript.svg' alt='JavaScript' />
+								<span>JavaScript</span>
+							</li>
+							<li>
+								<img src='https://cdn.worldvectorlogo.com/logos/react-2.svg' alt='React.js' />
+								<span>React.js</span>
+							</li>
+							<li>
+								<img src='https://cdn.worldvectorlogo.com/logos/next-js.svg' alt='Next.js' />
+								<span>Next.js</span>
+							</li>
+							<li>
+								<img src='https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg' alt='Node.js' />
+								<span>Node.js</span>
+							</li>
+							<li>
+								<img src='https://cdn.worldvectorlogo.com/logos/typescript.svg' alt='TypeScript' />
+								<span>TypeScript</span>
+							</li>
+							<li>
+								<img src='https://camo.githubusercontent.com/521b3e7f3fab722f33b7724d215934986ad0bababee5995f3aaab596a7ccf173/68747470733a2f2f7374796c65642d636f6d706f6e656e74732e636f6d2f66617669636f6e2e706e67' alt='Styled Components' />
+								<span>Styled Components</span>
+							</li>
+						</ul>
+					</div>
+					<div className='group'>
+						<h3>Advanced experience</h3>
+						<ul>
+							<li>
+								<img src='https://cdn.worldvectorlogo.com/logos/html5.svg' alt='HTML' />
+								<span>HTML</span>
+							</li>
+							<li>
+								<img src='https://cdn.worldvectorlogo.com/logos/css-5.svg' alt='CSS' />
+								<span>CSS</span>
+							</li>
+							<li>
+								<img src='https://cdn.worldvectorlogo.com/logos/git-icon.svg' alt='Git' />
+								<span>Git</span>
+							</li>
+							<li>
+								<img src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/latex/latex.png' alt='LaTeX' />
+								<span>LaTeX</span>
+							</li>
+							<li>
+								<img src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png' alt='Terminal' />
+								<span>Terminal (bash & zsh)</span>
+							</li>
+						</ul>
+					</div>
+					<div className='group'>
+						<h3>Basic experience</h3>
+						<ul>
+							<li>
+								<img src='https://cdn.worldvectorlogo.com/logos/java-14.svg' alt='Java' />
+								<span>Java</span>
+							</li>
+							<li>
+								<img src='https://cdn.worldvectorlogo.com/logos/c.svg' alt='C++' />
+								<span>C++</span>
+							</li>
+							<li>
+								<img src='https://cdn.worldvectorlogo.com/logos/python-5.svg' alt='Python' />
+								<span>Python</span>
+							</li>
+							<li>
+								<img src='https://cdn.worldvectorlogo.com/logos/react-2.svg' alt='React Native' />
+								<span>React Native</span>
+							</li>
+							<li>
+								<img src='https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png' alt='MATLAB' />
+								<span>MATLAB</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 		</Container>
 	)
 }

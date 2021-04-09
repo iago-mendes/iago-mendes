@@ -31,7 +31,7 @@ const Container = styled.div`
 			h1
 			{
 				font-size: 3rem;
-				font-family: Permanent Marker;
+				font-family: Ubuntu;
 
 				color: ${p => p.theme.detailStrong};
 			}

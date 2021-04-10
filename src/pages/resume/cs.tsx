@@ -78,8 +78,8 @@ const CSResume: React.FC = () =>
 
 					<div className='field'>
 						<FaLinkedinIn />
-						<a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/iago-mendes-21a2361a2/'>
-							Iago Mendes
+						<a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/iago-b-mendes'>
+							/in/iago-b-mendes
 						</a>
 					</div>
 

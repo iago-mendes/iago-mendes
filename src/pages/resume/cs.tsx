@@ -302,8 +302,22 @@ const CSResume: React.FC = () =>
 			</section>
 
 			{/* education */}
-			<section>
+			<section id='education' >
 				<h2>Education</h2>
+
+				<div className='group'>
+					<img src='https://oberview.oberlin.edu/media/setting/FAVICON-IMAGE' alt='Oberlin College'/>
+
+					<div>
+						<h3>Oberlin College</h3>
+						<p>Class of 2024</p>
+					</div>
+				
+					<ul>
+						<li>Computer Science</li>
+						<li>Physics (Astrophysics)</li>
+					</ul>
+				</div>
 			</section>
 		</Container>
 	)

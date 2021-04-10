@@ -86,7 +86,6 @@ const Container = styled.div`
 		{
 			display: flex;
 			justify-content: space-between;
-			/* gap: 1rem; */
 
 			margin-top: 0.5rem;
 
@@ -153,6 +152,29 @@ const Container = styled.div`
 					font-size: 1.25rem;
 				}
 			}
+		}
+	}
+
+	section#education .group
+	{
+		display: flex;
+		align-items: center;
+		gap: 5rem;
+
+		img
+		{
+			max-width: 4rem;
+			max-height: 4rem;
+		}
+
+		h3
+		{
+			font-size: 2rem;
+		}
+
+		p, li
+		{
+			font-size: 1.5rem;
 		}
 	}
 `

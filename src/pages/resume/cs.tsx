@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-import {FaCalendar, FaGithub, FaHome, FaLink, FaLinkedinIn, FaPhone, FaTag, FaWhatsapp} from 'react-icons/fa'
+import {FaCalendar, FaGithub, FaHeart, FaHome, FaLink, FaLinkedinIn, FaPhone, FaTag} from 'react-icons/fa'
 import {HiMail} from 'react-icons/hi'
 import {RiWhatsappFill} from 'react-icons/ri'
 
@@ -50,6 +50,13 @@ const CSResume: React.FC = () =>
 							Montes Claros, MG, Brazil
 						</span>
 					</div>
+
+					<div className='field'>
+						<FaHeart />
+						<span>
+							Software development
+						</span>
+					</div>
 				</div>
 
 				<div className='info'>
@@ -93,6 +100,7 @@ const CSResume: React.FC = () =>
 				</div>
 			</header>
 
+			{/* technologies */}
 			<section>
 				<h2>Technologies</h2>
 
@@ -115,6 +123,10 @@ const CSResume: React.FC = () =>
 							<li>
 								<img src='https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg' alt='Node.js' />
 								<span>Node.js</span>
+							</li>
+							<li>
+								<img src='https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg' alt='MongoDB' />
+								<span>MongoDB</span>
 							</li>
 							<li>
 								<img src='https://cdn.worldvectorlogo.com/logos/typescript.svg' alt='TypeScript' />
@@ -171,6 +183,10 @@ const CSResume: React.FC = () =>
 								<span>React Native</span>
 							</li>
 							<li>
+								<img src='https://cdn.worldvectorlogo.com/logos/postgresql.svg' alt='PostgreSQL' />
+								<span>PostgreSQL</span>
+							</li>
+							<li>
 								<img src='https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png' alt='MATLAB' />
 								<span>MATLAB</span>
 							</li>
@@ -179,8 +195,9 @@ const CSResume: React.FC = () =>
 				</div>
 			</section>
 
+			{/* projects */}
 			<section>
-				<h2>Programming projects</h2>
+				<h2>Projects</h2>
 
 				<div className='verticalGroups'>
 					<div className='group'>
@@ -277,6 +294,16 @@ const CSResume: React.FC = () =>
 						</ul>
 					</div>
 				</div>
+			</section>
+
+			{/* events */}
+			<section>
+				<h2>Events</h2>
+			</section>
+
+			{/* education */}
+			<section>
+				<h2>Education</h2>
 			</section>
 		</Container>
 	)

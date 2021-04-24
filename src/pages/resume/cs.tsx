@@ -6,6 +6,7 @@ import {HiMail} from 'react-icons/hi'
 import {RiWhatsappFill} from 'react-icons/ri'
 
 import Container from '../../styles/pages/resume/cs'
+import ExternalLink from '../../components/ExternalLink'
 
 const CSResume: React.FC = () =>
 {
@@ -68,34 +69,28 @@ const CSResume: React.FC = () =>
 						<HiMail />
 						<ul>
 							<li>
-								<a target='_blank' rel='noreferrer' href='mailto:contact@iago-mendes.me'>contact@iago-mendes.me</a>
+								<ExternalLink url='mailto:contact@iago-mendes.me' text='contact@iago-mendes.me' />
 							</li>
 							<li>
-								<a target='_blank' rel='noreferrer' href='mailto:Iago.Braz.Mendes@oberlin.edu'>Iago.Braz.Mendes@oberlin.edu</a>
+								<ExternalLink url='mailto:Iago.Braz.Mendes@oberlin.edu' text='Iago.Braz.Mendes@oberlin.edu' />
 							</li>
 						</ul>
 					</div>
 
 					<div className='field'>
 						<FaLinkedinIn />
-						<a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/iago-b-mendes'>
-							/in/iago-b-mendes
-						</a>
+						<ExternalLink url='https://www.linkedin.com/in/iago-b-mendes' text='/in/iago-b-mendes' />
 					</div>
 
 					<div className='field'>
 						<FaGithub />
-						<a target='_blank' rel='noreferrer' href='https://github.com/iago-mendes'>
-							iago-mendes
-						</a>
+						<ExternalLink url='https://github.com/iago-mendes' text='iago-mendes' />
 					</div>
 
 					<div className='field'>
 						<FaPhone />
 						<RiWhatsappFill />
-						<a target='_blank' rel='noreferrer' href='https://wa.me/5528984043111'>
-							+55 (38) 9 8404-3111
-						</a>
+						<ExternalLink url='https://wa.me/5528984043111' text='+55 (38) 9 8404-3111' />
 					</div>
 				</div>
 			</header>
@@ -211,15 +206,11 @@ const CSResume: React.FC = () =>
 						<ul>
 							<li>
 								<FaLink />
-								<a target='_blank' rel='noreferrer' href='https://cinephix.com'>
-									cinephix.com
-								</a>
+								<ExternalLink url='https://cinephix.com' text='cinephix.com' />
 							</li>
 							<li>
 								<FaGithub />
-								<a target='_blank' rel='noreferrer' href='https://github.com/iago-mendes/cinephix'>
-									iago-mendes/cinephix
-								</a>
+								<ExternalLink url='https://github.com/iago-mendes/cinephix' text='iago-mendes/cinephix' />
 							</li>
 						</ul>
 					</div>
@@ -234,11 +225,11 @@ const CSResume: React.FC = () =>
 						<ul>
 							<li>
 								<FaLink />
-								<a target='_blank' rel='noreferrer' href='https://stemguy.club'>stemguy.club</a>
+								<ExternalLink url='https://stemguy.club' text='stemguy.club' />
 							</li>
 							<li>
 								<FaGithub />
-								<a target='_blank' rel='noreferrer' href='https://github.com/iago-mendes/stemguy'>iago-mendes/stemguy</a>
+								<ExternalLink url='https://github.com/iago-mendes/stemguy' text='iago-mendes/stemguy' />
 							</li>
 						</ul>
 					</div>
@@ -253,18 +244,15 @@ const CSResume: React.FC = () =>
 						<ul>
 							<li>
 								<FaLink />
-								<a target='_blank' rel='noreferrer' href='https://textcounter.tools'>textcounter.tools</a>
+								<ExternalLink url='https://textcounter.tools' text='textcounter.tools' />
 							</li>
 							<li>
 								<FaGithub />
-								<a
-									target='_blank'
-									rel='noreferrer'
-									href='https://github.com/iago-mendes/textcounter'
+								<ExternalLink
+									url='https://github.com/iago-mendes/textcounter'
+									text='iago-mendes/textcounter'
 									style={{fontSize: '1.25rem'}}
-								>
-									iago-mendes/textcounter
-								</a>
+								/>
 							</li>
 						</ul>
 					</div>
@@ -276,20 +264,15 @@ const CSResume: React.FC = () =>
 						<ul>
 							<li>
 								<FaLink />
-								<a
-									target='_blank'
-									rel='noreferrer'
-									href='https://cruzrepresentacoes.com.br'
+								<ExternalLink
+									url='https://cruzrepresentacoes.com.br'
+									text='cruzrepresentacoes.com.br'
 									style={{fontSize: '1.25rem'}}
-								>
-									cruzrepresentacoes.com.br
-								</a>
+								/>
 							</li>
 							<li>
 								<FaGithub />
-								<a target='_blank' rel='noreferrer' href='https://github.com/iago-mendes/cruz'>
-									iago-mendes/cruz
-								</a>
+								<ExternalLink url='https://github.com/iago-mendes/cruz' text='iago-mendes/cruz' />
 							</li>
 						</ul>
 					</div>

@@ -128,8 +128,8 @@ const Container = styled.div`
 
 					li
 					{
-						display: flex;
-						align-items: center;
+						display: grid;
+						grid-template-columns: 1.5rem 1fr;
 						gap: 1rem;
 
 						font-size: 1.5rem;

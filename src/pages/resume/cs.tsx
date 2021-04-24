@@ -156,6 +156,10 @@ const CSResume: React.FC = () =>
 								<img src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png' alt='Terminal' />
 								<span>Terminal (bash & zsh)</span>
 							</li>
+							<li>
+								<img src='https://cdn.worldvectorlogo.com/logos/tux.svg' alt='Linux' />
+								<span>Linux</span>
+							</li>
 						</ul>
 					</div>
 					<div className='group'>

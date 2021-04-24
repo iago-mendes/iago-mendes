@@ -78,6 +78,7 @@ const Container = styled.div`
 			border-left: ${p => p.theme.text} 5px solid;
 			padding-left: 1rem;
 			margin-left: -2rem;
+			margin-bottom: 1rem;
 
 			font-size: 2rem;
 		}
@@ -87,15 +88,13 @@ const Container = styled.div`
 			display: flex;
 			justify-content: space-between;
 
-			margin-top: 0.5rem;
-
 			.group
 			{
 				width: 18rem;
 
 				display: flex;
 				flex-direction: column;
-				gap: 0.25rem;
+				gap: 1rem;
 
 				.groupHeader
 				{

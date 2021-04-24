@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-import {FaCalendar, FaGithub, FaHeart, FaHome, FaLink, FaLinkedinIn, FaPhone, FaTag} from 'react-icons/fa'
+import {FaCalendar, FaGithub, FaHeart, FaHome, FaLink, FaLinkedinIn, FaPhone, FaTag, FaFilePdf} from 'react-icons/fa'
 import {HiMail} from 'react-icons/hi'
 import {RiWhatsappFill} from 'react-icons/ri'
 
@@ -199,8 +199,9 @@ const CSResume: React.FC = () =>
 				<h2>Projects</h2>
 
 				<div className='verticalGroups'>
+					{/* cinephix */}
 					<div className='group'>
-						<div className='projectHeader'>
+						<div className='groupHeader'>
 							<img src='https://cinephix.com/favicon.svg' alt='Cinephix' />
 							<h3>Cinephix</h3>
 						</div>
@@ -218,8 +219,9 @@ const CSResume: React.FC = () =>
 							</li>
 						</ul>
 					</div>
+					{/* stem guy */}
 					<div className='group'>
-						<div className='projectHeader'>
+						<div className='groupHeader'>
 							<img src='https://api.stemguy.club/public/logo.svg' alt='STEM Guy' />
 							<h3>STEM Guy</h3>
 						</div>
@@ -237,8 +239,9 @@ const CSResume: React.FC = () =>
 							</li>
 						</ul>
 					</div>
+					{/* text counter */}
 					<div className='group'>
-						<div className='projectHeader'>
+						<div className='groupHeader'>
 							<img src='https://textcounter.tools/faviconDark.svg' alt='Text Counter' />
 							<h3>Text Counter</h3>
 						</div>
@@ -260,8 +263,9 @@ const CSResume: React.FC = () =>
 							</li>
 						</ul>
 					</div>
+					{/* cruz */}
 					<div className='group'>
-						<div className='projectHeader'>
+						<div className='groupHeader'>
 							<img src='https://cruzrepresentacoes.com.br/favicon.svg' alt='Cruz Representações' />
 							<h3 style={{fontSize: '1.5rem'}} >Cruz Representações</h3>
 						</div>
@@ -286,6 +290,89 @@ const CSResume: React.FC = () =>
 			{/* events */}
 			<section>
 				<h2>Events</h2>
+
+				<div className='verticalGroups'>
+					{/* nlw */}
+					<div className='group'>
+						<div className='groupHeader'>
+							<img src='/assets/nlw.svg' alt='NLW'/>
+							<h3 style={{fontSize: '1.5rem'}}>Next Level Weeks</h3>
+						</div>
+						<p><ExternalLink url='https://nextlevelweek.com/' text='Next Level Weeks' /> are coding events organized by <ExternalLink url='https://rocketseat.com.br' text='Rocketseat' /> with a hands-on methodology. I have participated in all 5 editions, in which we developed different applications using the React stack.</p>
+						<ul>
+							<li>
+								<FaLink />
+								<ExternalLink
+									url='https://iago-mendes.me/nlw'
+									text='iago-mendes.me/nlw'
+								/>
+							</li>
+							<li>
+								<FaGithub />
+								<ExternalLink url='https://github.com/iago-mendes?tab=repositories&q=nlw' text='iago-mendes?q=nlw' />
+							</li>
+						</ul>
+					</div>
+					{/* brasa */}
+					<div className='group'>
+						<div className='groupHeader'>
+							<img src='https://static.wixstatic.com/media/88d58b_12bfe4fba448428185238dca23c03906~mv2.png/v1/fill/w_86,h_94,al_c,q_85,usm_0.66_1.00_0.01/88d58b_12bfe4fba448428185238dca23c03906~mv2.webp' alt='BRASA Hacks'/>
+							<h3>BRASA Hacks</h3>
+						</div>
+						<p>In this hackathon, my team was able to create Express Bot (a solution for improving omnichannel sales) in just 4 days. I was in charge of most coding tasks, in which I used Node.js.</p>
+						<ul>
+							<li>
+								<FaLink />
+								<ExternalLink
+									url='https://t.me/express_a_bot'
+									text='t.me/express_a_bot'
+								/>
+							</li>
+							<li>
+								<FaGithub />
+								<ExternalLink
+									url='https://github.com/iago-mendes/express-bot'
+									text='iago-mendes/express-bot'
+									style={{fontSize: '1.25rem'}}
+								/>
+							</li>
+						</ul>
+					</div>
+					{/* react conf */}
+					<div className='group'>
+						<div className='groupHeader'>
+							<img src='https://reactconf.com.br/favicon-32x32.png' alt='DoWhile 2020'/>
+							<h3>React Conf</h3>
+						</div>
+						<p>The <ExternalLink url='https://reactconf.com.br' text='4th React Conference Brasil' /> was a coding event about React and its uses on November 21, 2020. The workload was 9 hours.</p>
+						<ul>
+							<li>
+								<FaFilePdf />
+								<ExternalLink
+									url='https://iago-mendes.me/certificates/react-conf-2020.pdf'
+									text='certificate'
+								/>
+							</li>
+						</ul>
+					</div>
+					{/* do while */}
+					<div className='group'>
+						<div className='groupHeader'>
+							<img src='/assets/do-while-2020.svg' alt='DoWhile 2020'/>
+							<h3>DoWhile 2020</h3>
+						</div>
+						<p><ExternalLink url='https://dowhile.rocketseat.com.br/' text='DoWhile 2020' /> was a coding event organized by <ExternalLink url='https://rocketseat.com.br' text='Rocketseat' /> with lectures, workshops, panels, and talks about technology. The workload was 16 hours.</p>
+						<ul>
+							<li>
+								<FaFilePdf />
+								<ExternalLink
+									url='https://iago-mendes.me/certificates/do-while-2020.pdf'
+									text='certificate'
+								/>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</section>
 
 			{/* education */}

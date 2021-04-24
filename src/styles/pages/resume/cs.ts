@@ -97,7 +97,7 @@ const Container = styled.div`
 				flex-direction: column;
 				gap: 0.25rem;
 
-				.projectHeader
+				.groupHeader
 				{
 					width: 100%;
 

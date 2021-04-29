@@ -77,9 +77,9 @@ const Container = styled.div`
 
 		.group
 		{
-			display: flex;
-			align-items: center;
-			gap: 5rem;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
+			gap: 2rem;
 
 			img
 			{
@@ -164,6 +164,20 @@ const Container = styled.div`
 						word-break: break-all;
 					}
 				}
+			}
+		}
+	}
+
+	@media (max-width: 725px)
+	{
+		header
+		{
+			flex-direction: column;
+			gap: 1rem;
+
+			ul.info
+			{
+				width: 100%;
 			}
 		}
 	}

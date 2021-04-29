@@ -175,6 +175,18 @@ const Container = styled.div`
 			flex-direction: column;
 			gap: 1rem;
 
+			.me
+			{
+				width: 100%;
+
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+				gap: 1rem;
+
+				align-items: center;
+				justify-items: center;
+			}
+
 			ul.info
 			{
 				width: 100%;

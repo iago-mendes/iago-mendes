@@ -58,8 +58,7 @@ const Container = styled.div`
 
 	section
 	{
-		padding: 1rem;
-		padding-left: 3rem;
+		padding: 0 3rem;
 
 		h2
 		{
@@ -70,98 +69,102 @@ const Container = styled.div`
 
 			font-size: 2rem;
 		}
+	}
 
-		.verticalGroups
+	section#education
+	{
+		margin-bottom: 1.5rem;
+
+		.group
 		{
 			display: flex;
-			justify-content: space-between;
+			align-items: center;
+			gap: 5rem;
 
-			.group
+			img
 			{
-				width: 18rem;
+				max-width: 4rem;
+				max-height: 4rem;
+			}
 
+			h3
+			{
+				font-size: 2rem;
+			}
+
+			p, li
+			{
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+	section#experiences
+	{
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		.experience
+		{
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+
+			.header
+			{
 				display: flex;
-				flex-direction: column;
-				gap: 1rem;
+				align-items: center;
+				gap: 2rem;
 
-				.groupHeader
+				img
 				{
-					width: 100%;
-
-					display: flex;
-					align-items: center;
-					justify-content: space-around;
-					gap: 0.5rem;
-
-					img
-					{
-						max-width: 5rem;
-						max-height: 5rem;
-					}
+					max-width: 3rem;
+					max-height: 3rem;
 				}
 
 				h3
 				{
 					font-size: 1.75rem;
 				}
+			}
 
-				ul
-				{
-					list-style: none;
-
-					display: flex;
-					flex-direction: column;
-					gap: 0.25rem;
-
-					li
-					{
-						display: grid;
-						grid-template-columns: 1.5rem 1fr;
-						gap: 1rem;
-
-						font-size: 1.5rem;
-
-						img
-						{
-							max-width: 1.5rem;
-							max-height: 1.5rem;
-						}
-
-						a
-						{
-							word-break: break-all;
-						}
-					}
-				}
-
+			.description
+			{
 				p
 				{
 					font-size: 1.25rem;
 				}
 			}
-		}
-	}
 
-	section#education .group
-	{
-		display: flex;
-		align-items: center;
-		gap: 5rem;
+			ul.links
+			{
+				list-style: none;
 
-		img
-		{
-			max-width: 4rem;
-			max-height: 4rem;
-		}
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+				gap: 1rem;
 
-		h3
-		{
-			font-size: 2rem;
-		}
+				li
+				{
+					display: grid;
+					grid-template-columns: 1.5rem 1fr;
+					gap: 1rem;
 
-		p, li
-		{
-			font-size: 1.5rem;
+					font-size: 1.5rem;
+
+					img
+					{
+						max-width: 1.5rem;
+						max-height: 1.5rem;
+					}
+
+					a
+					{
+						word-break: break-all;
+					}
+				}
+			}
 		}
 	}
 `

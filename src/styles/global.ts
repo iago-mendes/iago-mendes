@@ -18,7 +18,7 @@ export default createGlobalStyle`
 	body
 	{
 		background-color: ${p => p.theme.background};
-		color: ${p => p.theme.text};
+		color: ${p => p.theme.foreground};
 	}
 	
 	body, input, textarea, button

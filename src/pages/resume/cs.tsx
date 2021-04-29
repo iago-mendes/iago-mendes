@@ -18,63 +18,32 @@ const CSResume: React.FC = () =>
 
 			<header>
 				<div className='me'>
-					<div className='img'>
-						<Image src='/me.png' width={1000} height={1000} layout='responsive' />
-					</div>
 					<h1>
 						Iago Mendes
 					</h1>
+					<h2>
+						Front-end web development
+					</h2>
 				</div>
 
-				<div className='info'>
-					<h2>
-						Personal info
-					</h2>
-
-					<div className='field'>
-						<FaTag />
-						<span>
-							Iago Braz Mendes
-						</span>
-					</div>
-
+				<ul className='info'>
 					<div className='field'>
 						<FaCalendar />
 						<span>
-							December 17th, 2001
+							19 years old
 						</span>
 					</div>
 
 					<div className='field'>
 						<FaHome />
 						<span>
-							Montes Claros, MG, Brazil
+							Brazil
 						</span>
 					</div>
-
-					<div className='field'>
-						<FaHeart />
-						<span>
-							Software development
-						</span>
-					</div>
-				</div>
-
-				<div className='info'>
-					<h2>
-						Contact info
-					</h2>
 
 					<div className='field'>
 						<HiMail />
-						<ul>
-							<li>
-								<ExternalLink url='mailto:contact@iago-mendes.me' text='contact@iago-mendes.me' />
-							</li>
-							<li>
-								<ExternalLink url='mailto:Iago.Braz.Mendes@oberlin.edu' text='Iago.Braz.Mendes@oberlin.edu' />
-							</li>
-						</ul>
+						<ExternalLink url='mailto:contact@iago-mendes.me' text='contact@iago-mendes.me' />
 					</div>
 
 					<div className='field'>
@@ -92,7 +61,7 @@ const CSResume: React.FC = () =>
 						<RiWhatsappFill />
 						<ExternalLink url='https://wa.me/5528984043111' text='+55 (38) 9 8404-3111' />
 					</div>
-				</div>
+				</ul>
 			</header>
 
 			{/* technologies */}

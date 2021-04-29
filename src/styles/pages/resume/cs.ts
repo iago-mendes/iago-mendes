@@ -3,12 +3,13 @@ import styled from 'styled-components'
 const Container = styled.div`
 	header
 	{
-		height: 20rem;
-		background-color: ${p => p.theme.detailLight};
-
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
+
+		padding: 1rem;
+		border-bottom: ${p => p.theme.currentLine} 2px solid;
+		margin-bottom: 1rem;
 
 		.me
 		{
@@ -17,38 +18,30 @@ const Container = styled.div`
 			align-items: center;
 			gap: 1rem;
 
-			.img
-			{
-				width: 11rem;
-				height: 11rem;
-
-				img
-				{
-					border-radius: 3rem;
-				}
-			}
-
 			h1
 			{
 				font-size: 3rem;
 				font-family: Ubuntu;
 
-				color: ${p => p.theme.detailStrong};
+				color: ${p => p.theme.cyan};
 			}
-		}
-
-		.info
-		{
-			height: 75%;
-
-			display: flex;
-			flex-direction: column;
-			gap: 0.75rem;
 
 			h2
 			{
 				font-size: 2rem;
+				font-family: Ubuntu;
+
+				color: ${p => p.theme.cyan};
 			}
+		}
+
+		ul.info
+		{
+			width: 60%;
+
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+			gap: 1rem;
 
 			.field
 			{
@@ -59,11 +52,6 @@ const Container = styled.div`
 				font-size: 1.5rem;
 
 				display: flex;
-
-				ul
-				{
-					list-style: none;
-				}
 			}
 		}
 	}
@@ -75,7 +63,7 @@ const Container = styled.div`
 
 		h2
 		{
-			border-left: ${p => p.theme.text} 5px solid;
+			border-left: ${p => p.theme.foreground} 5px solid;
 			padding-left: 1rem;
 			margin-left: -2rem;
 			margin-bottom: 1rem;

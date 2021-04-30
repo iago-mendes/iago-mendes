@@ -84,6 +84,35 @@ const CSResume: React.FC = () =>
 			<section id='experiences' >
 				<h2>Experiences</h2>
 
+				{/* cruz */}
+				<div className='experience' >
+					<div className='header'>
+						<img src='https://cruzrepresentacoes.com.br/favicon.svg' alt='Cruz Representações' />
+						<h3>Cruz Representações</h3>
+					</div>
+					
+					<div className='description'>
+						<p>This is a sales representation company owned by my father, in which I have been working as a <strong>full stack developer</strong> for about a year. In this period, I have developed 3 main applications: a server, an e-commerce, and an administrative system. The company attends approximately <strong>1,500 clients</strong>.</p>
+
+						<p>While developing the <strong>back-end</strong> the biggest challenges I had to solve were <strong>authentication</strong> of sellers and clients, <strong>e-mails</strong> using the <strong>Google API's</strong>, and <strong>PDF</strong> generation of requests.</p>
+
+						<p>For the e-commerce, I had to create a friendly interface through which the clients could buy products. Then, I focused on delivering the best <strong>UX</strong> and <strong>UI</strong>.</p>
+
+						<p>Finally, in the administrative system, I had to deal with different roles (sellers and administers), allowing different actions for each. Besides, I created several automatization functions to help in the daily tasks of the company, especially implementing the use of <strong>Spreadsheets</strong> for importing of exporting <strong>large</strong> amount of data.</p>
+					</div>
+					
+					<ul className='links' >
+						<li>
+							<FaLink />
+							<ExternalLink url='https://cruzrepresentacoes.com.br' text='cruzrepresentacoes.com.br' />
+						</li>
+						<li>
+							<FaGithub />
+							<ExternalLink url='https://github.com/iago-mendes/cruz' text='iago-mendes/cruz' />
+						</li>
+					</ul>
+				</div>
+
 				{/* cinephix */}
 				<div className='experience'>
 					<div className='header'>
@@ -155,29 +184,6 @@ const CSResume: React.FC = () =>
 						<li>
 							<FaGithub />
 							<ExternalLink url='https://github.com/iago-mendes/textcounter' text='iago-mendes/textcounter' />
-						</li>
-					</ul>
-				</div>
-				
-				{/* cruz */}
-				<div className='experience' >
-					<div className='header'>
-						<img src='https://cruzrepresentacoes.com.br/favicon.svg' alt='Cruz Representações' />
-						<h3>Cruz Representações</h3>
-					</div>
-					
-					<div className='description'>
-						<p></p>
-					</div>
-					
-					<ul className='links' >
-						<li>
-							<FaLink />
-							<ExternalLink url='https://cruzrepresentacoes.com.br' text='cruzrepresentacoes.com.br' />
-						</li>
-						<li>
-							<FaGithub />
-							<ExternalLink url='https://github.com/iago-mendes/cruz' text='iago-mendes/cruz' />
 						</li>
 					</ul>
 				</div>

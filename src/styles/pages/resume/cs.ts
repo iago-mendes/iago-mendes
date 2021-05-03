@@ -142,6 +142,11 @@ const Container = styled.div`
 				{
 					font-size: 1.25rem;
 					text-align: justify;
+
+					strong
+					{
+						font-style: italic;
+					}
 				}
 			}
 

@@ -145,7 +145,7 @@ const CSResume: React.FC = () =>
 					<div className='description'>
 						<p>This is a sales representation company owned by my father, in which I have been working as a <strong>full stack developer</strong> for about a year. In this period, I have developed 3 main applications: a server, an e-commerce, and an administrative system. The company attends approximately <strong>1,500 clients</strong>.</p>
 
-						<p>While developing the <strong>back-end</strong> the biggest challenges I had to solve were <strong>authentication</strong> of sellers and clients, <strong>e-mails</strong> using the <strong>Google API's</strong>, and <strong>PDF</strong> generation of requests.</p>
+						<p>While developing the back-end the biggest challenges I had to solve were <strong>authentication</strong> of sellers and clients, <strong>e-mails</strong> using the <strong>Google API's</strong>, and <strong>PDF</strong> generation of requests.</p>
 
 						<p>For the e-commerce, I had to create a friendly interface through which the clients could buy products. Then, I focused on delivering the best <strong>UX</strong> and <strong>UI</strong>.</p>
 
@@ -173,7 +173,10 @@ const CSResume: React.FC = () =>
 
 					<div className='description'>
 						<p>
-							Cinephix is the application made for cinephiles. By now, I have developed the main website and the API, but I plan on creating a mobile app soon.
+							This is the application made for cinephiles. By now, I have developed the main website and the API, but I plan on creating a mobile app soon.
+						</p>
+						<p>
+							The initial challenges involved mainly studying <strong>TMDb's API</strong>, which I used as the source for media data. Later on, I had to improve this communication in order to improve the response time and to avoid many calls to that API; then, I implemented a <strong>caching</strong> principle using <strong>Redis</strong>.
 						</p>
 					</div>
 

@@ -1,11 +1,25 @@
 import Head from 'next/head'
 
-import {FaCalendar, FaGithub, FaHeart, FaHome, FaLink, FaLinkedinIn, FaPhone, FaTag, FaFilePdf} from 'react-icons/fa'
-import {HiMail} from 'react-icons/hi'
-import {RiWhatsappFill} from 'react-icons/ri'
+import { FaCalendar, FaGithub, FaHome, FaLink, FaLinkedinIn, FaPhone } from 'react-icons/fa'
+import { HiMail } from 'react-icons/hi'
+import { RiWhatsappFill } from 'react-icons/ri'
 
 import Container from '../../styles/pages/resume/cs'
 import ExternalLink from '../../components/ExternalLink'
+import {
+	CSS,
+	Git,
+	HTML,
+	JavaScript,
+	Linux,
+	MongoDB,
+	Next,
+	Node,
+	React,
+	StyledComponents,
+	Terminal,
+	TypeScript
+} from '../../utils/techs'
 
 const CSResume: React.FC = () =>
 {
@@ -63,22 +77,59 @@ const CSResume: React.FC = () =>
 				</ul>
 			</header>
 
-			<section id='education' >
-				<h2>Education</h2>
+			<section id='technologies'>
+				<h2>Technologies</h2>
 
-				<div className='group'>
-					<img src='https://oberview.oberlin.edu/media/setting/FAVICON-IMAGE' alt='Oberlin College'/>
-
-					<div>
-						<h3>Oberlin College</h3>
-						<p>Class of 2024</p>
-					</div>
-				
-					<ul>
-						<li>Computer Science</li>
-						<li>Physics (Astrophysics)</li>
-					</ul>
-				</div>
+				<ul>
+					<li>
+						<JavaScript />
+						<span>JavaScript</span>
+					</li>
+					<li>
+						<TypeScript />
+						<span>TypeScript</span>
+					</li>
+					<li>
+						<React />
+						<span>React.js</span>
+					</li>
+					<li>
+						<Next />
+						<span>Next.js</span>
+					</li>
+					<li>
+						<Node />
+						<span>Node.js</span>
+					</li>
+					<li>
+						<MongoDB />
+						<span>MongoDB</span>
+					</li>
+					<li>
+						<HTML />
+						<span>HTML</span>
+					</li>
+					<li>
+						<CSS />
+						<span>CSS</span>
+					</li>
+					<li>
+						<StyledComponents />
+						<span>Styled Comp.</span>
+					</li>
+					<li>
+						<Git />
+						<span>Git</span>
+					</li>
+					<li>
+						<Terminal />
+						<span>Terminal</span>
+					</li>
+					<li>
+						<Linux />
+						<span>Linux</span>
+					</li>
+				</ul>
 			</section>
 
 			<section id='experiences' >
@@ -185,6 +236,25 @@ const CSResume: React.FC = () =>
 							<FaGithub />
 							<ExternalLink url='https://github.com/iago-mendes/textcounter' text='iago-mendes/textcounter' />
 						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id='education' >
+				<h2>Education</h2>
+
+				<div className='group'>
+					<div className='college'>
+						<img src='https://oberview.oberlin.edu/media/setting/FAVICON-IMAGE' alt='Oberlin College'/>
+						<div>
+							<h3>Oberlin College</h3>
+							<p>Class of 2024</p>
+						</div>
+					</div>
+				
+					<ul>
+						<li>Computer Science</li>
+						<li>Physics (Astrophysics)</li>
 					</ul>
 				</div>
 			</section>

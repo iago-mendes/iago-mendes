@@ -59,52 +59,57 @@ const Container = styled.div`
 	section
 	{
 		padding: 0 3rem;
+		margin-bottom: 1.5rem;
+
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		:last-of-type
+		{
+			margin: 0;
+		}
 
 		h2
 		{
 			border-left: ${p => p.theme.foreground} 5px solid;
 			padding-left: 1rem;
 			margin-left: -2rem;
-			margin-bottom: 1rem;
 
 			font-size: 2rem;
 		}
 	}
 
-	section#education
+	section#technologies
 	{
-		margin-bottom: 1.5rem;
-
-		.group
+		ul
 		{
+			list-style: none;
+
 			display: grid;
-			grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
-			gap: 2rem;
+			grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+			gap: 1rem;
 
-			img
+			li
 			{
-				max-width: 4rem;
-				max-height: 4rem;
-			}
+				display: grid;
+				grid-template-columns: 1.5rem 1fr;
+				gap: 0.25rem;
+				align-items: center;
 
-			h3
-			{
-				font-size: 2rem;
-			}
+				font-size: 1.25rem;
 
-			p, li
-			{
-				font-size: 1.5rem;
+				img
+				{
+					max-width: 1.25rem;
+					max-height: 1.25rem;
+				}
 			}
 		}
 	}
 
 	section#experiences
 	{
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-
 		.experience
 		{
 			display: flex;
@@ -131,9 +136,12 @@ const Container = styled.div`
 
 			.description
 			{
+				padding-left: 1rem;
+
 				p
 				{
 					font-size: 1.25rem;
+					text-align: justify;
 				}
 			}
 
@@ -142,21 +150,22 @@ const Container = styled.div`
 				list-style: none;
 
 				display: grid;
-				grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+				grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
 				gap: 1rem;
 
 				li
 				{
 					display: grid;
 					grid-template-columns: 1.5rem 1fr;
-					gap: 1rem;
+					gap: 0.25rem;
+					align-items: center;
 
-					font-size: 1.5rem;
+					font-size: 1.25rem;
 
 					img
 					{
-						max-width: 1.5rem;
-						max-height: 1.5rem;
+						max-width: 1.25rem;
+						max-height: 1.25rem;
 					}
 
 					a
@@ -164,6 +173,38 @@ const Container = styled.div`
 						word-break: break-all;
 					}
 				}
+			}
+		}
+	}
+
+	section#education
+	{
+		.group
+		{
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+			gap: 3rem;
+
+			.college
+			{
+				display: flex;
+				justify-content: space-around;
+
+				img
+				{
+					max-width: 4rem;
+					max-height: 4rem;
+				}
+
+				h3
+				{
+					font-size: 2rem;
+				}
+			}
+
+			p, li
+			{
+				font-size: 1.5rem;
 			}
 		}
 	}

@@ -134,14 +134,18 @@ const Container = styled.div`
 				}
 			}
 
-			.description
+			ul.description
 			{
-				padding-left: 1rem;
+				padding-left: 2rem;
 
-				p
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
+				gap: 0.5rem;
+
+				li
 				{
 					font-size: 1.25rem;
-					text-align: justify;
+					padding-right: 1.5rem;
 
 					strong
 					{

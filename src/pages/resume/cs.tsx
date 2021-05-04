@@ -142,15 +142,17 @@ const CSResume: React.FC = () =>
 						<h3>Cruz Representações</h3>
 					</div>
 					
-					<div className='description'>
-						<p>This is a sales representation company owned by my father, in which I have been working as a <strong>full stack developer</strong> for about a year. In this period, I have developed 3 main applications: a server, an e-commerce, and an administrative system. The company attends approximately <strong>1,500 clients</strong>.</p>
-
-						<p>While developing the back-end the biggest challenges I had to solve were <strong>authentication</strong> of sellers and clients, <strong>e-mails</strong> using the <strong>Google API's</strong>, and <strong>PDF</strong> generation of requests.</p>
-
-						<p>For the e-commerce, I had to create a friendly interface through which the clients could buy products. Then, I focused on delivering the best <strong>UX</strong> and <strong>UI</strong>.</p>
-
-						<p>Finally, in the administrative system, I had to deal with different roles (sellers and administers), allowing different actions for each. Besides, I created several automatization functions to help in the daily tasks of the company, especially implementing the use of <strong>Spreadsheets</strong> for importing of exporting <strong>large</strong> amount of data.</p>
-					</div>
+					<ul className='description'>
+						<li>Sales representation company</li>
+						<li>I have been working as a <strong>full stack developer</strong> for about a year.</li>
+						<li>A server, an e-commerce, and an admin system.</li>
+						<li>Approximately <strong>1,500 clients</strong>.</li>
+						<li><strong>Authentication</strong> of sellers and clients with different accesses.</li>
+						<li>Automatic <strong>e-mails</strong> using <strong>Google API's</strong>.</li>
+						<li><strong>PDF</strong> generation of requests.</li>
+						<li><strong>Spreadsheets</strong> for importing or exporting <strong>large</strong> amounts of data.</li>
+						<li><strong>PWA</strong> with <strong>offline</strong> functions and API <strong>synchronization</strong>.</li>
+					</ul>
 					
 					<ul className='links' >
 						<li>
@@ -171,14 +173,14 @@ const CSResume: React.FC = () =>
 						<h3>Cinephix</h3>
 					</div>
 
-					<div className='description'>
-						<p>
-							This is the application made for cinephiles. By now, I have developed the main website and the API, but I plan on creating a mobile app soon.
-						</p>
-						<p>
-							The initial challenges involved mainly studying <strong>TMDb's API</strong>, which I used as the source for media data. Later on, I had to improve this communication in order to improve the response time and to avoid many calls to that API; then, I implemented a <strong>caching</strong> principle using <strong>Redis</strong>.
-						</p>
-					</div>
+					<ul className='description'>
+						<li>Application made for cinephiles.</li>
+						<li>A website, and an API.</li>
+						<li>Uses <strong>TMDb's API</strong> as the source for media data.</li>
+						<li>Uses <strong>caching</strong> for media data using <strong>Redis</strong>.</li>
+						<li>Groups for friends to share predictions about geek events.</li>
+						<li>Search, discover, save, and organize movies and TV shows.</li>
+					</ul>
 
 					<ul className='links' >
 						<li>
@@ -192,6 +194,34 @@ const CSResume: React.FC = () =>
 					</ul>
 				</div>
 
+				{/* express bot */}
+				<div className='experience'>
+					<div className='header'>
+						<img src='https://raw.githubusercontent.com/iago-mendes/express-bot/main/public/logo.svg' alt='Express Bot' />
+						<h3>Express Bot</h3>
+					</div>
+
+					<ul className='description'>
+						<li>Online seller that guides clients in buying products.</li>
+						<li>Solution to challenge created by <strong>VTEX</strong> in the <strong>hackathon</strong> BRASA Hacks.</li>
+						<li>I worked in a <strong>group</strong> of 5 participants to create this in only <strong>4 days</strong>.</li>
+						<li>From a total of 51 teams, my team won <strong>second place</strong>.</li>
+						<li>Uses the <strong>Telegram Bot API</strong>.</li>
+						<li>Personalized messages, smart search, and checkout without redirection.</li>
+					</ul>
+
+					<ul className='links' >
+						<li>
+							<FaLink />
+							<ExternalLink url='https://t.me/express_a_bot' text='t.me/express_a_bot' />
+						</li>
+						<li>
+							<FaGithub />
+							<ExternalLink url='https://github.com/iago-mendes/express-bot' text='iago-mendes/express-bot' />
+						</li>
+					</ul>
+				</div>
+
 				{/* stem guy */}
 				<div className='experience' >
 					<div className='header'>
@@ -199,11 +229,14 @@ const CSResume: React.FC = () =>
 						<h3>STEM Guy</h3>
 					</div>
 
-					<div className='description'>
-						<p>
-							The STEM Guy club is a blog about science and technology. I have developed the main website, an admin system, the API, and more.
-						</p>
-					</div>
+					<ul className='description'>
+						<li>This is a blog about science and technology.</li>
+						<li>A server, a blog website, and an admin system.</li>
+						<li>Articles written in <strong>Markdown</strong>.</li>
+						<li><strong>OAuth 2.0</strong> authentication with <strong>Auth0</strong>.</li>
+						<li>Scheduling of posts.</li>
+						<li>Search and pagination.</li>
+					</ul>
 
 					<ul className='links' >
 						<li>
@@ -223,12 +256,12 @@ const CSResume: React.FC = () =>
 						<img src='https://textcounter.tools/faviconDark.svg' alt='Text Counter' />
 						<h3>Text Counter</h3>
 					</div>
-					
-					<div className='description'>
-						<p>
-							Text Counter is an application that counts text. I have developed the minimalist website.
-						</p>
-					</div>
+
+					<ul className='description'>
+						<li>This is an application that counts text.</li>
+						<li><strong>Theme switcher</strong> (light or dark).</li>
+						<li>Text show options and safe content in <strong>local storage</strong>.</li>
+					</ul>
 					
 					<ul className='links' >
 						<li>
@@ -238,6 +271,31 @@ const CSResume: React.FC = () =>
 						<li>
 							<FaGithub />
 							<ExternalLink url='https://github.com/iago-mendes/textcounter' text='iago-mendes/textcounter' />
+						</li>
+					</ul>
+				</div>
+
+				{/* astronomic week */}
+				<div className='experience' >
+					<div className='header'>
+						<img src='https://ceamontes-semana-astronomica-iago-mendes.vercel.app/favicon.svg' alt='2nd Astronomic Week' />
+						<h3>2nd Astronomic Week</h3>
+					</div>
+
+					<ul className='description'>
+						<li>This is an astronomic event website for subscription.</li>
+						<li>Step-by-step <strong>e-commerce</strong> experience.</li>
+						<li>Uses <strong>Wide Pay</strong> as a <strong>payment gateway</strong> and stores data in <strong>MongoDB Atlas</strong>.</li>
+					</ul>
+					
+					<ul className='links' >
+						<li>
+							<FaLink />
+							<ExternalLink url='https://ceamontes-semana-astronomica-iago-mendes.vercel.app/' text='ceamontes-semana-astronomica-iago-mendes.vercel.app' />
+						</li>
+						<li>
+							<FaGithub />
+							<ExternalLink url='https://github.com/ceamontes/semana-astronomica' text='ceamontes/semana-astronomica' />
 						</li>
 					</ul>
 				</div>

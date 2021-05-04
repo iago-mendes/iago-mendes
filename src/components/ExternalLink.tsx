@@ -19,7 +19,7 @@ const ExternalLink: React.FC<ExternalLinkProps> = ({url, text, style}) =>
 			href={url}
 			style={style}
 		>
-			{truncateText(text, 27)}
+			{truncateText(text, 25)}
 		</a>
 	)
 }

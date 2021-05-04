@@ -1,5 +1,7 @@
 import { CSSProperties } from 'styled-components'
 
+import truncateText from '../utils/truncateText'
+
 interface ExternalLinkProps
 {
 	url: string
@@ -17,7 +19,7 @@ const ExternalLink: React.FC<ExternalLinkProps> = ({url, text, style}) =>
 			href={url}
 			style={style}
 		>
-			{text}
+			{truncateText(text, 27)}
 		</a>
 	)
 }

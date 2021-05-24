@@ -21,12 +21,12 @@ import {
 	TypeScript
 } from '../../utils/techs'
 
-const CSResume: React.FC = () =>
+const DevResume: React.FC = () =>
 {
 	return (
 		<Container>
 			<Head>
-				<title>Iago Mendes (Computer Science Resume)</title>
+				<title>Iago Mendes (Development Resume)</title>
 			</Head>
 
 			<header>
@@ -327,4 +327,4 @@ const CSResume: React.FC = () =>
 	)
 }
 
-export default CSResume
+export default DevResume

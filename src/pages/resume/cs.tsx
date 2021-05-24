@@ -317,6 +317,10 @@ const CSResume: React.FC = () =>
 						<li>Computer Science</li>
 						<li>Physics (Astrophysics)</li>
 					</ul>
+
+					<ul>
+						<li>GPA: 3.90</li>
+					</ul>
 				</div>
 			</section>
 		</Container>

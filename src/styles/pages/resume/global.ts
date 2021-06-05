@@ -53,7 +53,7 @@ const Container = styled.div`
 		}
 	}
 
-	section#experiences
+	section.experiences
 	{
 		.experience
 		{
@@ -76,6 +76,40 @@ const Container = styled.div`
 				h3
 				{
 					font-size: 1.75rem;
+					white-space: nowrap;
+				}
+
+				ul.links
+				{
+					list-style: none;
+					/* width: 100%; */
+					margin-left: auto;
+
+					display: grid;
+					/* grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr)); */
+					grid-template-columns: repeat(2, minmax(17.5rem, 1fr));
+					gap: 1rem;
+
+					li
+					{
+						display: grid;
+						grid-template-columns: 1.5rem 1fr;
+						gap: 0.25rem;
+						align-items: center;
+
+						font-size: 1.25rem;
+
+						img
+						{
+							max-width: 1.25rem;
+							max-height: 1.25rem;
+						}
+
+						a
+						{
+							word-break: break-all;
+						}
+					}
 				}
 			}
 
@@ -95,36 +129,6 @@ const Container = styled.div`
 					strong
 					{
 						font-style: italic;
-					}
-				}
-			}
-
-			ul.links
-			{
-				list-style: none;
-
-				display: grid;
-				grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
-				gap: 1rem;
-
-				li
-				{
-					display: grid;
-					grid-template-columns: 1.5rem 1fr;
-					gap: 0.25rem;
-					align-items: center;
-
-					font-size: 1.25rem;
-
-					img
-					{
-						max-width: 1.25rem;
-						max-height: 1.25rem;
-					}
-
-					a
-					{
-						word-break: break-all;
 					}
 				}
 			}

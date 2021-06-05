@@ -86,7 +86,7 @@ const DevResume: React.FC = () =>
 				</ul>
 			</section>
 
-			<section id='experiences' >
+			<section className='experiences' >
 				<h2>Experiences</h2>
 
 				{/* cruz */}

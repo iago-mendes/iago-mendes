@@ -1,25 +1,12 @@
 import Head from 'next/head'
 import { FaGithub, FaLink } from 'react-icons/fa'
 
+
 import Container from '../../styles/pages/resume/global'
 import ExternalLink from '../../components/ExternalLink'
-import {
-	CSS,
-	Git,
-	HTML,
-	JavaScript,
-	Linux,
-	MongoDB,
-	Next,
-	Node,
-	React,
-	StyledComponents,
-	Terminal,
-	TypeScript
-} from '../../utils/techs'
 import ResumeHeader from '../../components/ResumeHeader'
 
-const DevResume: React.FC = () =>
+const MainResume: React.FC = () =>
 {
 	return (
 		<Container>
@@ -27,64 +14,7 @@ const DevResume: React.FC = () =>
 				<title>Iago Mendes (Development Resume)</title>
 			</Head>
 
-			<ResumeHeader
-				title='Front-end web developer'
-			/>
-
-			<section id='technologies'>
-				<h2>Technologies</h2>
-
-				<ul>
-					<li>
-						<JavaScript />
-						<span>JavaScript</span>
-					</li>
-					<li>
-						<TypeScript />
-						<span>TypeScript</span>
-					</li>
-					<li>
-						<React />
-						<span>React.js</span>
-					</li>
-					<li>
-						<Next />
-						<span>Next.js</span>
-					</li>
-					<li>
-						<Node />
-						<span>Node.js</span>
-					</li>
-					<li>
-						<MongoDB />
-						<span>MongoDB</span>
-					</li>
-					<li>
-						<HTML />
-						<span>HTML</span>
-					</li>
-					<li>
-						<CSS />
-						<span>CSS</span>
-					</li>
-					<li>
-						<StyledComponents />
-						<span>Styled Comp.</span>
-					</li>
-					<li>
-						<Git />
-						<span>Git</span>
-					</li>
-					<li>
-						<Terminal />
-						<span>Terminal</span>
-					</li>
-					<li>
-						<Linux />
-						<span>Linux</span>
-					</li>
-				</ul>
-			</section>
+			<ResumeHeader />
 
 			<section id='experiences' >
 				<h2>Experiences</h2>
@@ -281,4 +211,4 @@ const DevResume: React.FC = () =>
 	)
 }
 
-export default DevResume
+export default MainResume

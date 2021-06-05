@@ -4,7 +4,7 @@ import { FaCalendar, FaGithub, FaHome, FaLink, FaLinkedinIn, FaPhone } from 'rea
 import { HiMail } from 'react-icons/hi'
 import { RiWhatsappFill } from 'react-icons/ri'
 
-import Container from '../../styles/pages/resume/cs'
+import Container from '../../styles/pages/resume/global'
 import ExternalLink from '../../components/ExternalLink'
 import {
 	CSS,

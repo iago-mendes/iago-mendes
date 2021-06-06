@@ -115,10 +115,7 @@ const MainResume: React.FC = () =>
 					<ul className='description'>
 						<li>This is a blog about science and technology.</li>
 						<li>A server, a blog website, and an admin system.</li>
-						<li>Articles written in <strong>Markdown</strong>.</li>
-						<li><strong>OAuth 2.0</strong> authentication with <strong>Auth0</strong>.</li>
-						<li>Scheduling of posts.</li>
-						<li>Search and pagination.</li>
+						<li>I have developed all software and written most articles.</li>
 					</ul>
 
 				</div>
@@ -151,11 +148,15 @@ const MainResume: React.FC = () =>
 				<div className='experience' >
 					<div className='header'>
 						<img src='https://iaac.space/src/logo_tt_white_transparent_small.png' alt='IAAC' />
-						<h3>International Astronomy and Astrophysics Competition (IAAC)</h3>
+						<h3>International Astronomy and Astrophysics Competition</h3>
 						<ul className='links' >
 							<li>
 								<FaLink />
 								<ExternalLink url='https://iaac.space/en/' text='iaac.space' />
+							</li>
+							<li>
+								<FaLink />
+								<ExternalLink url='https://iaac.space/en/iagmendes' text='/iagmendes' />
 							</li>
 						</ul>
 					</div>
@@ -172,18 +173,69 @@ const MainResume: React.FC = () =>
 					<div className='header'>
 						<img src='https://github.com/ceamontes.png' alt='CEAMONTES' />
 						<h3>Montes Claros's Astronomical Studies Center (CEAMONTES)</h3>
-						<ul className='links' >
-							<li>
-								<FaLink />
-								<ExternalLink url='https://iaac.space/en/' text='iaac.space' />
-							</li>
-						</ul>
 					</div>
 
 					<ul className='description'>
 						<li>This is the Astronomy group of my local community.</li>
 						<li>I have worked as <strong>event organizer</strong>, <strong>content creator</strong>, <strong>lecturer</strong>, and more.</li>
 						<li><strong>Public events</strong>: eclipse observation, astronomy classes, etc..</li>
+					</ul>
+				</div>
+
+				{/* astronomical meetings */}
+				<div className='experience' >
+					<div className='header'>
+						<h3>Astronomical Meetings</h3>
+					</div>
+
+					<ul className='description'>
+						<li>These were events about Astronomy in public schools.</li>
+						<li>My friend and I were the organizers and lecturers.</li>
+						<li><strong>Practical activities</strong>: using a telescope and building rockets.</li>
+					</ul>
+				</div>
+			</section>
+
+			<section className='experiences'>
+				<h2>Science experiences</h2>
+
+				{/* OBA 1 */}
+				<div className='experience' >
+					<div className='header'>
+						<img src='http://www.oba.org.br/sisglob/sisglob_arquivos/LOGOTIPO_OBA_AF-1.png' alt='LOA' />
+						<h3>Advanced Astronomy Training</h3>
+					</div>
+
+					<ul className='description'>
+						<li>This was a training of 5 months (with 3 in-person camps).</li>
+						<li>In the final ranking, I was in the <strong>11th position</strong> in Brazil.</li>
+					</ul>
+				</div>
+
+				{/* OBA 2 */}
+				<div className='experience' >
+					<div className='header'>
+						<img src='http://www.oba.org.br/sisglob/sisglob_arquivos/LOGOTIPO_OBA_AF-1.png' alt='IAAC' />
+						<h3>Space Journey Program</h3>
+					</div>
+
+					<ul className='description'>
+						<li>This was a week of immersion in <strong>space subjects</strong>.</li>
+						<li>The event invited only <strong>90 students</strong> from all over Brazil.</li>
+						<li>Selection based on the <strong>Brazilian Olympiad of Astronomy</strong>.</li>
+					</ul>
+				</div>
+
+				{/* air viscosity */}
+				<div className='experience' >
+					<div className='header'>
+						<h3>Air Viscosity Study</h3>
+					</div>
+
+					<ul className='description'>
+						<li>This was a <strong>scientific initiation</strong> in the Federal Instute (IFNMG).</li>
+						<li>Air viscosity determined with a spring-mass oscillation.</li>
+						<li>I was mentored by prof. Carvalho (<strong>master in Physics</strong>).</li>
 					</ul>
 				</div>
 			</section>

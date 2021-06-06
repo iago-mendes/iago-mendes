@@ -83,12 +83,12 @@ const Container = styled.div`
 				{
 					list-style: none;
 					/* width: 100%; */
-					margin-left: auto;
+					/* margin-left: auto; */
 
 					display: grid;
-					/* grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr)); */
-					grid-template-columns: repeat(2, minmax(17.5rem, 1fr));
 					gap: 1rem;
+					/* grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr)); */
+					grid-template-columns: 1fr 1fr;
 
 					li
 					{

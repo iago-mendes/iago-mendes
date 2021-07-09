@@ -12,7 +12,7 @@ export const Container = styled(motion.nav)`
 	align-items: center;
 	justify-content: space-between;
 
-	padding-right: 2rem;
+	padding-right: 5rem;
 
 	* {
 		z-index: 100;
@@ -38,4 +38,40 @@ export const Title = styled(motion.h1)`
 	cursor: pointer;
 `
 
-export const OptionsContainer = styled.div``
+export const OptionsContainer = styled.div`
+	display: flex;
+	align-items: center;
+	gap: 15rem;
+
+	.links {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+
+		a {
+			text-decoration: none;
+			font-family: ${p => p.theme.fonts.title};
+			font-weight: 700;
+		}
+	}
+
+	.route > a {
+		font-size: 1.75rem;
+
+		::after {
+			content: '';
+			width: 0px;
+			height: 2px;
+			display: block;
+			background: ${p => p.theme.colors.foreground};
+			transition: 0.25s;
+		}
+		:hover::after {
+			width: 100%;
+		}
+	}
+
+	.social > a {
+		font-size: 2rem;
+	}
+`

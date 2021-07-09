@@ -1,18 +1,27 @@
+import {ReactNode} from 'react'
 import {CSSProperties} from 'styled-components'
 
 import truncateText from '../utils/truncateText'
 
-interface ExternalLinkProps {
+type Props = {
 	url: string
-	text: string
+	text?: string
 
 	style?: CSSProperties
+	children?: ReactNode
 }
 
-const ExternalLink: React.FC<ExternalLinkProps> = ({url, text, style}) => {
+export function ExternalLink({url, text, style, children}: Props) {
+	if (text)
+		return (
+			<a target="_blank" rel="noreferrer" href={url} style={style}>
+				{truncateText(text, 25)}
+			</a>
+		)
+
 	return (
 		<a target="_blank" rel="noreferrer" href={url} style={style}>
-			{truncateText(text, 25)}
+			{children}
 		</a>
 	)
 }

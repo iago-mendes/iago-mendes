@@ -17,13 +17,13 @@ export default createGlobalStyle`
 	
 	body
 	{
-		background-color: ${p => p.theme.background};
-		color: ${p => p.theme.foreground};
+		background-color: ${p => p.theme.colors.background};
+		color: ${p => p.theme.colors.foreground};
 	}
 	
 	body, input, textarea, button
 	{
-		font-family: Roboto;
+		font-family: ${p => p.theme.fonts.text};
 	}
 	
 	button

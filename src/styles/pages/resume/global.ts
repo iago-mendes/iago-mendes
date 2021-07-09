@@ -14,7 +14,7 @@ const Container = styled.div`
 		}
 
 		h2 {
-			border-left: ${p => p.theme.foreground} 5px solid;
+			border-left: ${p => p.theme.colors.foreground} 5px solid;
 			padding-left: 1rem;
 			margin-left: -2rem;
 

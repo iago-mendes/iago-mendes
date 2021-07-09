@@ -6,7 +6,7 @@ const Container = styled.header`
 	justify-content: space-around;
 
 	padding: 1rem;
-	border-bottom: ${p => p.theme.currentLine} 2px solid;
+	border-bottom: ${p => p.theme.colors.currentLine} 2px solid;
 	margin-bottom: 1rem;
 
 	.me {
@@ -19,14 +19,14 @@ const Container = styled.header`
 			font-size: 3rem;
 			font-family: Ubuntu;
 
-			color: ${p => p.theme.cyan};
+			color: ${p => p.theme.colors.cyan};
 		}
 
 		h2 {
 			font-size: 2rem;
 			font-family: Ubuntu;
 
-			color: ${p => p.theme.cyan};
+			color: ${p => p.theme.colors.cyan};
 		}
 	}
 

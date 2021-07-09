@@ -22,7 +22,7 @@ export const Container = styled(motion.nav)`
 		position: absolute;
 		z-index: 99;
 
-		background: ${p => p.theme.background};
+		background: ${p => p.theme.colors.background};
 		width: 100%;
 		height: 100%;
 
@@ -31,8 +31,9 @@ export const Container = styled(motion.nav)`
 `
 
 export const Title = styled(motion.h1)`
+	font-family: ${p => p.theme.fonts.special};
 	font-size: 3rem;
-	color: ${p => p.theme.cyan};
+	color: ${p => p.theme.colors.cyan};
 
 	cursor: pointer;
 `

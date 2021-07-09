@@ -55,7 +55,7 @@ export const OptionsContainer = styled.div`
 		}
 	}
 
-	.route > a {
+	.route a {
 		font-size: 1.75rem;
 
 		::after {
@@ -71,7 +71,8 @@ export const OptionsContainer = styled.div`
 		}
 	}
 
-	.social > a {
+	.social a {
 		font-size: 2rem;
+		height: 2rem;
 	}
 `

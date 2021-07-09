@@ -1,11 +1,12 @@
-import {motion, useTransform, useViewportScroll} from 'framer-motion'
 import Link from 'next/link'
+import {motion, useTransform, useViewportScroll} from 'framer-motion'
 
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import {HiMail} from 'react-icons/hi'
 import ExternalLink from '../ExternalLink'
 
 import {Container, Title, OptionsContainer} from './styles'
+import {ContentWithTextCallout} from '../ContentWithTextCallout'
 
 export function Menu() {
 	const {scrollY} = useViewportScroll()
@@ -39,15 +40,21 @@ function Options() {
 			</div>
 
 			<div className="social links">
-				<ExternalLink url="mailto:contact@iago-mendes.me">
-					<HiMail />
-				</ExternalLink>
-				<ExternalLink url="https://github.com/iago-mendes">
-					<FaGithub />
-				</ExternalLink>
-				<ExternalLink url="https://www.linkedin.com/in/iago-b-mendes">
-					<FaLinkedinIn />
-				</ExternalLink>
+				<ContentWithTextCallout text="E-mail">
+					<ExternalLink url="mailto:contact@iago-mendes.me">
+						<HiMail />
+					</ExternalLink>
+				</ContentWithTextCallout>
+				<ContentWithTextCallout text="GitHub">
+					<ExternalLink url="https://github.com/iago-mendes">
+						<FaGithub />
+					</ExternalLink>
+				</ContentWithTextCallout>
+				<ContentWithTextCallout text="LinkedIn">
+					<ExternalLink url="https://www.linkedin.com/in/iago-b-mendes">
+						<FaLinkedinIn />
+					</ExternalLink>
+				</ContentWithTextCallout>
 			</div>
 		</OptionsContainer>
 	)

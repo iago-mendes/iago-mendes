@@ -15,6 +15,7 @@
 - Physics and Astronomy :telescope:
 
 ## My technologies
+
 (names appear on hover)
 
 ### Development stack

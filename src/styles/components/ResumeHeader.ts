@@ -9,23 +9,20 @@ const Container = styled.header`
 	border-bottom: ${p => p.theme.currentLine} 2px solid;
 	margin-bottom: 1rem;
 
-	.me
-	{
+	.me {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		gap: 1rem;
 
-		h1
-		{
+		h1 {
 			font-size: 3rem;
 			font-family: Ubuntu;
 
 			color: ${p => p.theme.cyan};
 		}
 
-		h2
-		{
+		h2 {
 			font-size: 2rem;
 			font-family: Ubuntu;
 
@@ -33,16 +30,14 @@ const Container = styled.header`
 		}
 	}
 
-	ul.info
-	{
+	ul.info {
 		width: 60%;
 
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 		gap: 1rem;
 
-		.field
-		{
+		.field {
 			display: flex;
 			align-items: center;
 			gap: 0.75rem;

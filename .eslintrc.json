@@ -16,32 +16,19 @@
 		"ecmaVersion": 12,
 		"sourceType": "module"
 	},
-	"plugins": [
-		"react",
-		"@typescript-eslint"
-	],
+	"plugins": ["react", "@typescript-eslint", "prettier"],
 	"rules": {
-		"indent": [
+		"prettier/prettier": [
 			"error",
-			"tab"
+			{},
+			{
+				"usePrettierrc": true
+			}
 		],
-		"linebreak-style": [
-			"error",
-			"unix"
-		],
-		"quotes": [
-			"error",
-			"single"
-		],
-		"semi": [
-			"error",
-			"never"
-		]
-	},
-	"react/react-in-jsx-scope": "off",
-	"@typescript-eslint/no-empty-function": "off",
-	"react/no-unescaped-entities": "off",
-	"@typescript-eslint/explicit-module-boundary-types": "off",
-	"@typescript-eslint/no-explicit-any": "off",
-	"prefer-const": "off"
+		"react/react-in-jsx-scope": "off",
+		"react/no-unescaped-entities": "off",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"@typescript-eslint/no-explicit-any": "off",
+		"react/prop-types": "off"
+	}
 }

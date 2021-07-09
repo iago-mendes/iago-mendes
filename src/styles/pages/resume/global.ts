@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
-	section
-	{
+	section {
 		padding: 0 3rem;
 		margin-bottom: 1.5rem;
 
@@ -10,13 +9,11 @@ const Container = styled.div`
 		flex-direction: column;
 		gap: 1rem;
 
-		:last-of-type
-		{
+		:last-of-type {
 			margin: 0;
 		}
 
-		h2
-		{
+		h2 {
 			border-left: ${p => p.theme.foreground} 5px solid;
 			padding-left: 1rem;
 			margin-left: -2rem;
@@ -25,18 +22,15 @@ const Container = styled.div`
 		}
 	}
 
-	section#technologies
-	{
-		ul
-		{
+	section#technologies {
+		ul {
 			list-style: none;
 
 			display: grid;
 			grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
 			gap: 1rem;
 
-			li
-			{
+			li {
 				display: grid;
 				grid-template-columns: 1.5rem 1fr;
 				gap: 0.25rem;
@@ -44,8 +38,7 @@ const Container = styled.div`
 
 				font-size: 1.25rem;
 
-				img
-				{
+				img {
 					max-width: 1.25rem;
 					max-height: 1.25rem;
 				}
@@ -53,34 +46,28 @@ const Container = styled.div`
 		}
 	}
 
-	section.experiences
-	{
-		.experience
-		{
+	section.experiences {
+		.experience {
 			display: flex;
 			flex-direction: column;
 			gap: 0.5rem;
 
-			.header
-			{
+			.header {
 				display: flex;
 				align-items: center;
 				gap: 2rem;
 
-				img
-				{
+				img {
 					max-width: 3rem;
 					max-height: 3rem;
 				}
 
-				h3
-				{
+				h3 {
 					font-size: 1.75rem;
 					white-space: nowrap;
 				}
 
-				ul.links
-				{
+				ul.links {
 					list-style: none;
 					/* width: 100%; */
 					/* margin-left: auto; */
@@ -90,8 +77,7 @@ const Container = styled.div`
 					/* grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr)); */
 					grid-template-columns: 1fr 1fr;
 
-					li
-					{
+					li {
 						display: grid;
 						grid-template-columns: 1.5rem 1fr;
 						gap: 0.25rem;
@@ -99,35 +85,30 @@ const Container = styled.div`
 
 						font-size: 1.25rem;
 
-						img
-						{
+						img {
 							max-width: 1.25rem;
 							max-height: 1.25rem;
 						}
 
-						a
-						{
+						a {
 							word-break: break-all;
 						}
 					}
 				}
 			}
 
-			ul.description
-			{
+			ul.description {
 				padding-left: 2rem;
 
 				display: grid;
 				grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
 				gap: 0.5rem;
 
-				li
-				{
+				li {
 					font-size: 1.25rem;
 					padding-right: 1.5rem;
 
-					strong
-					{
+					strong {
 						font-style: italic;
 					}
 				}
@@ -135,47 +116,39 @@ const Container = styled.div`
 		}
 	}
 
-	section#education
-	{
-		.group
-		{
+	section#education {
+		.group {
 			display: grid;
 			grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 			gap: 3rem;
 
-			.college
-			{
+			.college {
 				display: flex;
 				justify-content: space-around;
 
-				img
-				{
+				img {
 					max-width: 4rem;
 					max-height: 4rem;
 				}
 
-				h3
-				{
+				h3 {
 					font-size: 2rem;
 				}
 			}
 
-			p, li
-			{
+			p,
+			li {
 				font-size: 1.5rem;
 			}
 		}
 	}
 
-	@media (max-width: 725px)
-	{
-		header
-		{
+	@media (max-width: 725px) {
+		header {
 			flex-direction: column;
 			gap: 1rem;
 
-			.me
-			{
+			.me {
 				width: 100%;
 
 				display: grid;
@@ -186,8 +159,7 @@ const Container = styled.div`
 				justify-items: center;
 			}
 
-			ul.info
-			{
+			ul.info {
 				width: 100%;
 			}
 		}

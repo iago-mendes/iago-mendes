@@ -16,7 +16,7 @@ export default function Home() {
 						</h2>
 						<h3>Meet Iago Mendes</h3>
 					</main>
-					<ContentWithTextCallout text="you drag the letters!">
+					<ContentWithTextCallout text="you can drag the letters!">
 						<HeroPlayground />
 					</ContentWithTextCallout>
 				</section>

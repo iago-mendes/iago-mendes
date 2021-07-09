@@ -1,12 +1,6 @@
-import Head from 'next/head'
-
 export default function Home() {
 	return (
 		<div>
-			<Head>
-				<title>Iago Mendes</title>
-			</Head>
-
 			<h1>Hi there!</h1>
 			<h2>
 				This is my personal website, but I haven't had time to code it yet.

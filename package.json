@@ -9,6 +9,7 @@
 		"lint": "prettier --write . && eslint --fix ."
 	},
 	"dependencies": {
+		"framer-motion": "^4.1.17",
 		"next": "10.0.3",
 		"next-images": "^1.7.0",
 		"react": "17.0.1",

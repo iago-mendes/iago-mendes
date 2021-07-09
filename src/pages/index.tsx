@@ -1,6 +1,8 @@
+import {PageContainer} from '../components/PageContainer'
+
 export default function Home() {
 	return (
-		<div>
+		<PageContainer>
 			<h1>Hi there!</h1>
 			<h2>
 				This is my personal website, but I haven't had time to code it yet.
@@ -13,6 +15,6 @@ export default function Home() {
 				</a>{' '}
 				accounts
 			</h2>
-		</div>
+		</PageContainer>
 	)
 }

@@ -33,6 +33,7 @@ export const HomeContainer = styled.div`
 			h3 {
 				font-size: 2rem;
 				text-transform: uppercase;
+				color: ${p => p.theme.colors.purple};
 			}
 		}
 	}

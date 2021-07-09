@@ -17,7 +17,11 @@ export function Menu() {
 	const titleMargin = useTransform(scrollY, [0, 200], [200, 50])
 
 	return (
-		<Container style={{height: menuHeight}}>
+		<Container
+			initial={{opacity: 0}}
+			animate={{opacity: 1, transition: {duration: 1}}}
+			style={{height: menuHeight}}
+		>
 			<motion.div style={{opacity: menuOpacity}} className="background" />
 			<Link href="/">
 				<Title style={{scale: titleSize, marginLeft: titleMargin}}>

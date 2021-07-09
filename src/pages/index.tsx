@@ -1,3 +1,5 @@
+import {motion} from 'framer-motion'
+
 import {HomeContainer} from '../styles/pages/index'
 
 import {PageContainer} from '../components/PageContainer'
@@ -10,7 +12,10 @@ export default function Home() {
 		<PageContainer>
 			<HomeContainer>
 				<section id="hero">
-					<main>
+					<motion.main
+						initial={{opacity: 0, x: -100}}
+						animate={{opacity: 1, x: 0, transition: {duration: 1}}}
+					>
 						<h2>
 							Changing the world...
 							<br /> with code.
@@ -19,7 +24,7 @@ export default function Home() {
 						<ContentWithTextCallout text="scroll down">
 							<ScrollIndicator />
 						</ContentWithTextCallout>
-					</main>
+					</motion.main>
 					<ContentWithTextCallout text="you can drag the letters!">
 						<HeroPlayground />
 					</ContentWithTextCallout>

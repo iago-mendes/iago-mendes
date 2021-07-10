@@ -26,13 +26,12 @@ export const Callout = styled(motion.div)`
 
 	.content {
 		background: ${p => p.theme.colors.selection};
-		padding: 0.5rem 1.5rem;
+		padding: 0.2rem 1rem;
 		border-radius: 0.5rem;
-		margin-top: -5px;
+		margin-top: -10px;
 
 		span {
 			white-space: nowrap;
-			font-size: 1.5rem;
 			font-weight: 700;
 		}
 	}

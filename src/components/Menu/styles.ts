@@ -12,7 +12,7 @@ export const Container = styled(motion.nav)`
 	align-items: center;
 	justify-content: space-between;
 
-	padding-right: 5rem;
+	padding-right: 2rem;
 
 	* {
 		z-index: 100;
@@ -28,20 +28,28 @@ export const Container = styled(motion.nav)`
 
 		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
 	}
+
+	@media (min-width: 1100px) {
+		padding-right: 5rem;
+	}
 `
 
 export const Title = styled(motion.h1)`
 	font-family: ${p => p.theme.fonts.special};
-	font-size: 3rem;
 	color: ${p => p.theme.colors.cyan};
 
 	cursor: pointer;
+
+	@media (max-width: 600px) {
+		font-size: 1rem;
+		margin-left: 5rem !important;
+	}
 `
 
 export const OptionsContainer = styled.div`
 	display: flex;
 	align-items: center;
-	gap: 15rem;
+	gap: 2rem;
 
 	.links {
 		display: flex;
@@ -56,8 +64,6 @@ export const OptionsContainer = styled.div`
 	}
 
 	.route a {
-		font-size: 1.75rem;
-
 		::after {
 			content: '';
 			width: 0px;
@@ -72,7 +78,11 @@ export const OptionsContainer = styled.div`
 	}
 
 	.social a {
-		font-size: 2rem;
-		height: 2rem;
+		font-size: 1.5rem;
+		height: 1.5rem;
+	}
+
+	@media only screen and (min-width: 1100px) {
+		gap: 5rem;
 	}
 `

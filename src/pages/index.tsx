@@ -6,8 +6,11 @@ import {PageContainer} from '../components/PageContainer'
 import {HeroPlayground} from '../components/HeroPlayground'
 import {ContentWithTextCallout} from '../components/ContentWithTextCallout'
 import {ScrollIndicator} from '../components/ScrollIndicator'
+import {useDimensions} from '../hooks/useDimensions'
 
 export default function Home() {
+	const {inDesktop} = useDimensions()
+
 	return (
 		<PageContainer>
 			<HomeContainer>
@@ -25,9 +28,12 @@ export default function Home() {
 							<ScrollIndicator />
 						</ContentWithTextCallout>
 					</motion.main>
-					<ContentWithTextCallout text="you can drag the letters!">
-						<HeroPlayground />
-					</ContentWithTextCallout>
+
+					{inDesktop && (
+						<ContentWithTextCallout text="you can drag the letters!">
+							<HeroPlayground />
+						</ContentWithTextCallout>
+					)}
 				</section>
 
 				<section id="portfolio">

@@ -6,7 +6,6 @@ export const HomeContainer = styled.div`
 		padding: 2rem;
 
 		> h2.title {
-			font-size: 3rem;
 			text-transform: uppercase;
 			font-family: ${p => p.theme.fonts.title};
 		}
@@ -17,21 +16,18 @@ export const HomeContainer = styled.div`
 		justify-content: space-around;
 		align-items: center;
 
-		main {
-			margin-bottom: 10rem;
-
+		> main {
 			display: flex;
 			flex-direction: column;
 			gap: 2rem;
 
 			h2 {
-				font-size: 5rem;
+				font-size: 3rem;
 				font-family: ${p => p.theme.fonts.title};
 				text-transform: lowercase;
 			}
 
 			h3 {
-				font-size: 2rem;
 				text-transform: uppercase;
 				color: ${p => p.theme.colors.purple};
 			}

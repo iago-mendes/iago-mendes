@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
 	background: ${p => p.theme.colors.currentLine}80;
-	width: 400px;
-	height: 400px;
+	width: 300px;
+	height: 300px;
 	border-radius: 10%;
 
 	display: flex;

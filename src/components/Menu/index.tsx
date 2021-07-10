@@ -7,14 +7,16 @@ import ExternalLink from '../ExternalLink'
 
 import {Container, Title, OptionsContainer} from './styles'
 import {ContentWithTextCallout} from '../ContentWithTextCallout'
+import {useDimensions} from '../../hooks/useDimensions'
 
 export function Menu() {
+	const {inDesktop} = useDimensions()
 	const {scrollY} = useViewportScroll()
 
 	const menuHeight = useTransform(scrollY, [0, 200], [150, 50])
 	const menuOpacity = useTransform(scrollY, [150, 200], [0, 1])
 	const titleSize = useTransform(scrollY, [0, 200], [2, 1])
-	const titleMargin = useTransform(scrollY, [0, 200], [200, 50])
+	const titleMargin = useTransform(scrollY, [0, 200], [125, 50])
 
 	return (
 		<Container
@@ -29,7 +31,7 @@ export function Menu() {
 				</Title>
 			</Link>
 
-			<Options />
+			{inDesktop && <Options />}
 		</Container>
 	)
 }

@@ -1,9 +1,20 @@
 import {createGlobalStyle} from 'styled-components'
 
 export default createGlobalStyle`
-	:root
+	@media(max-width: 1100px)
 	{
-		font-size: 10px;
+		html
+		{
+			font-size: 93.75%;
+		}
+	}
+
+	@media(max-width: 900px)
+	{
+		html
+		{
+			font-size: 87.5%;
+		}
 	}
 	
 	*

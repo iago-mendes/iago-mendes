@@ -1,3 +1,4 @@
+import {useState} from 'react'
 import Link from 'next/link'
 import {motion, useTransform, useViewportScroll} from 'framer-motion'
 
@@ -8,15 +9,18 @@ import ExternalLink from '../ExternalLink'
 import {Container, Title, OptionsContainer} from './styles'
 import {ContentWithTextCallout} from '../ContentWithTextCallout'
 import {useDimensions} from '../../hooks/useDimensions'
+import {BurgerButton} from '../BurgerButton'
 
 export function Menu() {
-	const {inDesktop} = useDimensions()
+	const {inDesktop, inMobile} = useDimensions()
 	const {scrollY} = useViewportScroll()
 
 	const menuHeight = useTransform(scrollY, [0, 200], [150, 50])
 	const menuOpacity = useTransform(scrollY, [150, 200], [0, 1])
 	const titleSize = useTransform(scrollY, [0, 200], [2, 1])
 	const titleMargin = useTransform(scrollY, [0, 200], [125, 50])
+
+	const [isBurgerOpen, setIsBurgerOpen] = useState(false)
 
 	return (
 		<Container
@@ -32,6 +36,9 @@ export function Menu() {
 			</Link>
 
 			{inDesktop && <Options />}
+			{inMobile && (
+				<BurgerButton isOpen={isBurgerOpen} setIsOpen={setIsBurgerOpen} />
+			)}
 		</Container>
 	)
 }

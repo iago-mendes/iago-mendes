@@ -6,7 +6,7 @@ import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import {HiMail} from 'react-icons/hi'
 import ExternalLink from '../ExternalLink'
 
-import {Container, Title, OptionsContainer} from './styles'
+import {Container, Title, OptionsContainer, BurgerContainer} from './styles'
 import {ContentWithTextCallout} from '../ContentWithTextCallout'
 import {useDimensions} from '../../hooks/useDimensions'
 import {BurgerButton} from '../BurgerButton'
@@ -37,7 +37,27 @@ export function Menu() {
 
 			{inDesktop && <Options />}
 			{inMobile && (
-				<BurgerButton isOpen={isBurgerOpen} setIsOpen={setIsBurgerOpen} />
+				<>
+					<BurgerButton isOpen={isBurgerOpen} setIsOpen={setIsBurgerOpen} />
+
+					<BurgerContainer
+						variants={{
+							closed: {marginLeft: '100vw'},
+							openned: {
+								marginLeft: '25vw',
+								transition: {type: 'spring', stiffness: 250, damping: 15}
+							}
+						}}
+						initial={false}
+						animate={isBurgerOpen ? 'openned' : 'closed'}
+						style={{
+							marginTop: menuHeight,
+							height: `calc(100vh - ${menuHeight})`
+						}}
+					>
+						<Options />
+					</BurgerContainer>
+				</>
 			)}
 		</Container>
 	)

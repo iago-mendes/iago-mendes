@@ -5,6 +5,11 @@ export const HomeContainer = styled.div`
 		min-height: calc(95vh - 150px);
 		padding: 2rem;
 
+		:nth-of-type(even) {
+			background: ${p => p.theme.colors.cyan}80;
+			color: ${p => p.theme.colors.background};
+		}
+
 		> h2.title {
 			text-transform: uppercase;
 			font-family: ${p => p.theme.fonts.title};
@@ -32,10 +37,5 @@ export const HomeContainer = styled.div`
 				color: ${p => p.theme.colors.purple};
 			}
 		}
-	}
-
-	section#portfolio {
-		background: ${p => p.theme.colors.cyan}80;
-		color: ${p => p.theme.colors.background};
 	}
 `

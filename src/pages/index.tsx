@@ -39,6 +39,14 @@ export default function Home() {
 				<section id="portfolio">
 					<h2 className="title">Portfolio</h2>
 				</section>
+
+				<section id="resumes">
+					<h2 className="title">Resumes</h2>
+				</section>
+
+				<section id="about-me">
+					<h2 className="title">About me</h2>
+				</section>
 			</HomeContainer>
 		</PageContainer>
 	)

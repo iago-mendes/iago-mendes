@@ -67,9 +67,9 @@ function Options() {
 	return (
 		<OptionsContainer>
 			<div className="route links">
-				<Link href="">Portfolio</Link>
-				<Link href="">Resume</Link>
-				<Link href="">About me</Link>
+				<Link href="/#portfolio">Portfolio</Link>
+				<Link href="/#resumes">Resumes</Link>
+				<Link href="/#about-me">About me</Link>
 			</div>
 
 			<div className="social links">

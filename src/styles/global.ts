@@ -25,6 +25,11 @@ export default createGlobalStyle`
 		outline: none;
 		-webkit-tap-highlight-color: transparent;
 	}
+
+	html {
+		scroll-behavior: smooth;
+		scroll-padding-top: 50px;
+	}
 	
 	body
 	{

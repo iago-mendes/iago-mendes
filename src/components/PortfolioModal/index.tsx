@@ -6,9 +6,11 @@ import {Container} from './styles'
 import {portfolio} from '../../assets/db/portfolio'
 import ModalContainer from '../ModalContainer'
 import {motion} from 'framer-motion'
+import {useClickOutside} from '../../hooks/useClickOutside'
 
 export function PortfolioModal() {
 	const {query, push} = useRouter()
+	const ref = useClickOutside(handleClose)
 
 	const portfolioIndex = Number(query.portfolio)
 	const portfolioItem =
@@ -26,6 +28,7 @@ export function PortfolioModal() {
 		<ModalContainer isOpen={isOpen}>
 			{query.portfolio && (
 				<Container
+					ref={ref}
 					initial={{opacity: 0}}
 					animate={{opacity: 1}}
 					exit={{opacity: 0, transition: {duration: 0.15}}}

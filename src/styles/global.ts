@@ -36,6 +36,15 @@ export default createGlobalStyle`
 		background-color: ${p => p.theme.colors.background};
 		color: ${p => p.theme.colors.foreground};
 	}
+
+	body.avoid-scroll {
+		height: 100vh;
+		overflow-y: hidden;
+
+		@media (min-width: 900px) {
+			padding-right: 15px;
+		}
+	}
 	
 	body, input, textarea, button
 	{

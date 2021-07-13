@@ -1,4 +1,4 @@
-type Portfolio = Array<{
+export type Portfolio = Array<{
 	title: string
 	subtitle?: string
 	startDate: string

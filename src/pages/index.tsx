@@ -10,7 +10,6 @@ import {ScrollIndicator} from '../components/ScrollIndicator'
 import {useDimensions} from '../hooks/useDimensions'
 import {AnimatedGrid} from '../components/AnimatedGrid'
 import {portfolio} from '../assets/db/portfolio'
-import {PortfolioModal} from '../components/PortfolioModal'
 import {AnimatedCard} from '../components/AnimatedCard'
 
 export default function Home() {
@@ -46,7 +45,7 @@ export default function Home() {
 					<h2 className="title">Portfolio</h2>
 
 					<div className="content">
-						<AnimatedGrid modal={PortfolioModal}>
+						<AnimatedGrid modal="portfolio">
 							{portfolio.map((portfolioItem, index) => (
 								<AnimatedCard
 									layoutId={`portfolio-${index}`}

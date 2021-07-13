@@ -1,6 +1,6 @@
 export type Portfolio = Array<{
 	title: string
-	subtitle?: string
+	subtitle: string
 	startDate: string
 	endDate: string
 	links?: Array<{
@@ -15,6 +15,7 @@ export type Portfolio = Array<{
 export const portfolio: Portfolio = [
 	{
 		title: 'Star View',
+		subtitle: 'Stargazing software',
 		startDate: '2021-06',
 		endDate: 'present',
 		image: '/images/portfolio/star-view.png',
@@ -27,6 +28,7 @@ export const portfolio: Portfolio = [
 	},
 	{
 		title: 'Cinephix',
+		subtitle: 'Software for cinephiles',
 		startDate: '2021-01',
 		endDate: 'present',
 		links: [
@@ -46,6 +48,7 @@ export const portfolio: Portfolio = [
 	},
 	{
 		title: 'Cruz Representações',
+		subtitle: 'Sales representation company',
 		startDate: '2020-08',
 		endDate: 'present',
 		links: [
@@ -69,6 +72,7 @@ export const portfolio: Portfolio = [
 	},
 	{
 		title: 'STEM Guy',
+		subtitle: 'Blog about STEM',
 		startDate: '2020-11',
 		endDate: 'present',
 		links: [
@@ -87,6 +91,7 @@ export const portfolio: Portfolio = [
 	},
 	{
 		title: 'Text Counter',
+		subtitle: 'Software that counts text',
 		startDate: '2020-08',
 		endDate: '2021-01',
 		links: [
@@ -117,6 +122,7 @@ export const portfolio: Portfolio = [
 	},
 	{
 		title: 'Podcastr',
+		subtitle: 'Podcast streaming website',
 		startDate: '2021-04',
 		endDate: '2021-04',
 		links: [
@@ -135,6 +141,7 @@ export const portfolio: Portfolio = [
 	},
 	{
 		title: 'Letmeask',
+		subtitle: 'Live Q&A platform',
 		startDate: '2021-06',
 		endDate: '2021-06',
 		links: [

@@ -51,6 +51,7 @@ export default function Home() {
 									layoutId={`portfolio-${index}`}
 									image={portfolioItem.image}
 									title={portfolioItem.title}
+									subtitle={portfolioItem.subtitle}
 									handleClick={() => push(`/?portfolio=${index}`)}
 									key={portfolioItem.title}
 								/>

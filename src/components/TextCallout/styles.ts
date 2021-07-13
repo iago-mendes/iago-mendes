@@ -10,10 +10,10 @@ export const Container = styled.div`
 `
 
 export const Callout = styled(motion.div)`
-	position: absolute;
-	top: 100%;
-
 	overflow: hidden;
+	position: absolute;
+	top: -3px;
+	z-index: 1;
 
 	display: flex;
 	flex-direction: column;
@@ -22,17 +22,26 @@ export const Callout = styled(motion.div)`
 	.detail {
 		margin: 0 auto;
 		color: ${p => p.theme.colors.selection};
+
+		font-size: 1rem;
 	}
 
 	.content {
 		background: ${p => p.theme.colors.selection};
-		padding: 0.2rem 1rem;
+		padding: 0.5rem 1.5rem;
 		border-radius: 0.5rem;
-		margin-top: -10px;
+		margin-top: -12px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
 		span {
 			white-space: nowrap;
 			font-weight: 700;
+
+			font-size: 1rem;
+			color: ${p => p.theme.colors.foreground};
 		}
 	}
 `

@@ -35,6 +35,8 @@ export default createGlobalStyle`
 	{
 		background-color: ${p => p.theme.colors.background};
 		color: ${p => p.theme.colors.foreground};
+
+		overflow-x: hidden;
 	}
 
 	body.avoid-scroll {

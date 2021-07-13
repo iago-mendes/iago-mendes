@@ -1,26 +1,33 @@
 import styled from 'styled-components'
 
-export const Container = styled.svg`
-	overflow: visible;
-	transform: scale(0.75);
+export const Container = styled.div`
+	width: fit-content;
+	height: fit-content;
 
-	rect {
-		fill: none;
-		stroke: ${p => p.theme.colors.foreground};
-	}
+	margin: 0 auto;
 
-	circle {
-		fill: ${p => p.theme.colors.foreground};
+	svg {
+		overflow: visible;
+		transform: scale(0.75);
 
-		animation: circleAnimation 1s infinite alternate-reverse;
-	}
-
-	@keyframes circleAnimation {
-		from {
-			transform: translateY(0px);
+		rect {
+			fill: none;
+			stroke: ${p => p.theme.colors.foreground};
 		}
-		to {
-			transform: translateY(40px);
+
+		circle {
+			fill: ${p => p.theme.colors.foreground};
+
+			animation: circleAnimation 1s infinite alternate-reverse;
+		}
+
+		@keyframes circleAnimation {
+			from {
+				transform: translateY(0px);
+			}
+			to {
+				transform: translateY(40px);
+			}
 		}
 	}
 `

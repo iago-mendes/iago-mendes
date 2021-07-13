@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useRef, useState} from 'react'
 import Link from 'next/link'
 import {motion, useTransform, useViewportScroll} from 'framer-motion'
 
@@ -7,7 +7,7 @@ import {HiMail} from 'react-icons/hi'
 import ExternalLink from '../ExternalLink'
 
 import {Container, Title, OptionsContainer, BurgerContainer} from './styles'
-import {ContentWithTextCallout} from '../ContentWithTextCallout'
+import {TextCallout} from '../TextCallout'
 import {useDimensions} from '../../hooks/useDimensions'
 import {BurgerButton} from '../BurgerButton'
 
@@ -64,6 +64,10 @@ export function Menu() {
 }
 
 function Options() {
+	const emailRef = useRef(null)
+	const githubRef = useRef(null)
+	const linkedinRef = useRef(null)
+
 	return (
 		<OptionsContainer>
 			<div className="route links">
@@ -73,21 +77,24 @@ function Options() {
 			</div>
 
 			<div className="social links">
-				<ContentWithTextCallout text="E-mail">
+				<div ref={emailRef}>
 					<ExternalLink url="mailto:contact@iago-mendes.me">
 						<HiMail />
+						<TextCallout text="E-mail" targetRef={emailRef} />
 					</ExternalLink>
-				</ContentWithTextCallout>
-				<ContentWithTextCallout text="GitHub">
+				</div>
+				<div ref={githubRef}>
 					<ExternalLink url="https://github.com/iago-mendes">
 						<FaGithub />
+						<TextCallout text="GitHub" targetRef={githubRef} />
 					</ExternalLink>
-				</ContentWithTextCallout>
-				<ContentWithTextCallout text="LinkedIn">
+				</div>
+				<div ref={linkedinRef}>
 					<ExternalLink url="https://www.linkedin.com/in/iago-b-mendes">
 						<FaLinkedinIn />
+						<TextCallout text="LinkedIn" targetRef={linkedinRef} />
 					</ExternalLink>
-				</ContentWithTextCallout>
+				</div>
 			</div>
 		</OptionsContainer>
 	)

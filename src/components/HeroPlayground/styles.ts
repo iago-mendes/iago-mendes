@@ -6,15 +6,20 @@ export const Container = styled.div`
 	height: 300px;
 	border-radius: 10%;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	> div {
+		width: 100%;
+		height: 100%;
 
-	svg {
-		path {
-			stroke-width: 1;
-			stroke-linecap: round;
-			stroke-linejoin: round;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		svg {
+			path {
+				stroke-width: 1;
+				stroke-linecap: round;
+				stroke-linejoin: round;
+			}
 		}
 	}
 `

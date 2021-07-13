@@ -1,23 +1,25 @@
-import {ReactNode, useState} from 'react'
+import {useState, useEffect, MutableRefObject} from 'react'
 import {BsFillTriangleFill} from 'react-icons/bs'
 
 import {Container, Callout} from './styles'
 
 type Props = {
 	text: string
-	children: ReactNode
+	targetRef: MutableRefObject<any>
 }
 
-export function ContentWithTextCallout({text, children}: Props) {
+export function TextCallout({text, targetRef}: Props) {
 	const [showCallout, setShowCallout] = useState(false)
 
-	return (
-		<Container
-			onMouseEnter={() => setShowCallout(true)}
-			onMouseLeave={() => setShowCallout(false)}
-		>
-			{children}
+	useEffect(() => {
+		if (targetRef && targetRef.current) {
+			targetRef.current.onmouseenter = () => setShowCallout(true)
+			targetRef.current.onmouseleave = () => setShowCallout(false)
+		}
+	}, [targetRef])
 
+	return (
+		<Container>
 			<Callout
 				initial={false}
 				animate={showCallout ? 'open' : 'closed'}

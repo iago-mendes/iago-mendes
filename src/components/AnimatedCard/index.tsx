@@ -1,6 +1,9 @@
+import {useRef} from 'react'
 import Image from 'next/image'
+import {motion} from 'framer-motion'
 
 import {Container} from './styles'
+import {TextCallout} from '../TextCallout'
 
 type Props = {
 	layoutId: string
@@ -18,31 +21,34 @@ export function AnimatedCard({
 	subtitle,
 	handleClick
 }: Props) {
+	const ref = useRef(null)
+
 	return (
 		<Container
 			onClick={handleClick}
-			whileHover={{
-				scale: 0.95,
-				borderRadius: 0
-			}}
 			whileTap={{
-				scale: 0.9,
-				borderRadius: 0
+				scale: 0.9
 			}}
 			layoutId={layoutId}
-			title={subtitle}
+			ref={ref}
 		>
-			<Image
-				src={image}
-				alt={title}
-				width={1200}
-				height={630}
-				layout="responsive"
-			/>
+			<motion.div className="card">
+				<div className="background">
+					<Image
+						src={image}
+						alt={title}
+						width={1200}
+						height={630}
+						layout="responsive"
+					/>
 
-			<div className="title">
-				<span>{title}</span>
-			</div>
+					<div className="title">
+						<span>{title}</span>
+					</div>
+				</div>
+
+				<TextCallout text={subtitle} targetRef={ref} />
+			</motion.div>
 		</Container>
 	)
 }

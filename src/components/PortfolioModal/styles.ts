@@ -3,14 +3,20 @@ import styled from 'styled-components'
 
 export const Container = styled(motion.div)`
 	width: 95vw;
-	min-height: 50vh;
+	height: 75vh;
+
 	background-color: ${p => p.theme.colors.background};
+	color: ${p => p.theme.colors.foreground};
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
 
 	border-top-left-radius: 0.5rem;
 	border-top-right-radius: 0.5rem;
-	overflow: hidden;
+	overflow-y: auto;
 
 	header {
+		border-top-left-radius: 0.5rem;
+		border-top-right-radius: 0.5rem;
+		overflow-x: hidden;
 		position: relative;
 
 		.img {
@@ -54,6 +60,61 @@ export const Container = styled(motion.div)`
 			:hover {
 				border-radius: 0;
 			}
+		}
+	}
+
+	.details {
+		padding: 0 1rem;
+
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		.titles {
+			display: flex;
+			flex-direction: column;
+			gap: 0.25rem;
+
+			h3 {
+				font-family: ${p => p.theme.fonts.title};
+				font-size: 2rem;
+			}
+		}
+
+		span.dates {
+			margin-left: auto;
+			font-family: ${p => p.theme.fonts.title};
+			font-weight: 700;
+		}
+	}
+
+	.links {
+		padding: 0.5rem 2rem;
+
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+		gap: 0.5rem;
+	}
+
+	.description {
+		padding: 1rem;
+	}
+
+	ul.descriptionItems {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+
+		padding: 0 1rem;
+		padding-left: 2.5rem;
+		margin-bottom: 5rem;
+	}
+
+	@media (min-width: 900px) {
+		width: 50vw;
+
+		.details {
+			flex-direction: row;
 		}
 	}
 `

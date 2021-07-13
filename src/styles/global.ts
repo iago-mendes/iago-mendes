@@ -65,4 +65,28 @@ export default createGlobalStyle`
 	
 	#__next
 	{}
+
+	@media (min-width: 900px) {
+		* {
+			::-webkit-scrollbar
+			{
+				width: 15px;
+			}
+			::-webkit-scrollbar-track
+			{
+				background-color: ${p => p.theme.colors.selection}40;
+			}
+			
+			::-webkit-scrollbar-thumb
+			{
+				background-color: ${p => p.theme.colors.foreground}80;
+				border-radius: 0.5rem;
+
+				:hover
+				{
+					background-color: ${p => p.theme.colors.foreground}40;
+				}
+			}
+		}
+	}
 `

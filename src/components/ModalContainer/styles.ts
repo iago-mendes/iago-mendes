@@ -1,7 +1,11 @@
 import {motion} from 'framer-motion'
 import styled from 'styled-components'
 
-export const Container = styled(motion.div)`
+type Props = {
+	blurBackground: boolean
+}
+
+export const Container = styled(motion.div)<Props>`
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -18,5 +22,5 @@ export const Container = styled(motion.div)`
 	justify-content: center;
 
 	background-color: rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(3px);
+	${p => (p.blurBackground ? 'backdrop-filter: blur(3px);' : '')}
 `

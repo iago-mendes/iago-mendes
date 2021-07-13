@@ -19,8 +19,9 @@ export function AnimatedCard({layoutId, image, title, handleClick}: Props) {
 				scale: 0.95,
 				borderRadius: 0
 			}}
+			layoutId={layoutId}
 		>
-			<motion.div layoutId={layoutId}>
+			<motion.div>
 				<Image
 					src={image}
 					alt={title}

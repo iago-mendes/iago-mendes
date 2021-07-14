@@ -22,7 +22,7 @@ export function PortfolioModal() {
 	const isOpen = portfolioItem != null
 
 	function handleClose() {
-		push('/')
+		push('/', '/', {scroll: false})
 	}
 
 	return (

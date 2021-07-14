@@ -15,6 +15,10 @@ export default function Home() {
 	const {inDesktop} = useDimensions()
 	const {push} = useRouter()
 
+	function handleOpenPortfolio(index: number) {
+		push(`/?portfolio=${index}`, `/?portfolio=${index}`, {scroll: false})
+	}
+
 	return (
 		<PageContainer>
 			<HomeContainer>
@@ -45,7 +49,7 @@ export default function Home() {
 									image={portfolioItem.image}
 									title={portfolioItem.title}
 									subtitle={portfolioItem.subtitle}
-									handleClick={() => push(`/?portfolio=${index}`)}
+									handleClick={() => handleOpenPortfolio(index)}
 									key={portfolioItem.title}
 								/>
 							))}

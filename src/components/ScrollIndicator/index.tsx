@@ -1,13 +1,19 @@
 import {useRef} from 'react'
+import {useRouter} from 'next/router'
 
 import {Container} from './styles'
 import {TextCallout} from '../TextCallout'
 
 export function ScrollIndicator() {
 	const ref = useRef(null)
+	const {push} = useRouter()
+
+	function handleClick() {
+		push('/#portfolio')
+	}
 
 	return (
-		<Container ref={ref}>
+		<Container ref={ref} onClick={handleClick}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 40 80"

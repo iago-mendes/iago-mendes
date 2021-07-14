@@ -6,6 +6,8 @@ export const Container = styled.div`
 
 	margin: 0 auto;
 
+	cursor: pointer;
+
 	svg {
 		overflow: visible;
 		transform: scale(0.75);

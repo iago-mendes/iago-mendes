@@ -4,6 +4,7 @@ import {motion} from 'framer-motion'
 
 import {Container} from './styles'
 import {TextCallout} from '../TextCallout'
+import {placeholder} from '../../assets/images/placeholder'
 
 type Props = {
 	layoutId: string
@@ -40,6 +41,8 @@ export function AnimatedCard({
 						width={1200}
 						height={630}
 						layout="responsive"
+						placeholder="blur"
+						blurDataURL={placeholder}
 					/>
 
 					<div className="title">

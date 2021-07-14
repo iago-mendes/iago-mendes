@@ -19,6 +19,8 @@ export const Container = styled.div`
 				stroke-width: 1;
 				stroke-linecap: round;
 				stroke-linejoin: round;
+
+				cursor: move;
 			}
 		}
 	}

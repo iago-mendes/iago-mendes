@@ -16,7 +16,7 @@ export const Container = styled(motion.div)`
 	header {
 		border-top-left-radius: 0.5rem;
 		border-top-right-radius: 0.5rem;
-		overflow-x: hidden;
+		overflow: hidden;
 		position: relative;
 
 		.img {

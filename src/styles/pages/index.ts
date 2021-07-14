@@ -14,6 +14,10 @@ export const HomeContainer = styled.div`
 			text-transform: uppercase;
 			font-family: ${p => p.theme.fonts.title};
 		}
+
+		> .content {
+			margin-top: 2rem;
+		}
 	}
 
 	section#hero {
@@ -35,6 +39,14 @@ export const HomeContainer = styled.div`
 			h3 {
 				text-transform: uppercase;
 				color: ${p => p.theme.colors.purple};
+			}
+		}
+	}
+
+	@media (min-width: 900px) {
+		section {
+			> .content {
+				padding: 0 5rem;
 			}
 		}
 	}

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.section`
 	min-height: calc(95vh - 150px);
 	padding: 2rem;
+	overflow: hidden;
 
 	:nth-of-type(even) {
 		background: ${p => p.theme.colors.cyan}80;

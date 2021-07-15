@@ -89,7 +89,7 @@ export const Container = styled(motion.div)`
 	}
 
 	.links {
-		padding: 0.5rem 2rem;
+		padding: 0.5rem 1rem;
 
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));

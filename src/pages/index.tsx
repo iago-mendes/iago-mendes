@@ -11,6 +11,7 @@ import {ScrollIndicator} from '../components/ScrollIndicator'
 import {useDimensions} from '../hooks/useDimensions'
 import {AnimatedGrid} from '../components/AnimatedGrid'
 import {AnimatedCard} from '../components/AnimatedCard'
+import {AnimatedSection} from '../components/AnimatedSection'
 
 export default function Home() {
 	const {inDesktop} = useDimensions()
@@ -43,45 +44,35 @@ export default function Home() {
 					{inDesktop && <HeroPlayground />}
 				</section>
 
-				<section id="portfolio">
-					<h2 className="title">Portfolio</h2>
+				<AnimatedSection id="portfolio" titleText="Portfolio">
+					<AnimatedGrid modal="portfolio">
+						{portfolio.map((portfolioItem, index) => (
+							<AnimatedCard
+								layoutId={`portfolio-${index}`}
+								image={portfolioItem.image}
+								title={portfolioItem.title}
+								subtitle={portfolioItem.subtitle}
+								handleClick={() => handleOpenPortfolio(index)}
+								key={portfolioItem.title}
+							/>
+						))}
+					</AnimatedGrid>
+				</AnimatedSection>
 
-					<div className="content">
-						<AnimatedGrid modal="portfolio">
-							{portfolio.map((portfolioItem, index) => (
-								<AnimatedCard
-									layoutId={`portfolio-${index}`}
-									image={portfolioItem.image}
-									title={portfolioItem.title}
-									subtitle={portfolioItem.subtitle}
-									handleClick={() => handleOpenPortfolio(index)}
-									key={portfolioItem.title}
-								/>
-							))}
-						</AnimatedGrid>
-					</div>
-				</section>
+				<AnimatedSection id="resumes" titleText="Resumes">
+					<AnimatedGrid>
+						{resumes.map((resume, index) => (
+							<AnimatedCard
+								title={resume.title}
+								image={resume.image}
+								handleClick={() => handleOpenResume(resume.pdfUrl)}
+								key={index}
+							/>
+						))}
+					</AnimatedGrid>
+				</AnimatedSection>
 
-				<section id="resumes">
-					<h2 className="title">Resumes</h2>
-
-					<div className="content">
-						<AnimatedGrid>
-							{resumes.map((resume, index) => (
-								<AnimatedCard
-									title={resume.title}
-									image={resume.image}
-									handleClick={() => handleOpenResume(resume.pdfUrl)}
-									key={index}
-								/>
-							))}
-						</AnimatedGrid>
-					</div>
-				</section>
-
-				<section id="about-me">
-					<h2 className="title">About me</h2>
-				</section>
+				<AnimatedSection id="about-me" titleText="About me" />
 			</HomeContainer>
 		</PageContainer>
 	)

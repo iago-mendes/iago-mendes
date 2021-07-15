@@ -1,29 +1,12 @@
 import styled from 'styled-components'
 
 export const HomeContainer = styled.div`
-	section {
-		min-height: calc(95vh - 150px);
-		padding: 2rem;
-
-		:nth-of-type(even) {
-			background: ${p => p.theme.colors.cyan}80;
-			color: ${p => p.theme.colors.background};
-		}
-
-		> h2.title {
-			text-transform: uppercase;
-			font-family: ${p => p.theme.fonts.title};
-		}
-
-		> .content {
-			margin-top: 2rem;
-		}
-	}
-
 	section#hero {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+
+		height: calc(95vh - 200px);
 
 		> main {
 			display: flex;
@@ -39,14 +22,6 @@ export const HomeContainer = styled.div`
 			h3 {
 				text-transform: uppercase;
 				color: ${p => p.theme.colors.purple};
-			}
-		}
-	}
-
-	@media (min-width: 900px) {
-		section {
-			> .content {
-				padding: 0 5rem;
 			}
 		}
 	}

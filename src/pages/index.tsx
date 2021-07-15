@@ -1,14 +1,15 @@
 import {motion} from 'framer-motion'
 import {useRouter} from 'next/router'
 
-import {HomeContainer} from '../styles/pages/index'
+import {portfolio} from '../assets/db/portfolio'
+import {resumes} from '../assets/db/resumes'
 
+import {HomeContainer} from '../styles/pages/index'
 import {PageContainer} from '../components/PageContainer'
 import {HeroPlayground} from '../components/HeroPlayground'
 import {ScrollIndicator} from '../components/ScrollIndicator'
 import {useDimensions} from '../hooks/useDimensions'
 import {AnimatedGrid} from '../components/AnimatedGrid'
-import {portfolio} from '../assets/db/portfolio'
 import {AnimatedCard} from '../components/AnimatedCard'
 
 export default function Home() {
@@ -17,6 +18,10 @@ export default function Home() {
 
 	function handleOpenPortfolio(index: number) {
 		push(`/?portfolio=${index}`, `/?portfolio=${index}`, {scroll: false})
+	}
+
+	function handleOpenResume(url: string) {
+		window.open(url, '_blank').focus()
 	}
 
 	return (
@@ -59,6 +64,19 @@ export default function Home() {
 
 				<section id="resumes">
 					<h2 className="title">Resumes</h2>
+
+					<div className="content">
+						<AnimatedGrid>
+							{resumes.map((resume, index) => (
+								<AnimatedCard
+									title={resume.title}
+									image={resume.image}
+									handleClick={() => handleOpenResume(resume.pdfUrl)}
+									key={index}
+								/>
+							))}
+						</AnimatedGrid>
+					</div>
 				</section>
 
 				<section id="about-me">

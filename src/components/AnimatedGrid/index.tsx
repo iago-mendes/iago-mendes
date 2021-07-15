@@ -6,15 +6,17 @@ import {PortfolioModal} from '../PortfolioModal'
 
 type Props = {
 	children: ReactNode
-	modal: 'portfolio'
+	modal?: 'portfolio'
 }
 
 export function AnimatedGrid({children, modal}: Props) {
 	return (
 		<AnimateSharedLayout type="crossfade">
-			<AnimatePresence>
-				{modal === 'portfolio' && <PortfolioModal />}
-			</AnimatePresence>
+			{modal && (
+				<AnimatePresence>
+					{modal === 'portfolio' && <PortfolioModal />}
+				</AnimatePresence>
+			)}
 			<Container>{children}</Container>
 		</AnimateSharedLayout>
 	)

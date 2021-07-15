@@ -7,10 +7,11 @@ import {TextCallout} from '../TextCallout'
 import {placeholder} from '../../assets/images/placeholder'
 
 type Props = {
-	layoutId: string
-	image: string
 	title: string
-	subtitle: string
+	image: string
+
+	layoutId?: string
+	subtitle?: string
 
 	handleClick: () => void
 }
@@ -50,7 +51,7 @@ export function AnimatedCard({
 					</div>
 				</div>
 
-				<TextCallout text={subtitle} targetRef={ref} />
+				{subtitle && <TextCallout text={subtitle} targetRef={ref} />}
 			</motion.div>
 		</Container>
 	)

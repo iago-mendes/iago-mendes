@@ -6,7 +6,8 @@ export const HomeContainer = styled.div`
 		justify-content: space-around;
 		align-items: center;
 
-		height: calc(95vh - 200px);
+		height: calc(95vh - 150px);
+		padding: 2rem;
 
 		> main {
 			display: flex;

@@ -1,6 +1,8 @@
 import {motion} from 'framer-motion'
 import {useRouter} from 'next/router'
 import Image from 'next/image'
+import {getPlaiceholder} from 'plaiceholder'
+import type {InferGetStaticPropsType} from 'next'
 
 import {portfolio} from '../assets/db/portfolio'
 import {resumes} from '../assets/db/resumes'
@@ -14,7 +16,9 @@ import {AnimatedGrid} from '../components/AnimatedGrid'
 import {AnimatedCard} from '../components/AnimatedCard'
 import {AnimatedSection} from '../components/AnimatedSection'
 
-export default function Home() {
+const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
+	meImageProps
+}) => {
 	const {inDesktop} = useDimensions()
 	const {push} = useRouter()
 
@@ -75,13 +79,7 @@ export default function Home() {
 
 				<AnimatedSection id="about-me" titleText="About me">
 					<motion.figure whileHover={{borderRadius: '50%'}}>
-						<Image
-							src="/images/me.png"
-							alt="Image of Iago Mendes"
-							width={1000}
-							height={1000}
-							layout="responsive"
-						/>
+						<Image {...meImageProps} placeholder="blur" />
 					</motion.figure>
 
 					<p>Hello, world! My name is Iago.</p>
@@ -108,3 +106,20 @@ export default function Home() {
 		</PageContainer>
 	)
 }
+
+export const getStaticProps = async () => {
+	const meImageProps = await getPlaiceholder('/images/me.png').then(
+		({img, base64}) => ({
+			...img,
+			blurDataURL: base64
+		})
+	)
+
+	return {
+		props: {
+			meImageProps
+		}
+	}
+}
+
+export default Home

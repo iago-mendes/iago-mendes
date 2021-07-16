@@ -29,12 +29,22 @@ export const HomeContainer = styled.div`
 
 	section#about-me {
 		figure {
-			width: 20rem;
-			max-width: calc(100% - 2rem);
+			width: 15rem;
+			height: 15rem;
 			margin: 1rem auto;
 
 			border-radius: 25%;
 			overflow: hidden;
+
+			@media (min-width: 400px) {
+				width: 20rem;
+				height: 20rem;
+			}
+
+			@media (min-width: 900px) {
+				float: right;
+				margin: 1rem;
+			}
 		}
 
 		p {
@@ -51,13 +61,6 @@ export const HomeContainer = styled.div`
 				:hover {
 					color: ${p => p.theme.colors.cyan};
 				}
-			}
-		}
-
-		@media (min-width: 900px) {
-			figure {
-				float: right;
-				margin: 1rem;
 			}
 		}
 	}

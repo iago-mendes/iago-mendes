@@ -1,5 +1,6 @@
 import {motion} from 'framer-motion'
 import {useRouter} from 'next/router'
+import Image from 'next/image'
 
 import {portfolio} from '../assets/db/portfolio'
 import {resumes} from '../assets/db/resumes'
@@ -72,7 +73,37 @@ export default function Home() {
 					</AnimatedGrid>
 				</AnimatedSection>
 
-				<AnimatedSection id="about-me" titleText="About me" />
+				<AnimatedSection id="about-me" titleText="About me">
+					<motion.figure whileHover={{borderRadius: '50%'}}>
+						<Image
+							src="/images/me.png"
+							alt="Image of Iago Mendes"
+							width={1000}
+							height={1000}
+							layout="responsive"
+						/>
+					</motion.figure>
+
+					<p>Hello, world! My name is Iago.</p>
+					<p>
+						I am a <strong>software developer</strong> passionate about{' '}
+						<strong>front-end</strong> technologies. I love helping to bring
+						ideas to the world through the internet, which is what motivates me
+						every day. In this area, I am currently focused on one stack:{' '}
+						<strong>Next.js</strong>, <strong>React.js</strong>,{' '}
+						<strong>React Native</strong>, <strong>Expo</strong>,{' '}
+						<strong>Node.js</strong>, <strong>JavaScript</strong>, and{' '}
+						<strong>TypeScript</strong>.
+					</p>
+					<p>
+						Besides, I am passionate about science, especially{' '}
+						<strong>Physics</strong> and <strong>Astronomy</strong>. I have done
+						a lot of projects during high school related to my interests and{' '}
+						<strong>education</strong>, which I intend to keep doing in college.
+						If you would like to know some of my activities and achievements, I
+						invite you to take a look at my profile.
+					</p>
+				</AnimatedSection>
 			</HomeContainer>
 		</PageContainer>
 	)

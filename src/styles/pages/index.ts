@@ -26,4 +26,39 @@ export const HomeContainer = styled.div`
 			}
 		}
 	}
+
+	section#about-me {
+		figure {
+			width: 20rem;
+			max-width: calc(100% - 2rem);
+			margin: 1rem auto;
+
+			border-radius: 25%;
+			overflow: hidden;
+		}
+
+		p {
+			color: ${p => p.theme.colors.background};
+			font-size: 1.5rem;
+
+			margin-bottom: 0.5rem;
+			text-indent: 1.5rem;
+
+			strong {
+				font-family: ${p => p.theme.fonts.title};
+				transition: color 0.2s;
+
+				:hover {
+					color: ${p => p.theme.colors.cyan};
+				}
+			}
+		}
+
+		@media (min-width: 900px) {
+			figure {
+				float: right;
+				margin: 1rem;
+			}
+		}
+	}
 `

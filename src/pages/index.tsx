@@ -17,6 +17,8 @@ import {AnimatedCard} from '../components/AnimatedCard'
 import {AnimatedSection} from '../components/AnimatedSection'
 
 const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
+	portfolioImagesProps,
+	resumesImagesProps,
 	meImageProps
 }) => {
 	const {inDesktop} = useDimensions()
@@ -54,7 +56,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 						{portfolio.map((portfolioItem, index) => (
 							<AnimatedCard
 								layoutId={`portfolio-${index}`}
-								image={portfolioItem.image}
+								imageProps={portfolioImagesProps[index]}
 								title={portfolioItem.title}
 								subtitle={portfolioItem.subtitle}
 								handleClick={() => handleOpenPortfolio(index)}
@@ -69,7 +71,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 						{resumes.map((resume, index) => (
 							<AnimatedCard
 								title={resume.title}
-								image={resume.image}
+								imageProps={resumesImagesProps[index]}
 								handleClick={() => handleOpenResume(resume.pdfUrl)}
 								key={index}
 							/>
@@ -108,6 +110,20 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 }
 
 export const getStaticProps = async () => {
+	const portfolioImagesProps = await Promise.all(
+		portfolio.map(async ({image}) => {
+			const {img, base64} = await getPlaiceholder(image)
+			return {...img, blurDataURL: base64}
+		})
+	)
+
+	const resumesImagesProps = await Promise.all(
+		resumes.map(async ({image}) => {
+			const {img, base64} = await getPlaiceholder(image)
+			return {...img, blurDataURL: base64}
+		})
+	)
+
 	const meImageProps = await getPlaiceholder('/images/me.png').then(
 		({img, base64}) => ({
 			...img,
@@ -117,6 +133,8 @@ export const getStaticProps = async () => {
 
 	return {
 		props: {
+			portfolioImagesProps,
+			resumesImagesProps,
 			meImageProps
 		}
 	}

@@ -4,11 +4,16 @@ import {motion} from 'framer-motion'
 
 import {Container} from './styles'
 import {TextCallout} from '../TextCallout'
-import {placeholder} from '../../assets/images/placeholder'
 
 type Props = {
 	title: string
-	image: string
+	imageProps: {
+		blurDataURL: string
+		src: string
+		height: number
+		width: number
+		type?: string
+	}
 
 	layoutId?: string
 	subtitle?: string
@@ -18,7 +23,7 @@ type Props = {
 
 export function AnimatedCard({
 	layoutId,
-	image,
+	imageProps,
 	title,
 	subtitle,
 	handleClick
@@ -36,15 +41,7 @@ export function AnimatedCard({
 		>
 			<motion.div className="card">
 				<div className="background">
-					<Image
-						src={image}
-						alt={title}
-						width={1200}
-						height={630}
-						layout="responsive"
-						placeholder="blur"
-						blurDataURL={placeholder}
-					/>
+					<Image {...imageProps} placeholder="blur" />
 
 					<div className="title">
 						<span>{title}</span>

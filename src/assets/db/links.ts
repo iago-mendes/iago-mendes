@@ -7,7 +7,7 @@ type Link = {
 export const links: Link[] = [
 	{
 		display: 'Star View (Google Play)',
-		url: 'https://play.google.com/store/apps/details?id=com.ufla.fsouza.starview',
+		url: 'https://starview.one/google-play',
 		icon: 'https://github.com/star-view.png'
 	},
 	{

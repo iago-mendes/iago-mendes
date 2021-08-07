@@ -18,6 +18,13 @@ export const portfolio: Portfolio = [
 		subtitle: 'Stargazing software',
 		startDate: '2021-06',
 		endDate: 'present',
+		links: [
+			{
+				url: 'https://starview.one/google-play',
+				displayUrl: 'Google Play'
+			},
+			{url: 'https://starview.one', displayUrl: 'starview.one'}
+		],
 		image: '/images/portfolio/star-view.png',
 		description:
 			'This is a software that informs users the best location, date, and time to stargaze, in which I have:',

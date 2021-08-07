@@ -8,6 +8,7 @@ import {portfolio} from '../../assets/db/portfolio'
 import ModalContainer from '../ModalContainer'
 import {useClickOutside} from '../../hooks/useClickOutside'
 import ExternalLink from '../ExternalLink'
+import {formatDate} from '../../utils/formatDate'
 
 export function PortfolioModal() {
 	const {query, push} = useRouter()
@@ -60,7 +61,11 @@ export function PortfolioModal() {
 						</div>
 
 						<span className="dates">
-							{portfolioItem.startDate} - {portfolioItem.endDate}
+							{portfolioItem.startDate === portfolioItem.endDate
+								? formatDate(portfolioItem.startDate)
+								: `${formatDate(portfolioItem.startDate)} - ${formatDate(
+										portfolioItem.endDate
+								  )}`}
 						</span>
 					</div>
 

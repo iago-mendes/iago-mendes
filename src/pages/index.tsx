@@ -81,8 +81,8 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
 				<AnimatedSection id="about-me" titleText="About me">
 					<motion.figure
-						whileHover={{borderRadius: '50%'}}
-						whileTap={{scale: 0.9}}
+						whileHover={{borderRadius: '10%'}}
+						whileTap={{scale: 0.9, borderRadius: '10%'}}
 					>
 						<Image {...meImageProps} placeholder="blur" />
 					</motion.figure>

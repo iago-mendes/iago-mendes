@@ -33,8 +33,9 @@ export const HomeContainer = styled.div`
 			height: 15rem;
 			margin: 1rem auto;
 
-			border-radius: 25%;
+			border-radius: 30%;
 			overflow: hidden;
+			cursor: cell;
 
 			@media (min-width: 400px) {
 				width: 20rem;

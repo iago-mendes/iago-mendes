@@ -10,10 +10,12 @@ import {Container, Title, OptionsContainer, BurgerContainer} from './styles'
 import {TextCallout} from '../TextCallout'
 import {useDimensions} from '../../hooks/useDimensions'
 import {BurgerButton} from '../BurgerButton'
+import {useClickOutside} from '../../hooks/useClickOutside'
 
 export function Menu() {
 	const {inDesktop, inMobile} = useDimensions()
 	const {scrollY} = useViewportScroll()
+	const burgerRef = useClickOutside(closeBurger)
 
 	const menuHeight = useTransform(scrollY, [0, 200], [150, 50])
 	const menuOpacity = useTransform(scrollY, [150, 200], [0, 1])
@@ -21,6 +23,10 @@ export function Menu() {
 	const titleMargin = useTransform(scrollY, [0, 200], [125, 50])
 
 	const [isBurgerOpen, setIsBurgerOpen] = useState(false)
+
+	function closeBurger() {
+		setIsBurgerOpen(false)
+	}
 
 	return (
 		<Container
@@ -37,7 +43,7 @@ export function Menu() {
 
 			{inDesktop && <Options />}
 			{inMobile && (
-				<>
+				<div ref={burgerRef}>
 					<BurgerButton isOpen={isBurgerOpen} setIsOpen={setIsBurgerOpen} />
 
 					<BurgerContainer
@@ -55,22 +61,22 @@ export function Menu() {
 							height: `calc(100vh - ${menuHeight})`
 						}}
 					>
-						<Options />
+						<Options closeBurger={closeBurger} />
 					</BurgerContainer>
-				</>
+				</div>
 			)}
 		</Container>
 	)
 }
 
-function Options() {
+function Options({closeBurger}: {closeBurger?: () => void}) {
 	const emailRef = useRef(null)
 	const githubRef = useRef(null)
 	const linkedinRef = useRef(null)
 
 	return (
 		<OptionsContainer>
-			<div className="route links">
+			<div className="route links" onClick={closeBurger}>
 				<Link href="/#portfolio">Portfolio</Link>
 				<Link href="/#resumes">Resumes</Link>
 				<Link href="/#about-me">About me</Link>

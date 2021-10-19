@@ -102,13 +102,13 @@ export const portfolio: Portfolio = [
 		startDate: '2020-08',
 		endDate: '2021-01',
 		links: [
-			{url: 'https://textcounter.tools', displayUrl: 'textcounter.tools'},
+			{url: 'https://textcounter.iago-mendes.me', displayUrl: 'textcounter.iago-mendes.me'},
 			{
 				url: 'https://github.com/iago-mendes/textcounter',
 				displayUrl: 'iago-mendes/textcounter'
 			}
 		],
-		image: 'https://textcounter.tools/thumbnail.png',
+		image: 'https://textcounter.iago-mendes.me/thumbnail.png',
 		description:
 			'This is an application that counts text, which was my first project in production.'
 	},

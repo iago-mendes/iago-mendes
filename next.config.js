@@ -6,7 +6,7 @@ module.exports = {
 			'cinephix.com',
 			'api.cruzrepresentacoes.com.br',
 			'stemguy.club',
-			'textcounter.tools',
+			'textcounter.iago-mendes.me',
 			'podcastr.iago-mendes.me',
 			'letmeask.iago-mendes.me'
 		]

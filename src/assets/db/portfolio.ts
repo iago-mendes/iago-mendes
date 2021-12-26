@@ -83,13 +83,16 @@ export const portfolio: Portfolio = [
 		startDate: '2020-11',
 		endDate: 'present',
 		links: [
-			{url: 'https://stemguy.club', displayUrl: 'stemguy.club'},
+			{
+				url: 'https://stemguy.iago-mendes.me',
+				displayUrl: 'stemguy.iago-mendes.me'
+			},
 			{
 				url: 'https://github.com/iago-mendes/stemguy',
 				displayUrl: 'iago-mendes/stemguy'
 			}
 		],
-		image: 'https://stemguy.club/thumbnail.png',
+		image: 'https://stemguy.iago-mendes.me/thumbnail.png',
 		description:
 			'This is a blog where you can read articles about science and technology, in which I have:',
 		descriptionItems: [
@@ -102,7 +105,10 @@ export const portfolio: Portfolio = [
 		startDate: '2020-08',
 		endDate: '2021-01',
 		links: [
-			{url: 'https://textcounter.iago-mendes.me', displayUrl: 'textcounter.iago-mendes.me'},
+			{
+				url: 'https://textcounter.iago-mendes.me',
+				displayUrl: 'textcounter.iago-mendes.me'
+			},
 			{
 				url: 'https://github.com/iago-mendes/textcounter',
 				displayUrl: 'iago-mendes/textcounter'

@@ -20,7 +20,7 @@ module.exports = {
 			},
 			{
 				source: '/burton',
-				destination: 'https://puffy-juice-3e5.notion.site/Burton-Hall-Community-a7b80c3d4026493ab22574e75e729c03',
+				destination: 'https://iago-mendes.notion.site/Burton-Hall-Community-aa3dd840ab5a45f0a82aa88a27a912de',
 				permanent: true
 			}
 		]

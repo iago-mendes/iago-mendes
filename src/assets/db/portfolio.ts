@@ -33,26 +33,26 @@ export const portfolio: Portfolio = [
 			'Increased platform distribution by recreating old version (made with Java) with React Native and Expo.'
 		]
 	},
-	{
-		title: 'Cinephix',
-		subtitle: 'Software for cinephiles',
-		startDate: '2021-01',
-		endDate: 'present',
-		links: [
-			{url: 'https://cinephix.com', displayUrl: 'cinephix.com'},
-			{
-				url: 'https://github.com/iago-mendes/cinephix',
-				displayUrl: 'iago-mendes/cinephix'
-			}
-		],
-		image: 'https://cinephix.com/thumbnail.png',
-		description:
-			'This is a place where people passionate about movies and TV shows (cinephiles) can pursue their interest, in which I have:',
-		descriptionItems: [
-			"Built an API with Node.js and MongoDB that collects data from TMDb's API, caches information with Redis, and more.",
-			'Developed and designed the entire Progressive Web Application using React.js and Next.js.'
-		]
-	},
+	// {
+	// 	title: 'Cinephix',
+	// 	subtitle: 'Software for cinephiles',
+	// 	startDate: '2021-01',
+	// 	endDate: 'present',
+	// 	links: [
+	// 		{url: 'https://cinephix.com', displayUrl: 'cinephix.com'},
+	// 		{
+	// 			url: 'https://github.com/iago-mendes/cinephix',
+	// 			displayUrl: 'iago-mendes/cinephix'
+	// 		}
+	// 	],
+	// 	image: 'https://cinephix.com/thumbnail.png',
+	// 	description:
+	// 		'This is a place where people passionate about movies and TV shows (cinephiles) can pursue their interest, in which I have:',
+	// 	descriptionItems: [
+	// 		"Built an API with Node.js and MongoDB that collects data from TMDb's API, caches information with Redis, and more.",
+	// 		'Developed and designed the entire Progressive Web Application using React.js and Next.js.'
+	// 	]
+	// },
 	{
 		title: 'Cruz Representações',
 		subtitle: 'Sales representation company',
@@ -77,28 +77,28 @@ export const portfolio: Portfolio = [
 			'Developed PWAs with offline support using web development technologies like Next.js, React.js, and IndexedDB.'
 		]
 	},
-	{
-		title: 'STEM Guy',
-		subtitle: 'Blog about STEM',
-		startDate: '2020-11',
-		endDate: 'present',
-		links: [
-			{
-				url: 'https://stemguy.iago-mendes.me',
-				displayUrl: 'stemguy.iago-mendes.me'
-			},
-			{
-				url: 'https://github.com/iago-mendes/stemguy',
-				displayUrl: 'iago-mendes/stemguy'
-			}
-		],
-		image: 'https://stemguy.iago-mendes.me/thumbnail.png',
-		description:
-			'This is a blog where you can read articles about science and technology, in which I have:',
-		descriptionItems: [
-			'Built an API with Node.js and MongoDB, and the front-end apps (blog and Administer System) with React.js and Next.js.'
-		]
-	},
+	// {
+	// 	title: 'STEM Guy',
+	// 	subtitle: 'Blog about STEM',
+	// 	startDate: '2020-11',
+	// 	endDate: 'present',
+	// 	links: [
+	// 		{
+	// 			url: 'https://stemguy.iago-mendes.me',
+	// 			displayUrl: 'stemguy.iago-mendes.me'
+	// 		},
+	// 		{
+	// 			url: 'https://github.com/iago-mendes/stemguy',
+	// 			displayUrl: 'iago-mendes/stemguy'
+	// 		}
+	// 	],
+	// 	image: 'https://stemguy.iago-mendes.me/thumbnail.png',
+	// 	description:
+	// 		'This is a blog where you can read articles about science and technology, in which I have:',
+	// 	descriptionItems: [
+	// 		'Built an API with Node.js and MongoDB, and the front-end apps (blog and Administer System) with React.js and Next.js.'
+	// 	]
+	// },
 	{
 		title: 'Text Counter',
 		subtitle: 'Software that counts text',

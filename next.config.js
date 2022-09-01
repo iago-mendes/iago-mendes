@@ -19,8 +19,8 @@ module.exports = {
 				permanent: true
 			},
 			{
-				source: '/burton',
-				destination: 'https://iago-mendes.notion.site/Burton-Hall-Community-aa3dd840ab5a45f0a82aa88a27a912de',
+				source: '/barnard',
+				destination: 'https://iago-mendes.notion.site/Barnard-Roots-in-STEM-Community-bf01c0e0e00a42d9a86a43613370f920',
 				permanent: true
 			}
 		]

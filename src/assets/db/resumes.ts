@@ -6,8 +6,8 @@ type Resumes = Array<{
 
 export const resumes: Resumes = [
 	{
-		title: 'Software Developer',
-		image: '/images/resumes/software-developer.png',
-		pdfUrl: '/resumes/software-developer.pdf'
+		title: 'Software Engineer',
+		image: '/images/resumes/software-engineer.png',
+		pdfUrl: '/resumes/software-engineer.pdf'
 	}
 ]

@@ -41,7 +41,9 @@ export function AnimatedCard({
 		>
 			<motion.div className="card">
 				<div className="background">
-					<Image {...imageProps} placeholder="blur" />
+					<div className="img">
+						<Image {...imageProps} placeholder="blur" />
+					</div>
 
 					<div className="title">
 						<span>{title}</span>

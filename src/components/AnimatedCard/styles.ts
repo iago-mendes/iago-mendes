@@ -15,18 +15,25 @@ export const Container = styled(motion.li)`
 
 	.card {
 		transition: transform 0.2s;
+		height: 100%;
 
 		.background {
 			position: relative;
 			z-index: 0;
+			height: 100%;
 
 			border-radius: 0.5rem;
 			overflow: hidden;
 
 			transition: border-radius 0.2s;
 
-			img {
+			.img {
 				z-index: -1;
+				height: 100%;
+
+				div {
+					height: 100%;
+				}
 			}
 
 			.title {

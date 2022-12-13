@@ -27,6 +27,13 @@ export const HomeContainer = styled.div`
 		}
 	}
 
+	section#resume {
+		.single-content {
+			width: 30vw;
+			margin: 0 auto;
+		}
+	}
+
 	section#about-me {
 		figure {
 			width: 15rem;

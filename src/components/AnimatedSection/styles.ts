@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
-	min-height: calc(95vh - 150px);
+	/* min-height: calc(95vh - 150px); */
 	padding: 2rem;
 	overflow: hidden;
 

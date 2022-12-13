@@ -78,7 +78,7 @@ function Options({closeBurger}: {closeBurger?: () => void}) {
 		<OptionsContainer>
 			<div className="route links" onClick={closeBurger}>
 				<Link href="/#portfolio">Portfolio</Link>
-				<Link href="/#resumes">Resumes</Link>
+				<Link href="/#resume">Resume</Link>
 				<Link href="/#about-me">About me</Link>
 			</div>
 

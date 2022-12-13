@@ -8,7 +8,8 @@ module.exports = {
 			'stemguy.club',
 			'textcounter.iago-mendes.me',
 			'podcastr.iago-mendes.me',
-			'letmeask.iago-mendes.me'
+			'letmeask.iago-mendes.me',
+			'stemguy.iago-mendes.me'
 		]
 	},
 	async redirects() {

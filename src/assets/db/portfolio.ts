@@ -13,6 +13,7 @@ export type Portfolio = Array<{
 }>
 
 export const portfolio: Portfolio = [
+	// Star View
 	{
 		title: 'Star View',
 		subtitle: 'Stargazing software',
@@ -53,6 +54,7 @@ export const portfolio: Portfolio = [
 	// 		'Developed and designed the entire Progressive Web Application using React.js and Next.js.'
 	// 	]
 	// },
+	// Cruz Representações
 	{
 		title: 'Cruz Representações',
 		subtitle: 'Sales representation company',
@@ -77,28 +79,53 @@ export const portfolio: Portfolio = [
 			'Developed PWAs with offline support using web development technologies like Next.js, React.js, and IndexedDB.'
 		]
 	},
-	// {
-	// 	title: 'STEM Guy',
-	// 	subtitle: 'Blog about STEM',
-	// 	startDate: '2020-11',
-	// 	endDate: 'present',
-	// 	links: [
-	// 		{
-	// 			url: 'https://stemguy.iago-mendes.me',
-	// 			displayUrl: 'stemguy.iago-mendes.me'
-	// 		},
-	// 		{
-	// 			url: 'https://github.com/iago-mendes/stemguy',
-	// 			displayUrl: 'iago-mendes/stemguy'
-	// 		}
-	// 	],
-	// 	image: 'https://stemguy.iago-mendes.me/thumbnail.png',
-	// 	description:
-	// 		'This is a blog where you can read articles about science and technology, in which I have:',
-	// 	descriptionItems: [
-	// 		'Built an API with Node.js and MongoDB, and the front-end apps (blog and Administer System) with React.js and Next.js.'
-	// 	]
-	// },
+	// Audiovisual Pong
+	{
+		title: 'Audiovisual Pong',
+		subtitle: 'Variation of arcade game',
+		startDate: '2021-11',
+		endDate: '2022-01',
+		links: [
+			{
+				url: 'https://audiovisual-pong.vercel.app',
+				displayUrl: 'audiovisual-pong.vercel.app'
+			},
+			{
+				url: 'https://github.com/iago-mendes/audiovisual-pong',
+				displayUrl: 'iago-mendes/audiovisual-pong'
+			}
+		],
+		image: '/images/portfolio/audiovisual-pong.png',
+		description:
+			'Project created for the class CSCI 241 (Systems Programming) at Oberlin College.',
+		descriptionItems: [
+			'Used C# and Blazor to develop a website Pong game version with audiovisual features.'
+		]
+	},
+	// STEM Guy
+	{
+		title: 'STEM Guy',
+		subtitle: 'Blog about STEM',
+		startDate: '2020-11',
+		endDate: 'present',
+		links: [
+			{
+				url: 'https://stemguy.iago-mendes.me',
+				displayUrl: 'stemguy.iago-mendes.me'
+			},
+			{
+				url: 'https://github.com/iago-mendes/stemguy',
+				displayUrl: 'iago-mendes/stemguy'
+			}
+		],
+		image: 'https://stemguy.iago-mendes.me/thumbnail.png',
+		description:
+			'This is a blog where you can read articles about science and technology, in which I have:',
+		descriptionItems: [
+			'Built an API with Node.js and MongoDB, and the front-end apps (blog and Administer System) with React.js and Next.js.'
+		]
+	},
+	// Text Counter
 	{
 		title: 'Text Counter',
 		subtitle: 'Software that counts text',
@@ -118,6 +145,7 @@ export const portfolio: Portfolio = [
 		description:
 			'This is an application that counts text, which was my first project in production.'
 	},
+	// Express Bot
 	{
 		title: 'Express Bot',
 		subtitle: '2nd place in VTEX track of Brazilian Hackathon',
@@ -133,6 +161,7 @@ export const portfolio: Portfolio = [
 		description:
 			"From a total of 51 teams, my group won second place. With me as the main developer, we built an omnichannel integration to VTEX's platform. Using back-end technologies, it was an online bot with personalized messages, smart search, and checkout."
 	},
+	// Podcastr
 	{
 		title: 'Podcastr',
 		subtitle: 'Podcast streaming website',
@@ -152,6 +181,7 @@ export const portfolio: Portfolio = [
 		description:
 			'This is a podcast streaming website developed during the 5th edition of the Next Level Week, a coding event organized by Rocketseat.'
 	},
+	// Letmeask
 	{
 		title: 'Letmeask',
 		subtitle: 'Live Q&A platform',

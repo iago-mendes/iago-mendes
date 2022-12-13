@@ -30,6 +30,7 @@ export const HomeContainer = styled.div`
 	section#resume {
 		.single-content {
 			width: 30vw;
+			min-width: 250px;
 			margin: 0 auto;
 		}
 	}

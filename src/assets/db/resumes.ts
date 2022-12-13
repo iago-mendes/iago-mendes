@@ -8,6 +8,6 @@ export const resumes: Resumes = [
 	{
 		title: 'Software Engineer',
 		image: '/images/resumes/software-engineer.png',
-		pdfUrl: '/resumes/software-engineer.pdf'
+		pdfUrl: '/resume.pdf'
 	}
 ]

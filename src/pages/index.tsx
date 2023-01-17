@@ -19,7 +19,8 @@ import {AnimatedSection} from '../components/AnimatedSection'
 const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 	portfolioImagesProps,
 	resumesImagesProps,
-	meImageProps
+	meImageProps,
+	meBackgroundImageProps
 }) => {
 	const {inDesktop} = useDimensions()
 	const {push} = useRouter()
@@ -49,6 +50,16 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 					</motion.main>
 
 					{inDesktop && <HeroPlayground />}
+
+					<div className="background">
+						<Image
+							src={meBackgroundImageProps.src}
+							placeholder="blur"
+							blurDataURL={meBackgroundImageProps.blurDataURL}
+							layout="fill"
+							objectFit="cover"
+						/>
+					</div>
 				</section>
 
 				<AnimatedSection id="portfolio" titleText="Portfolio">
@@ -144,11 +155,19 @@ export const getStaticProps = async () => {
 		})
 	)
 
+	const meBackgroundImageProps = await getPlaiceholder(
+		'/images/me-background.jpg'
+	).then(({img, base64}) => ({
+		...img,
+		blurDataURL: base64
+	}))
+
 	return {
 		props: {
 			portfolioImagesProps,
 			resumesImagesProps,
-			meImageProps
+			meImageProps,
+			meBackgroundImageProps
 		}
 	}
 }

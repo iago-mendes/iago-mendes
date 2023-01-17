@@ -25,6 +25,35 @@ export const HomeContainer = styled.div`
 				color: ${p => p.theme.colors.purple};
 			}
 		}
+
+		> .background {
+			position: absolute;
+			z-index: -1;
+
+			height: calc(95vh - 150px);
+			width: 100%;
+			overflow: hidden;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&::before {
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 1;
+				content: '';
+				display: block;
+				height: 100%;
+				width: 100%;
+				background: ${p => `linear-gradient(
+					to top,
+					${p.theme.colors.background}f2,
+					${p.theme.colors.background}
+				)`};
+			}
+		}
 	}
 
 	section#resume {

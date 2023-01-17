@@ -31,7 +31,6 @@ export const HomeContainer = styled.div`
 			z-index: -1;
 
 			height: calc(95vh - 150px);
-			width: 100%;
 			overflow: hidden;
 
 			display: flex;

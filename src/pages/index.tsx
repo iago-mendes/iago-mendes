@@ -3,6 +3,7 @@ import {useRouter} from 'next/router'
 import Image from 'next/image'
 import {getPlaiceholder} from 'plaiceholder'
 import type {InferGetStaticPropsType} from 'next'
+import {useState} from 'react'
 
 import {portfolio} from '../assets/db/portfolio'
 import {resumes} from '../assets/db/resumes'
@@ -19,11 +20,12 @@ import {AnimatedSection} from '../components/AnimatedSection'
 const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 	portfolioImagesProps,
 	resumesImagesProps,
-	meImageProps,
-	meBackgroundImageProps
+	meImageProps
 }) => {
 	const {inDesktop} = useDimensions()
 	const {push} = useRouter()
+
+	const [backgroundImgIsLoaded, setBackgroundImgIsLoaded] = useState(false)
 
 	function handleOpenPortfolio(index: number) {
 		push(`/?portfolio=${index}`, `/?portfolio=${index}`, {scroll: false})
@@ -51,15 +53,22 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
 					{inDesktop && <HeroPlayground />}
 
-					<div className="background">
+					<motion.div
+						className="background"
+						variants={{
+							loading: {width: 0},
+							loaded: {width: '100%'}
+						}}
+						animate={backgroundImgIsLoaded ? 'loaded' : 'loading'}
+						transition={{duration: 0.5}}
+					>
 						<Image
-							src={meBackgroundImageProps.src}
-							placeholder="blur"
-							blurDataURL={meBackgroundImageProps.blurDataURL}
+							src="/images/me-background.jpg"
 							layout="fill"
 							objectFit="cover"
+							onLoad={() => setBackgroundImgIsLoaded(true)}
 						/>
-					</div>
+					</motion.div>
 				</section>
 
 				<AnimatedSection id="portfolio" titleText="Portfolio">
@@ -155,19 +164,11 @@ export const getStaticProps = async () => {
 		})
 	)
 
-	const meBackgroundImageProps = await getPlaiceholder(
-		'/images/me-background.jpg'
-	).then(({img, base64}) => ({
-		...img,
-		blurDataURL: base64
-	}))
-
 	return {
 		props: {
 			portfolioImagesProps,
 			resumesImagesProps,
-			meImageProps,
-			meBackgroundImageProps
+			meImageProps
 		}
 	}
 }

@@ -57,7 +57,7 @@ function Icon({path, color}: {path: string; color: string}) {
 					pathLength: 1,
 					fill: color,
 					transition: {
-						duration: 1
+						duration: 3
 					}
 				}
 			}}

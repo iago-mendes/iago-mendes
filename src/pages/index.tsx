@@ -71,35 +71,6 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 					</motion.div>
 				</section>
 
-				<AnimatedSection id="portfolio" titleText="Portfolio">
-					<AnimatedGrid modal="portfolio">
-						{portfolio.map((portfolioItem, index) => (
-							<AnimatedCard
-								layoutId={`portfolio-${index}`}
-								imageProps={portfolioImagesProps[index]}
-								title={portfolioItem.title}
-								subtitle={portfolioItem.subtitle}
-								handleClick={() => handleOpenPortfolio(index)}
-								key={portfolioItem.title}
-							/>
-						))}
-					</AnimatedGrid>
-				</AnimatedSection>
-
-				<AnimatedSection id="resume" titleText="Resume">
-					<div className="single-content">
-						{resumes.map((resume, index) => (
-							<AnimatedCard
-								title={resume.title}
-								subtitle="Open in a new tab"
-								imageProps={resumesImagesProps[index]}
-								handleClick={() => handleOpenResume(resume.pdfUrl)}
-								key={index}
-							/>
-						))}
-					</div>
-				</AnimatedSection>
-
 				<AnimatedSection id="about-me" titleText="About me">
 					<motion.figure
 						whileHover={{borderRadius: '10%'}}
@@ -136,6 +107,35 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 						pursue a <strong>PhD</strong> in{' '}
 						<strong>Quantum Information and Computation</strong>.
 					</p>
+				</AnimatedSection>
+
+				<AnimatedSection id="resume" titleText="Resume">
+					<div className="single-content">
+						{resumes.map((resume, index) => (
+							<AnimatedCard
+								title={resume.title}
+								subtitle="Open in a new tab"
+								imageProps={resumesImagesProps[index]}
+								handleClick={() => handleOpenResume(resume.pdfUrl)}
+								key={index}
+							/>
+						))}
+					</div>
+				</AnimatedSection>
+
+				<AnimatedSection id="portfolio" titleText="Portfolio">
+					<AnimatedGrid modal="portfolio">
+						{portfolio.map((portfolioItem, index) => (
+							<AnimatedCard
+								layoutId={`portfolio-${index}`}
+								imageProps={portfolioImagesProps[index]}
+								title={portfolioItem.title}
+								subtitle={portfolioItem.subtitle}
+								handleClick={() => handleOpenPortfolio(index)}
+								key={portfolioItem.title}
+							/>
+						))}
+					</AnimatedGrid>
 				</AnimatedSection>
 			</HomeContainer>
 		</PageContainer>

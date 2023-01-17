@@ -90,22 +90,31 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
 					<p>Hello, world! My name is Iago.</p>
 					<p>
-						I am a <strong>software developer</strong> passionate about{' '}
-						<strong>front-end</strong> technologies. I love helping to bring
-						ideas to the world through the internet, which is what motivates me
-						every day. In this area, I am currently focused on one stack:{' '}
-						<strong>Next.js</strong>, <strong>React.js</strong>,{' '}
-						<strong>React Native</strong>, <strong>Expo</strong>,{' '}
-						<strong>Node.js</strong>, <strong>JavaScript</strong>, and{' '}
-						<strong>TypeScript</strong>.
+						Throughout my journey, I have been deeply involved with{' '}
+						<strong>Physics</strong>, <strong>Astronomy</strong>, and{' '}
+						<strong>Computer Science</strong> in many experiences, about which
+						you can learn more on{' '}
+						<a
+							href="https://www.linkedin.com/in/iago-b-mendes"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							my profile
+						</a>
+						. As a <strong>software engineer</strong>, I have mostly been
+						involved with <strong>web development</strong>, but I have also
+						experimented with other areas. As a <strong>researcher</strong>, I
+						have been conducting research in the area of{' '}
+						<strong>Theoretical Astrophysics</strong> during my college degree,
+						focusing heavily in the <strong>computational methods</strong>.
 					</p>
 					<p>
-						Besides, I am passionate about science, especially{' '}
-						<strong>Physics</strong> and <strong>Astronomy</strong>. I have done
-						a lot of projects during high school related to my interests and{' '}
-						<strong>education</strong>, which I intend to keep doing in college.
-						If you would like to know some of my activities and achievements, I
-						invite you to take a look at my profile.
+						At the moment, a field that interests me a lot is{' '}
+						<strong>Quantum Computing</strong>. I am trying to learn more about
+						this area and searching for opportunities. My current post-college
+						goal is to go to a <strong>graduate school</strong> in order to
+						pursue a <strong>PhD</strong> in{' '}
+						<strong>Quantum Information and Computation</strong>.
 					</p>
 				</AnimatedSection>
 			</HomeContainer>
@@ -128,7 +137,7 @@ export const getStaticProps = async () => {
 		})
 	)
 
-	const meImageProps = await getPlaiceholder('/images/me.png').then(
+	const meImageProps = await getPlaiceholder('/images/me.jpg').then(
 		({img, base64}) => ({
 			...img,
 			blurDataURL: base64

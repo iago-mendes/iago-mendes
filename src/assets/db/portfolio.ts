@@ -35,26 +35,26 @@ export const portfolio: Portfolio = [
 		]
 	},
 	// Cinephix
-	{
-		title: 'Cinephix',
-		subtitle: 'Software for cinephiles',
-		startDate: '2021-01',
-		endDate: 'present',
-		links: [
-			{url: 'https://cinephix.com', displayUrl: 'cinephix.com'},
-			{
-				url: 'https://github.com/iago-mendes/cinephix',
-				displayUrl: 'iago-mendes/cinephix'
-			}
-		],
-		image: 'https://cinephix.com/thumbnail.png',
-		description:
-			'This is a place where people passionate about movies and TV shows (cinephiles) can pursue their interest, in which I have:',
-		descriptionItems: [
-			"Built an API with Node.js and MongoDB that collects data from TMDb's API, caches information with Redis, and more.",
-			'Developed and designed the entire Progressive Web Application using React.js and Next.js.'
-		]
-	},
+	// {
+	// 	title: 'Cinephix',
+	// 	subtitle: 'Software for cinephiles',
+	// 	startDate: '2021-01',
+	// 	endDate: 'present',
+	// 	links: [
+	// 		{url: 'https://cinephix.com', displayUrl: 'cinephix.com'},
+	// 		{
+	// 			url: 'https://github.com/iago-mendes/cinephix',
+	// 			displayUrl: 'iago-mendes/cinephix'
+	// 		}
+	// 	],
+	// 	image: 'https://cinephix.com/thumbnail.png',
+	// 	description:
+	// 		'This is a place where people passionate about movies and TV shows (cinephiles) can pursue their interest, in which I have:',
+	// 	descriptionItems: [
+	// 		"Built an API with Node.js and MongoDB that collects data from TMDb's API, caches information with Redis, and more.",
+	// 		'Developed and designed the entire Progressive Web Application using React.js and Next.js.'
+	// 	]
+	// },
 	// Cruz Representações
 	{
 		title: 'Cruz Representações',

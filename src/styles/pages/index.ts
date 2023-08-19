@@ -48,7 +48,7 @@ export const HomeContainer = styled.div`
 				width: 100%;
 				background: ${p => `linear-gradient(
 					to top,
-					${p.theme.colors.background}f2,
+					${p.theme.colors.background}E6,
 					${p.theme.colors.background}
 				)`};
 			}

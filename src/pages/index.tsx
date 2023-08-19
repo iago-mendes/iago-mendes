@@ -16,6 +16,7 @@ import {useDimensions} from '../hooks/useDimensions'
 import {AnimatedGrid} from '../components/AnimatedGrid'
 import {AnimatedCard} from '../components/AnimatedCard'
 import {AnimatedSection} from '../components/AnimatedSection'
+import Link from 'next/link'
 
 const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 	portfolioImagesProps,
@@ -90,22 +91,34 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							my profile
+							my LinkedIn profile
 						</a>
-						. As a <strong>software engineer</strong>, I have mostly been
-						involved with <strong>web development</strong>, but I have also
-						experimented with other areas. As a <strong>researcher</strong>, I
-						have been conducting research in the area of{' '}
-						<strong>Theoretical Astrophysics</strong> during my college degree,
-						focusing heavily in the <strong>computational methods</strong>.
+						. I am currently pursuing my undergraduate degree at{' '}
+						<strong>Oberlin College</strong>, where I am double majoring in{' '}
+						<strong>Computer Science</strong> and <strong>Physics</strong> (with
+						a concentration in <strong>Astrophysics</strong>).
 					</p>
 					<p>
-						At the moment, a field that interests me a lot is{' '}
-						<strong>Quantum Computing</strong>. I am trying to learn more about
-						this area and searching for opportunities. My current post-college
-						goal is to go to a <strong>graduate school</strong> in order to
-						pursue a <strong>PhD</strong> in{' '}
-						<strong>Quantum Information and Computation</strong>.
+						As a <strong>software engineer</strong>, I have had 2 internships at{' '}
+						<strong>Google</strong>, working with the <strong>Wear OS</strong>{' '}
+						and <strong>Google Assistant</strong> teams. I have also worked with{' '}
+						<strong>web</strong> and <strong>mobile development</strong> on my
+						personal projects, some of which you can check on{' '}
+						<Link href="/#portfolio">my portfolio</Link>.
+					</p>
+					<p>
+						As a <strong>computational physicist</strong>, I have been
+						conducting research on <strong>Numerical Relativity</strong> for the
+						past 2 years as a member of the{' '}
+						<a
+							href="https://www.black-holes.org/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							SXS collaboration
+						</a>
+						. My research has been focused on describing the surface of{' '}
+						<strong>black holes</strong> in computational simulations.
 					</p>
 				</AnimatedSection>
 

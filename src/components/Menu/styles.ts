@@ -19,6 +19,10 @@ export const Container = styled(motion.header)`
 		z-index: 100;
 	}
 
+	a {
+		text-decoration: none;
+	}
+
 	.background {
 		position: absolute;
 		z-index: 99;

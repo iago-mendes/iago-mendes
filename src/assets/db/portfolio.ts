@@ -103,29 +103,29 @@ export const portfolio: Portfolio = [
 			'Used C# and Blazor to develop a website Pong game version with audiovisual features.'
 		]
 	},
-	// STEM Guy
-	{
-		title: 'STEM Guy',
-		subtitle: 'Blog about STEM',
-		startDate: '2020-11',
-		endDate: 'present',
-		links: [
-			{
-				url: 'https://stemguy.iago-mendes.me',
-				displayUrl: 'stemguy.iago-mendes.me'
-			},
-			{
-				url: 'https://github.com/iago-mendes/stemguy',
-				displayUrl: 'iago-mendes/stemguy'
-			}
-		],
-		image: 'https://stemguy.iago-mendes.me/thumbnail.png',
-		description:
-			'This is a blog where you can read articles about science and technology, in which I have:',
-		descriptionItems: [
-			'Built an API with Node.js and MongoDB, and the front-end apps (blog and Administer System) with React.js and Next.js.'
-		]
-	},
+	// // STEM Guy
+	// {
+	// 	title: 'STEM Guy',
+	// 	subtitle: 'Blog about STEM',
+	// 	startDate: '2020-11',
+	// 	endDate: 'present',
+	// 	links: [
+	// 		{
+	// 			url: 'https://stemguy.iago-mendes.me',
+	// 			displayUrl: 'stemguy.iago-mendes.me'
+	// 		},
+	// 		{
+	// 			url: 'https://github.com/iago-mendes/stemguy',
+	// 			displayUrl: 'iago-mendes/stemguy'
+	// 		}
+	// 	],
+	// 	image: 'https://stemguy.iago-mendes.me/thumbnail.png',
+	// 	description:
+	// 		'This is a blog where you can read articles about science and technology, in which I have:',
+	// 	descriptionItems: [
+	// 		'Built an API with Node.js and MongoDB, and the front-end apps (blog and Administer System) with React.js and Next.js.'
+	// 	]
+	// },
 	// Text Counter
 	{
 		title: 'Text Counter',
@@ -134,15 +134,15 @@ export const portfolio: Portfolio = [
 		endDate: '2021-01',
 		links: [
 			{
-				url: 'https://textcounter.iago-mendes.me',
-				displayUrl: 'textcounter.iago-mendes.me'
+				url: 'https://textcounter.iagomendes.com',
+				displayUrl: 'textcounter.iagomendes.com'
 			},
 			{
 				url: 'https://github.com/iago-mendes/textcounter',
 				displayUrl: 'iago-mendes/textcounter'
 			}
 		],
-		image: 'https://textcounter.iago-mendes.me/thumbnail.png',
+		image: 'https://textcounter.iagomendes.com/thumbnail.png',
 		description:
 			'This is an application that counts text, which was my first project in production.'
 	},
@@ -161,45 +161,45 @@ export const portfolio: Portfolio = [
 		image: '/images/portfolio/express-bot.jpeg',
 		description:
 			"From a total of 51 teams, my group won second place. With me as the main developer, we built an omnichannel integration to VTEX's platform. Using back-end technologies, it was an online bot with personalized messages, smart search, and checkout."
-	},
-	// Podcastr
-	{
-		title: 'Podcastr',
-		subtitle: 'Podcast streaming website',
-		startDate: '2021-04',
-		endDate: '2021-04',
-		links: [
-			{
-				url: 'https://podcastr.iago-mendes.me',
-				displayUrl: 'podcastr.iago-mendes.me'
-			},
-			{
-				url: 'https://github.com/iago-mendes/nlw5-podcastr',
-				displayUrl: 'iago-mendes/nlw5-podcastr'
-			}
-		],
-		image: 'https://podcastr.iago-mendes.me/thumbnail.png',
-		description:
-			'This is a podcast streaming website developed during the 5th edition of the Next Level Week, a coding event organized by Rocketseat.'
-	},
-	// Letmeask
-	{
-		title: 'Letmeask',
-		subtitle: 'Live Q&A platform',
-		startDate: '2021-06',
-		endDate: '2021-06',
-		links: [
-			{
-				url: 'https://letmeask.iago-mendes.me',
-				displayUrl: 'letmeask.iago-mendes.me'
-			},
-			{
-				url: 'https://github.com/iago-mendes/nlw6-letmeask',
-				displayUrl: 'iago-mendes/nlw6-letmeask'
-			}
-		],
-		image: 'https://letmeask.iago-mendes.me/screenshots/home.png',
-		description:
-			'This is a live Q&A platform, which was developed during the 6th edition of the Next Level Week, referred to as NLW Together.'
 	}
+	// // Podcastr
+	// {
+	// 	title: 'Podcastr',
+	// 	subtitle: 'Podcast streaming website',
+	// 	startDate: '2021-04',
+	// 	endDate: '2021-04',
+	// 	links: [
+	// 		{
+	// 			url: 'https://podcastr.iago-mendes.me',
+	// 			displayUrl: 'podcastr.iago-mendes.me'
+	// 		},
+	// 		{
+	// 			url: 'https://github.com/iago-mendes/nlw5-podcastr',
+	// 			displayUrl: 'iago-mendes/nlw5-podcastr'
+	// 		}
+	// 	],
+	// 	image: 'https://podcastr.iago-mendes.me/thumbnail.png',
+	// 	description:
+	// 		'This is a podcast streaming website developed during the 5th edition of the Next Level Week, a coding event organized by Rocketseat.'
+	// },
+	// // Letmeask
+	// {
+	// 	title: 'Letmeask',
+	// 	subtitle: 'Live Q&A platform',
+	// 	startDate: '2021-06',
+	// 	endDate: '2021-06',
+	// 	links: [
+	// 		{
+	// 			url: 'https://letmeask.iago-mendes.me',
+	// 			displayUrl: 'letmeask.iago-mendes.me'
+	// 		},
+	// 		{
+	// 			url: 'https://github.com/iago-mendes/nlw6-letmeask',
+	// 			displayUrl: 'iago-mendes/nlw6-letmeask'
+	// 		}
+	// 	],
+	// 	image: 'https://letmeask.iago-mendes.me/screenshots/home.png',
+	// 	description:
+	// 		'This is a live Q&A platform, which was developed during the 6th edition of the Next Level Week, referred to as NLW Together.'
+	// }
 ]

@@ -5,10 +5,10 @@ module.exports = {
 			'cinephix.com',
 			'api.cruzrepresentacoes.com.br',
 			'stemguy.club',
-			'textcounter.iago-mendes.me',
-			'podcastr.iago-mendes.me',
-			'letmeask.iago-mendes.me',
-			'stemguy.iago-mendes.me'
+			'textcounter.iagomendes.com',
+			'podcastr.iagomendes.com',
+			'letmeask.iagomendes.com',
+			'stemguy.iagomendes.com'
 		]
 	},
 	async redirects() {

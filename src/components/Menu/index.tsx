@@ -13,7 +13,7 @@ import {BurgerButton} from '../BurgerButton'
 import {useClickOutside} from '../../hooks/useClickOutside'
 
 export function Menu() {
-	const {inDesktop, inMobile} = useDimensions()
+	const {width} = useDimensions()
 	const {scrollY} = useViewportScroll()
 	const burgerRef = useClickOutside(closeBurger)
 
@@ -41,8 +41,9 @@ export function Menu() {
 				</Title>
 			</Link>
 
-			{inDesktop && <Options />}
-			{inMobile && (
+			{width >= 1000 ? (
+				<Options />
+			) : (
 				<div ref={burgerRef}>
 					<BurgerButton isOpen={isBurgerOpen} setIsOpen={setIsBurgerOpen} />
 
@@ -61,7 +62,7 @@ export function Menu() {
 							height: `calc(100vh - ${menuHeight})`
 						}}
 					>
-						<Options closeBurger={closeBurger} />
+						<Options closeBurger={closeBurger} inBurger={true} />
 					</BurgerContainer>
 				</div>
 			)}
@@ -69,17 +70,29 @@ export function Menu() {
 	)
 }
 
-function Options({closeBurger}: {closeBurger?: () => void}) {
+function Options({
+	closeBurger,
+	inBurger
+}: {
+	closeBurger?: () => void
+	inBurger?: boolean
+}) {
 	const emailRef = useRef(null)
 	const githubRef = useRef(null)
 	const linkedinRef = useRef(null)
 
+	const {width} = useDimensions()
+
 	return (
 		<OptionsContainer>
 			<div className="route links" onClick={closeBurger}>
-				<Link href="/#about-me">About me</Link>
+				{!inBurger && width > 1300 && <Link href="/#about">About</Link>}
 				<Link href="/#resume">Resume</Link>
-				<Link href="/#portfolio">Portfolio</Link>
+				{!inBurger && width > 1250 && <Link href="/#education">Education</Link>}
+				<Link href="/#research">Research</Link>
+				<Link href="/#experience">Experience</Link>
+				<Link href="/#projects">Projects</Link>
+				{!inBurger && width > 1050 && <Link href="/#awards">Awards</Link>}
 			</div>
 
 			<div className="social links">

@@ -9,7 +9,7 @@ export function ScrollIndicator() {
 	const {push} = useRouter()
 
 	function handleClick() {
-		push('/#about-me')
+		push('/#about')
 	}
 
 	return (

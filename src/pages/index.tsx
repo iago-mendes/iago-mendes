@@ -73,7 +73,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 					</motion.div>
 				</section>
 
-				<AnimatedSection id="about-me" titleText="About me">
+				<AnimatedSection id="about" titleText="About me">
 					<motion.figure
 						whileHover={{borderRadius: '10%'}}
 						whileTap={{scale: 0.9, borderRadius: '10%'}}
@@ -145,7 +145,16 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 					</div>
 				</AnimatedSection>
 
-				<AnimatedSection id="portfolio" titleText="Portfolio">
+				<AnimatedSection id="education" titleText="Education"></AnimatedSection>
+
+				<AnimatedSection id="research" titleText="Research"></AnimatedSection>
+
+				<AnimatedSection
+					id="experience"
+					titleText="Work Experience"
+				></AnimatedSection>
+
+				<AnimatedSection id="projects" titleText="Projects">
 					<AnimatedGrid modal="portfolio">
 						{portfolio.map((portfolioItem, index) => (
 							<AnimatedCard
@@ -159,6 +168,8 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 						))}
 					</AnimatedGrid>
 				</AnimatedSection>
+
+				<AnimatedSection id="awards" titleText="Awards"></AnimatedSection>
 			</HomeContainer>
 		</PageContainer>
 	)

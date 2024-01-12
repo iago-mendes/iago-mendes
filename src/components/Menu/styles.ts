@@ -34,7 +34,7 @@ export const Container = styled(motion.header)`
 		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
 	}
 
-	@media (min-width: 1100px) {
+	@media (min-width: 1450px) {
 		padding-right: 5rem;
 	}
 `
@@ -46,8 +46,8 @@ export const Title = styled(motion.h1)`
 	cursor: pointer;
 
 	@media (max-width: 600px) {
-		font-size: 1rem;
-		margin-left: 5rem !important;
+		font-size: 1.5rem;
+		margin-left: 4.5rem !important;
 	}
 `
 
@@ -111,7 +111,7 @@ export const OptionsContainer = styled.nav`
 		}
 	}
 
-	@media (min-width: 1100px) {
+	@media (min-width: 1450px) {
 		gap: 5rem;
 	}
 `

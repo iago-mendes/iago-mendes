@@ -64,7 +64,7 @@ export const HomeContainer = styled.div`
 		}
 	}
 
-	section#about-me {
+	section#about {
 		figure {
 			width: 15rem;
 			height: 15rem;

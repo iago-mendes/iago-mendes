@@ -7,14 +7,11 @@ type EntryProps = {
 	children: ReactNode
 }
 
-/**
- * Component for CV entry.
- */
 export function Entry({title, children}: EntryProps) {
 	return (
 		<Container>
 			<h3>{title}</h3>
-			{children}
+			<div className="content">{children}</div>
 		</Container>
 	)
 }

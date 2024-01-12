@@ -11,7 +11,7 @@ type EntryProps = {
 export function EntryItem({title, date, children}: EntryProps) {
 	return (
 		<Container>
-			<div className="item-header">
+			<div className="header">
 				<h4>{title}</h4>
 				<span>{date}</span>
 			</div>

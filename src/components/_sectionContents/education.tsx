@@ -25,7 +25,7 @@ export function EducationContent() {
 						'Computational Physics (<<Python>>)',
 						'Classical Mechanics',
 						'Quantum Mechanics',
-						'Electromagnetism & Thermodynamics',
+						'Electomagnetism & Thermo.',
 						'Astrophysics I: Stars & Planets',
 						'Algorithms',
 						'Systems Programming (<<C>>)',

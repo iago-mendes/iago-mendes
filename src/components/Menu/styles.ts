@@ -75,6 +75,10 @@ export const OptionsContainer = styled.nav`
 		a {
 			font-size: 1.25rem;
 
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
 			::after {
 				content: '';
 				width: 0px;

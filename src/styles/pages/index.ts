@@ -60,6 +60,7 @@ export const HomeContainer = styled.div`
 			width: 30vw;
 			height: 15vw;
 			min-width: 250px;
+			min-height: 150px;
 			margin: 0 auto;
 		}
 	}

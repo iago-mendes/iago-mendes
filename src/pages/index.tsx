@@ -4,6 +4,7 @@ import Image from 'next/image'
 import {getPlaiceholder} from 'plaiceholder'
 import type {InferGetStaticPropsType} from 'next'
 import {useState} from 'react'
+import Link from 'next/link'
 
 import {portfolio} from '../assets/db/portfolio'
 import {resumes} from '../assets/db/resumes'
@@ -16,7 +17,7 @@ import {useDimensions} from '../hooks/useDimensions'
 import {AnimatedGrid} from '../components/AnimatedGrid'
 import {AnimatedCard} from '../components/AnimatedCard'
 import {AnimatedSection} from '../components/AnimatedSection'
-import Link from 'next/link'
+import {EducationContent} from '../components/_sectionContents/education'
 
 const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 	portfolioImagesProps,
@@ -145,7 +146,9 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 					</div>
 				</AnimatedSection>
 
-				<AnimatedSection id="education" titleText="Education"></AnimatedSection>
+				<AnimatedSection id="education" titleText="Education">
+					<EducationContent />
+				</AnimatedSection>
 
 				<AnimatedSection id="research" titleText="Research"></AnimatedSection>
 

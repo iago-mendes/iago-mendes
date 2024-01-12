@@ -41,9 +41,14 @@ export function AnimatedCard({
 		>
 			<motion.div className="card">
 				<div className="background">
-					<div className="img">
-						<Image {...imageProps} placeholder="blur" />
-					</div>
+					<Image
+						src={imageProps.src}
+						blurDataURL={imageProps.blurDataURL}
+						placeholder="blur"
+						alt={title}
+						fill={true}
+						style={{objectFit: 'cover'}}
+					/>
 
 					<div className="title">
 						<span>{title}</span>

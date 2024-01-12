@@ -65,9 +65,10 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 					>
 						<Image
 							src="/images/me-background.jpg"
-							layout="fill"
-							objectFit="cover"
+							fill={true}
+							style={{objectFit: 'cover'}}
 							onLoad={() => setBackgroundImgIsLoaded(true)}
+							alt="Background Image"
 						/>
 					</motion.div>
 				</section>
@@ -76,8 +77,16 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 					<motion.figure
 						whileHover={{borderRadius: '10%'}}
 						whileTap={{scale: 0.9, borderRadius: '10%'}}
+						style={{position: 'relative'}}
 					>
-						<Image {...meImageProps} placeholder="blur" />
+						<Image
+							src={meImageProps.src}
+							blurDataURL={meImageProps.blurDataURL}
+							placeholder="blur"
+							alt="Iago"
+							fill={true}
+							style={{objectFit: 'cover'}}
+						/>
 					</motion.figure>
 
 					<p>Hello, world! My name is Iago.</p>

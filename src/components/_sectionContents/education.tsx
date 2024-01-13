@@ -5,10 +5,13 @@ import {InfoList} from '../InfoList'
 
 export function EducationContent() {
 	return (
-		<Entry title="Bachelor's Degree, Oberlin College">
+		<Entry
+			title="Bachelor's Degree, Oberlin College"
+			image="/images/education/oberlin.png"
+		>
 			<EntryItem
-				title="Robert Owen's Lab, Oberlin College & SXS Collaboration"
-				date="Fall 2021 – Present"
+				title="Physics & Computer Science Double Major"
+				date="Spring 2021 – Fall 2024"
 			>
 				<InfoList
 					list={[

@@ -6,6 +6,7 @@ export const Container = styled.div`
 	grid-gap: 0.25em;
 
 	margin-top: 0.25em;
+	margin-bottom: 0.5em;
 	margin-left: 2.5em;
 
 	> div {

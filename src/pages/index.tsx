@@ -19,6 +19,7 @@ import {AnimatedCard} from '../components/AnimatedCard'
 import {AnimatedSection} from '../components/AnimatedSection'
 import {EducationContent} from '../components/_sectionContents/education'
 import {ResearchContent} from '../components/_sectionContents/research'
+import {ExperienceContent} from '../components/_sectionContents/experience'
 
 const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 	portfolioImagesProps,
@@ -155,10 +156,9 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 					<ResearchContent />
 				</AnimatedSection>
 
-				<AnimatedSection
-					id="experience"
-					titleText="Work Experience"
-				></AnimatedSection>
+				<AnimatedSection id="experience" titleText="Work Experience">
+					<ExperienceContent />
+				</AnimatedSection>
 
 				<AnimatedSection id="projects" titleText="Projects">
 					<AnimatedGrid modal="portfolio">

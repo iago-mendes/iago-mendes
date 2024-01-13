@@ -11,6 +11,8 @@ export const Container = styled.div`
 	min-height: 20rem;
 	width: 100%;
 
+	margin-bottom: 1em;
+
 	figure {
 		position: absolute;
 		top: 0;

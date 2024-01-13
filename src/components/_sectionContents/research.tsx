@@ -14,7 +14,7 @@ export function ResearchContent() {
 			>
 				<InfoList
 					list={[
-						'Implemented method in a <<finite-difference code>> (bit.ly/FDEmbed) & in the <<Spectral Einstein Code>>.',
+						'Implemented method in a [[finite-difference code,https://bit.ly/FDEmbed]] & in the <<Spectral Einstein Code>>.',
 						'Ran and studied binary black hole merger <<simulations>> in a high-performance <<>>.',
 						'Presented at the <<APS April Meeting>> (2023) and at Oberlin’s <<Research Symposium>> (2022, 2023).',
 						'Invited for Oberlin’s Physics <<Honors Program>> and selected as an Oberlin’s <<Featured Researcher>>.'

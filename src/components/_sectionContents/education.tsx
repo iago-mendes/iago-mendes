@@ -6,7 +6,7 @@ import {InfoList} from '../InfoList'
 export function EducationContent() {
 	return (
 		<Entry
-			title="Bachelor's Degree, Oberlin College"
+			title="Bachelor’s Degree, Oberlin College"
 			image="/images/education/oberlin.png"
 		>
 			<EntryItem

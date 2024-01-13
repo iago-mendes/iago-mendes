@@ -9,9 +9,9 @@ export function GridList({list}: GridListProps) {
 	return (
 		<Container>
 			{list.map((text, index) => (
-				<p key={index}>
+				<div key={index}>
 					<ParsedText text={text} />
-				</p>
+				</div>
 			))}
 		</Container>
 	)

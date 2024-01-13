@@ -8,6 +8,9 @@ export const Container = styled.div`
 
 	position: relative;
 
+	min-height: 20rem;
+	width: 100%;
+
 	figure {
 		position: absolute;
 		top: 0;
@@ -45,6 +48,7 @@ export const Container = styled.div`
 	}
 
 	aside {
+		width: 100%;
 		margin-left: ${figureSize + 2}em;
 
 		h3 {

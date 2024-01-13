@@ -20,7 +20,7 @@ export function AnimatedSection({titleText, children, ...props}: Props) {
 				initial={false}
 				animate={isTitleInView ? 'shown' : 'hidden'}
 				variants={{shown: {x: 0, opacity: 1}, hidden: {x: -200, opacity: 0}}}
-				transition={{duration: 0.5}}
+				transition={{duration: 1}}
 			>
 				{titleText}
 			</motion.h2>
@@ -31,7 +31,7 @@ export function AnimatedSection({titleText, children, ...props}: Props) {
 				initial={false}
 				animate={isContentInView ? 'shown' : 'hidden'}
 				variants={{shown: {x: 0, opacity: 1}, hidden: {x: 200, opacity: 0}}}
-				transition={{duration: 0.5}}
+				transition={{duration: 1}}
 			>
 				{children}
 			</motion.div>

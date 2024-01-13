@@ -3,9 +3,6 @@ import styled from 'styled-components'
 const figureSize = 15
 
 export const Container = styled.div`
-	display: flex;
-	flex-direction: row;
-
 	position: relative;
 
 	min-height: 20rem;
@@ -51,7 +48,7 @@ export const Container = styled.div`
 
 	aside {
 		width: 100%;
-		margin-left: ${figureSize + 2}em;
+		padding-left: ${figureSize + 2}em;
 
 		h3 {
 			font-size: 1.5em;
@@ -59,6 +56,50 @@ export const Container = styled.div`
 
 		.content {
 			margin-left: 2em;
+		}
+	}
+
+	@media (max-width: 700px) {
+		figure {
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: unset;
+
+			border-bottom-left-radius: 0;
+			border-top-left-radius: 1em;
+			border-top-right-radius: 1em;
+
+			width: unset;
+			height: ${figureSize}em;
+
+			mask-image: -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				from(rgba(0, 0, 0, 1)),
+				to(rgba(0, 0, 0, 0))
+			);
+			-webkit-mask-image: -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				from(rgba(0, 0, 0, 1)),
+				to(rgba(0, 0, 0, 0))
+			);
+
+			img {
+				object-position: top;
+			}
+		}
+
+		aside {
+			padding-left: 0;
+			padding-top: ${figureSize + 2}em;
+
+			h3 {
+				font-size: 1.25em;
+			}
 		}
 	}
 `

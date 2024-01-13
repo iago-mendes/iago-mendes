@@ -12,4 +12,19 @@ export const Container = styled.div`
 			font-weight: bold;
 		}
 	}
+
+	@media (max-width: 1350px) {
+		.header {
+			flex-direction: column;
+
+			h4,
+			span {
+				font-size: 1.25em;
+			}
+
+			span {
+				align-self: flex-end;
+			}
+		}
+	}
 `

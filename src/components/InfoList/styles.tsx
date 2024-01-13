@@ -6,4 +6,10 @@ export const Container = styled.ul`
 	li {
 		font-size: 1.5em;
 	}
+
+	@media (max-width: 1350px) {
+		li {
+			font-size: 1.25em;
+		}
+	}
 `

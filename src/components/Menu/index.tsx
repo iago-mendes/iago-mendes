@@ -86,13 +86,15 @@ function Options({
 	return (
 		<OptionsContainer>
 			<div className="route links" onClick={closeBurger}>
-				{!inBurger && width > 1300 && <Link href="/#about">About</Link>}
+				{(inBurger || width > 1300) && <Link href="/#about">About</Link>}
 				<Link href="/#resume">Resume</Link>
-				{!inBurger && width > 1250 && <Link href="/#education">Education</Link>}
+				{(inBurger || width > 1250) && (
+					<Link href="/#education">Education</Link>
+				)}
 				<Link href="/#research">Research</Link>
 				<Link href="/#experience">Experience</Link>
 				<Link href="/#projects">Projects</Link>
-				{!inBurger && width > 1050 && <Link href="/#awards">Awards</Link>}
+				{(inBurger || width > 1050) && <Link href="/#awards">Awards</Link>}
 			</div>
 
 			<div className="social links">

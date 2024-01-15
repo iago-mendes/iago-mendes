@@ -99,7 +99,7 @@ function Options({
 
 			<div className="social links">
 				<div ref={emailRef}>
-					<ExternalLink url="mailto:contact@iago-mendes.me">
+					<ExternalLink url="mailto:ibrazmen@oberlin.edu">
 						<HiMail />
 						<TextCallout text="E-mail" targetRef={emailRef} />
 					</ExternalLink>
@@ -111,7 +111,7 @@ function Options({
 					</ExternalLink>
 				</div>
 				<div ref={linkedinRef}>
-					<ExternalLink url="https://www.linkedin.com/in/iago-b-mendes">
+					<ExternalLink url="https://www.linkedin.com/in/mendes-iago">
 						<FaLinkedinIn />
 						<TextCallout text="LinkedIn" targetRef={linkedinRef} />
 					</ExternalLink>

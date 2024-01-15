@@ -136,15 +136,16 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 				</AnimatedSection>
 
 				<AnimatedSection id="resume" titleText="Resume">
-					<div className="single-content">
+					<div className="list">
 						{resumes.map((resume, index) => (
-							<AnimatedCard
-								title={resume.title}
-								subtitle="Open in a new tab"
-								imageProps={resumesImagesProps[index]}
-								handleClick={() => handleOpenResume(resume.pdfUrl)}
-								key={index}
-							/>
+							<div key={index}>
+								<AnimatedCard
+									title={resume.title}
+									subtitle="Open in a new tab"
+									imageProps={resumesImagesProps[index]}
+									handleClick={() => handleOpenResume(resume.pdfUrl)}
+								/>
+							</div>
 						))}
 					</div>
 				</AnimatedSection>

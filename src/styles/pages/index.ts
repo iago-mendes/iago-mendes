@@ -56,12 +56,21 @@ export const HomeContainer = styled.div`
 	}
 
 	section#resume {
-		.single-content {
-			width: 30vw;
-			height: 15vw;
-			min-width: 250px;
-			min-height: 150px;
-			margin: 0 auto;
+		.list {
+			width: 100%;
+
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			gap: 2em;
+
+			> div {
+				width: 30vw;
+				height: 15vw;
+				min-width: 250px;
+				min-height: 150px;
+			}
 		}
 	}
 

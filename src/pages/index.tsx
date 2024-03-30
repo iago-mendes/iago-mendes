@@ -21,6 +21,7 @@ import {EducationContent} from '../components/_sectionContents/education'
 import {ResearchContent} from '../components/_sectionContents/research'
 import {ExperienceContent} from '../components/_sectionContents/experience'
 import {AwardsContent} from '../components/_sectionContents/awards'
+import ExternalLink from '../components/ExternalLink'
 
 const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 	portfolioImagesProps,
@@ -95,34 +96,21 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
 					<p>Hello, world! My name is Iago.</p>
 					<p>
-						Throughout my journey, I have been deeply involved with{' '}
-						<strong>Physics</strong>, <strong>Astronomy</strong>, and{' '}
-						<strong>Computer Science</strong> in many experiences, about which
-						you can learn more on{' '}
-						<a
-							href="https://www.linkedin.com/in/iago-b-mendes"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							my LinkedIn profile
-						</a>
-						. I am currently pursuing my undergraduate degree at{' '}
-						<strong>Oberlin College</strong>, where I am double majoring in{' '}
-						<strong>Computer Science</strong> and <strong>Physics</strong> (with
-						a concentration in <strong>Astrophysics</strong>).
-					</p>
-					<p>
-						As a <strong>software engineer</strong>, I have had 2 internships at{' '}
-						<strong>Google</strong>, working with the <strong>Wear OS</strong>{' '}
-						and <strong>Google Assistant</strong> teams. I have also worked with{' '}
-						<strong>web</strong> and <strong>mobile development</strong> on my
-						personal projects, some of which you can check on{' '}
-						<Link href="/#portfolio">my portfolio</Link>.
+						Throughout my journey, I have been deeply involved with physical and
+						computational sciences. Currently, I am pursuing my undergraduate
+						degree at{' '}
+						<ExternalLink
+							text="Oberlin College"
+							url="https://www.oberlin.edu/"
+						/>
+						, where I am double majoring in <strong>Physics</strong> (with a
+						concentration in <strong>Astrophysics</strong>) and{' '}
+						<strong>Computer Science</strong>.
 					</p>
 					<p>
 						As a <strong>computational physicist</strong>, I have been
 						conducting research on <strong>Numerical Relativity</strong> for the
-						past 2 years as a member of the{' '}
+						past 3 years as a member of the{' '}
 						<a
 							href="https://www.black-holes.org/"
 							target="_blank"
@@ -131,7 +119,16 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 							SXS collaboration
 						</a>
 						. My research has been focused on describing the surface of{' '}
-						<strong>black holes</strong> in computational simulations.
+						<strong>black holes</strong> in a flat geometry (known as the
+						isometric embedding problem) for computational simulations.
+					</p>
+					<p>
+						As a <strong>software engineer</strong>, I have had 2 internships at{' '}
+						<strong>Google</strong>, working with the{' '}
+						<strong>Wear OS (Android)</strong> and{' '}
+						<strong>Google Assistant</strong> teams. I have also worked with web
+						and mobile development on many personal projects, some of which you
+						can check on <Link href="/#projects">my portfolio</Link>.
 					</p>
 				</AnimatedSection>
 

@@ -12,7 +12,7 @@ function Embedding() {
 		<PageContainer>
 			<Container>
 				<span className="title">
-					Isometric Embedding of Black Holes: Numerical Horizons in Euclidean
+					Isometric Embeddings of Black Holes: Numerical Horizons in Euclidean
 					Space
 				</span>
 				<span className="authors">

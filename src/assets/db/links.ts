@@ -1,23 +1,17 @@
 type Link = {
-	display: string
+	text: string
 	url: string
-	icon: string
+	disabled?: boolean
 }
 
-export const links: Link[] = [
+export const embeddingLinks: Link[] = [
+	{text: 'Paper (in preparation)', url: '', disabled: true},
 	{
-		display: 'Star View (Google Play)',
-		url: 'https://starview.one/google-play',
-		icon: 'https://github.com/star-view.png'
+		text: "Iago's Honors Thesis",
+		url: 'https://iagomendes.com/docs/embedding-thesis.pdf'
 	},
 	{
-		display: 'cinephix.com',
-		url: 'https://cinephix.com',
-		icon: 'https://cinephix.com/favicon.svg'
-	},
-	{
-		display: 'Cinephix (Google Play)',
-		url: 'https://play.google.com/store/apps/details?id=com.cinephix.twa',
-		icon: 'https://cinephix.com/favicon.svg'
+		text: 'FiDEC (open-source code)',
+		url: 'https://github.com/iago-mendes/fidec'
 	}
 ]

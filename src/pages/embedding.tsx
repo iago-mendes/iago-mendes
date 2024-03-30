@@ -45,13 +45,13 @@ function Embedding() {
 				</p>
 				<span className="links">Important Links</span>
 				<Links>
-					{links.map(link => (
-						<ExternalLink key={link.url} url={link.url}>
-							{link.disabled ? (
-								<li className="disabled">
-									<span>{link.text}</span>
-								</li>
-							) : (
+					{links.map(link =>
+						link.disabled ? (
+							<li className="disabled">
+								<span>{link.text}</span>
+							</li>
+						) : (
+							<ExternalLink key={link.url} url={link.url}>
 								<motion.li
 									whileHover={{borderRadius: 0, scale: 0.95}}
 									whileTap={{borderRadius: 0, scale: 0.9}}
@@ -59,9 +59,9 @@ function Embedding() {
 									<span>{link.text}</span>
 									<FaExternalLinkAlt />
 								</motion.li>
-							)}
-						</ExternalLink>
-					))}
+							</ExternalLink>
+						)
+					)}
 				</Links>
 			</Container>
 		</PageContainer>

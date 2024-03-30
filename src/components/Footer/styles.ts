@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const Container = styled.footer`
 	padding: 2.5rem 1rem;
 
+	background-color: ${p => p.theme.colors.selection}1A;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;

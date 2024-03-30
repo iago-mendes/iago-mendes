@@ -124,9 +124,9 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 					</p>
 					<p>
 						As a <strong>software engineer</strong>, I have had 2 internships at{' '}
-						<strong>Google</strong>, working with the{' '}
-						<strong>Wear OS (Android)</strong> and{' '}
-						<strong>Google Assistant</strong> teams. I have also worked with web
+						<strong>Google</strong>, working with{' '}
+						<strong>Wear OS (Android)</strong> and the{' '}
+						<strong>Google Assistant AI</strong>. I have also worked with web
 						and mobile development on many personal projects, some of which you
 						can check on <Link href="/#projects">my portfolio</Link>.
 					</p>

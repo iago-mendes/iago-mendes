@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Links = styled.ul`
+export const Container = styled.ul`
 	width: fit-content;
 	margin: 1rem auto;
 

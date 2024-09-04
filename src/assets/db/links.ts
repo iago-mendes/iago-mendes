@@ -1,4 +1,4 @@
-type Link = {
+export type Link = {
 	text: string
 	url: string
 	disabled?: boolean

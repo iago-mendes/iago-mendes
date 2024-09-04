@@ -1,11 +1,8 @@
-import {motion} from 'framer-motion'
-import {FaExternalLinkAlt} from 'react-icons/fa'
-
-import {embeddingLinks as links} from '../assets/db/links'
+import {embeddingLinks} from '../assets/db/links'
 import ExternalLink from '../components/ExternalLink'
 import {PageContainer} from '../components/PageContainer'
 import {Container} from '../styles/pages/embedding'
-import {Links} from '../styles/links'
+import {AnimatedLinks} from '../components/AnimatedLinks'
 
 function Embedding() {
 	return (
@@ -44,25 +41,7 @@ function Embedding() {
 					methods and focus on the results of these simulations.
 				</p>
 				<span className="links">Important Links</span>
-				<Links>
-					{links.map(link =>
-						link.disabled ? (
-							<li className="disabled">
-								<span>{link.text}</span>
-							</li>
-						) : (
-							<ExternalLink key={link.url} url={link.url}>
-								<motion.li
-									whileHover={{borderRadius: 0, scale: 0.95}}
-									whileTap={{borderRadius: 0, scale: 0.9}}
-								>
-									<span>{link.text}</span>
-									<FaExternalLinkAlt />
-								</motion.li>
-							</ExternalLink>
-						)
-					)}
-				</Links>
+				<AnimatedLinks links={embeddingLinks} />
 			</Container>
 		</PageContainer>
 	)

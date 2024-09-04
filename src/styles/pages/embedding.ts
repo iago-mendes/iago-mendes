@@ -6,7 +6,6 @@ export const Container = styled.div`
 	align-items: center;
 
 	padding: 2rem;
-	/* padding-top: 2rem; */
 	max-width: 75rem;
 	margin: 0 auto;
 
@@ -25,13 +24,12 @@ export const Container = styled.div`
 
 	p.description {
 		font-size: 1.5rem;
-		/* text-align: justify; */
 	}
 
 	span.links {
 		font-size: 1.75rem;
 		font-weight: bold;
 
-		margin-top: 1rem;
+		margin: 1rem 0;
 	}
 `

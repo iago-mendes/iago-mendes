@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 export const Container = styled.ul`
-	width: fit-content;
-	margin: 1rem auto;
+	width: 100%;
 
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+	grid-gap: 0.5rem;
+	justify-items: center;
 
 	* {
 		text-decoration: none;

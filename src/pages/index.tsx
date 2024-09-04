@@ -22,6 +22,7 @@ import {ResearchContent} from '../components/_sectionContents/research'
 import {ExperienceContent} from '../components/_sectionContents/experience'
 import {AwardsContent} from '../components/_sectionContents/awards'
 import ExternalLink from '../components/ExternalLink'
+import {SEOHead} from '../components/SEOHead'
 
 const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 	portfolioImagesProps,
@@ -43,6 +44,12 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
 	return (
 		<PageContainer>
+			<SEOHead
+				title="Iago Mendes"
+				description="Software developer & computational physicist"
+				image="https://iagomendes.com/images/me.jpg"
+				url="https://iagomendes.com"
+			/>
 			<HomeContainer>
 				<section id="hero">
 					<motion.main

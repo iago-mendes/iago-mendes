@@ -1,32 +1,40 @@
 import {PageContainer} from '../components/PageContainer'
 import {Container} from '../styles/pages/general-relativity-exco'
 import {AnimatedLinks} from '../components/AnimatedLinks'
+import {SEOHead} from '../components/SEOHead'
+
+const title = 'General Relativity: The Science of Interstellar'
+const description =
+	'In the early twentieth century, Einstein revolutionized the ' +
+	'study of gravity by connecting spacetime geometry with ' +
+	'physical dynamics. As John Wheeler says, “Spacetime tells ' +
+	'matter how to move; matter tells spacetime how to curve”. ' +
+	'This started the branch of physics currently known as ' +
+	'General Relativity. Despite being a very complex theory, ' +
+	'it leads to many intriguing results that are especially ' +
+	'highlighted by the famous Christopher Nolan movie ' +
+	'“Interstellar”. In this course, I aim to use these results ' +
+	'to discuss General Relativity in a beginner-friendly ' +
+	'manner.'
 
 function Embedding() {
 	return (
 		<PageContainer>
+			<SEOHead
+				title={title}
+				description={description}
+				url="https://iagomendes.com/general-relativity-exco"
+			/>
 			<Container>
 				<div className="header">
-					<span className="title">
-						General Relativity: The Science of Interstellar
-					</span>
+					<span className="title">{title}</span>
 					<span className="subtitle">ExCo 321, Fall 2024</span>
 					<span className="subtitle">Oberlin College</span>
 					<span className="subtitle">Iago Mendes</span>
 				</div>
 				<div className="section">
 					<span className="title">Course Overview</span>
-					<p>
-						In the early twentieth century, Einstein revolutionized the study of
-						gravity by connecting spacetime geometry with physical dynamics. As
-						John Wheeler says, “Spacetime tells matter how to move; matter tells
-						spacetime how to curve”. This started the branch of physics
-						currently known as General Relativity. Despite being a very complex
-						theory, it leads to many intriguing results that are especially
-						highlighted by the famous Christopher Nolan movie “Interstellar”. In
-						this course, I aim to use these results to discuss General
-						Relativity in a beginner-friendly manner.
-					</p>
+					<p>{description}</p>
 					<AnimatedLinks
 						links={[
 							{

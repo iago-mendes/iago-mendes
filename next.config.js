@@ -22,6 +22,11 @@ module.exports = {
 				source: '/barnard',
 				destination: 'https://iago-mendes.notion.site/Barnard-Roots-in-STEM-Community-bf01c0e0e00a42d9a86a43613370f920',
 				permanent: true
+			},
+			{
+				source: '/general-relativity-exco/syllabus.pdf',
+				destination: 'https://iago-mendes.github.io/exco-general-relativity/syllabus/main.pdf',
+				permanent: true
 			}
 		]
 	}

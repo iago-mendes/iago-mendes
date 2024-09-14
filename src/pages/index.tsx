@@ -91,7 +91,6 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 						/>
 					</motion.figure>
 
-					<p>Hello, world! My name is Iago.</p>
 					<p>
 						Throughout my journey, I have been deeply involved with physical and
 						computational sciences. Currently, I am pursuing my undergraduate

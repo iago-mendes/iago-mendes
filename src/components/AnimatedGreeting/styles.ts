@@ -6,15 +6,13 @@ export const Container = styled.div`
 		flex-direction: column;
 		gap: 2rem;
 
-		h2 {
-			font-size: 3rem;
-			font-family: ${p => p.theme.fonts.title};
-			text-transform: lowercase;
-		}
+		p {
+			font-size: 2rem;
+			font-family: ${p => p.theme.fonts.code};
 
-		h3 {
-			text-transform: uppercase;
-			color: ${p => p.theme.colors.purple};
+			&.small {
+				font-size: 1.5rem;
+			}
 		}
 	}
 `

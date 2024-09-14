@@ -17,7 +17,8 @@ const theme = {
 	fonts: {
 		text: 'Roboto, sans-serif',
 		title: 'Ubuntu, arial',
-		special: 'Bungee, cursive'
+		special: 'Bungee, cursive',
+		code: 'Roboto Mono, sans-serif'
 	}
 }
 

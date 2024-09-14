@@ -66,7 +66,7 @@ const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 						transition={{duration: 0.5}}
 					>
 						<Image
-							src="/images/me-background.jpg"
+							src="/images/background.png"
 							fill={true}
 							style={{objectFit: 'cover'}}
 							onLoad={() => setBackgroundImgIsLoaded(true)}

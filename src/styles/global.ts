@@ -80,7 +80,6 @@ export default createGlobalStyle`
 			::-webkit-scrollbar-thumb
 			{
 				background-color: ${p => p.theme.colors.foreground}80;
-				border-radius: 0.5rem;
 
 				:hover
 				{

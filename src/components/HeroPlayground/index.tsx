@@ -1,16 +1,39 @@
 import {motion} from 'framer-motion'
-import {useRef} from 'react'
+import {useLayoutEffect, useRef, useState} from 'react'
 
 import {Container} from './styles'
 import theme from '../../styles/theme'
-import {TextCallout} from '../TextCallout'
+
+const IPath =
+	'M 0 0 L 15 0 L 15 5 L 10 5 L 10 15 L 15 15 L 15 20 L 0 20 L 0 15 L 5 15 L 5 5 L 0 5 L 0 0'
+const MPath =
+	'M 0 0 L 0 20 L 4 20 L 4 10 L 10 15 L 16 10 L 16 20 L 20 20 L 20 0 L 10 10 L 0 0'
 
 export function HeroPlayground() {
-	const ref = useRef()
-	const IPath =
-		'M 0 0 L 15 0 L 15 5 L 10 5 L 10 15 L 15 15 L 15 20 L 0 20 L 0 15 L 5 15 L 5 5 L 0 5 L 0 0'
-	const MPath =
-		'M 0 0 L 0 20 L 4 20 L 4 10 L 10 15 L 16 10 L 16 20 L 20 20 L 20 0 L 10 10 L 0 0'
+	const ref = useRef(null)
+	const [IConstraints, setIConstraints] = useState(null)
+	const [MConstraints, setMConstraints] = useState(null)
+
+	// Calculate the constraints after the component has mounted
+	useLayoutEffect(() => {
+		if (ref.current) {
+			const containerRect = ref.current.getBoundingClientRect()
+
+			// Set constraints based on the container's size
+			setIConstraints({
+				left: -containerRect.width / 6,
+				right: containerRect.width / 1.5,
+				top: -containerRect.height / 3,
+				bottom: containerRect.height / 3
+			})
+			setMConstraints({
+				left: -containerRect.width / 1.5,
+				right: containerRect.width / 6,
+				top: -containerRect.height / 3,
+				bottom: containerRect.height / 3
+			})
+		}
+	}, [ref])
 
 	return (
 		<Container ref={ref}>
@@ -21,7 +44,7 @@ export function HeroPlayground() {
 					style={{width: 150, height: 200, rotate: '-10deg'}}
 					whileTap={{scale: 0.95}}
 					drag={true}
-					dragConstraints={ref}
+					dragConstraints={IConstraints}
 				>
 					<Icon path={IPath} color={theme.colors.foreground} />
 				</motion.svg>
@@ -32,13 +55,11 @@ export function HeroPlayground() {
 					style={{width: 200, height: 200, rotate: '5deg'}}
 					whileTap={{scale: 0.95}}
 					drag={true}
-					dragConstraints={ref}
+					dragConstraints={MConstraints}
 				>
 					<Icon path={MPath} color={theme.colors.cyan} />
 				</motion.svg>
 			</div>
-
-			<TextCallout text="drag the letters" targetRef={ref} />
 		</Container>
 	)
 }

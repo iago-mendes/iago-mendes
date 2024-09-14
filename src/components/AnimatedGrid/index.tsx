@@ -1,5 +1,5 @@
 import {ReactNode} from 'react'
-import {AnimatePresence, AnimateSharedLayout} from 'framer-motion'
+import {AnimatePresence, LayoutGroup} from 'framer-motion'
 
 import {Container} from './styles'
 import {PortfolioModal} from '../PortfolioModal'
@@ -11,13 +11,13 @@ type Props = {
 
 export function AnimatedGrid({children, modal}: Props) {
 	return (
-		<AnimateSharedLayout type="crossfade">
+		<LayoutGroup>
 			{modal && (
 				<AnimatePresence>
 					{modal === 'portfolio' && <PortfolioModal />}
 				</AnimatePresence>
 			)}
 			<Container>{children}</Container>
-		</AnimateSharedLayout>
+		</LayoutGroup>
 	)
 }

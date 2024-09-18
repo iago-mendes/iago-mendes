@@ -58,8 +58,7 @@ function Embedding() {
 							},
 							{
 								text: 'Week 3 (09/18)',
-								url: '',
-								disabled: true
+								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-03/main.pdf'
 							},
 							{
 								text: 'Week 4 (09/25)',

@@ -27,6 +27,11 @@ module.exports = {
 				source: '/general-relativity-exco/syllabus.pdf',
 				destination: 'https://iago-mendes.github.io/exco-general-relativity/syllabus/main.pdf',
 				permanent: true
+			},
+			{
+				source: '/GRVis.wl',
+				destination: 'https://iago-mendes.github.io/exco-general-relativity/mathematica/GRVis.wl',
+				permanent: true
 			}
 		]
 	}

@@ -66,27 +66,26 @@ function Embedding() {
 							},
 							{
 								text: 'Week 5 (10/02)',
-								url: '',
-								disabled: true
+								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-05/main.pdf'
 							},
 							{
 								text: 'Week 6 (10/09)',
-								url: '',
+								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-06/main.pdf',
 								disabled: true
 							},
 							{
 								text: 'Week 8 (10/30)',
-								url: '',
+								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-08/main.pdf',
 								disabled: true
 							},
 							{
 								text: 'Week 9 (11/06)',
-								url: '',
+								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-09/main.pdf',
 								disabled: true
 							},
 							{
 								text: 'Week 10 (11/13)',
-								url: '',
+								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-10/main.pdf',
 								disabled: true
 							}
 						]}
@@ -98,8 +97,7 @@ function Embedding() {
 						links={[
 							{
 								text: 'Quiz 1',
-								url: '',
-								disabled: true
+								url: 'https://iago-mendes.github.io/exco-general-relativity/quiz-1/main.pdf'
 							},
 							{
 								text: 'Solutions to Quiz 1',
@@ -114,6 +112,30 @@ function Embedding() {
 							{
 								text: 'Solutions to Quiz 2',
 								url: '',
+								disabled: true
+							}
+						]}
+					/>
+				</div>
+				<div className="section">
+					<span className="title">Mathematica</span>
+					<AnimatedLinks
+						links={[
+							{
+								text: 'Geodesic Examples (.nb)',
+								url: 'https://iago-mendes.github.io/exco-general-relativity/mathematica/GeodesicExamples.nb'
+							},
+							{
+								text: 'Geodesic Examples (.pdf)',
+								url: 'https://iago-mendes.github.io/exco-general-relativity/mathematica/GeodesicExamples.pdf'
+							},
+							{
+								text: 'Kerr Geometry (Start)',
+								url: 'https://iago-mendes.github.io/exco-general-relativity/mathematica/KerrGeometry_Start.nb'
+							},
+							{
+								text: 'Kerr Geometry (Solution)',
+								url: 'https://iago-mendes.github.io/exco-general-relativity/mathematica/KerrGeometry_Ssolution.nb',
 								disabled: true
 							}
 						]}

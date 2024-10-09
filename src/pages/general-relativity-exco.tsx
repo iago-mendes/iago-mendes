@@ -70,7 +70,11 @@ function Embedding() {
 							},
 							{
 								text: 'Week 6 (10/09)',
-								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-06/main.pdf',
+								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-06/main.pdf'
+							},
+							{
+								text: 'Week 7 (10/16)',
+								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-07/main.pdf',
 								disabled: true
 							},
 							{
@@ -86,6 +90,16 @@ function Embedding() {
 							{
 								text: 'Week 10 (11/13)',
 								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-10/main.pdf',
+								disabled: true
+							},
+							{
+								text: 'Week 11 (11/20)',
+								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-11/main.pdf',
+								disabled: true
+							},
+							{
+								text: 'Week 12 (12/04)',
+								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-12/main.pdf',
 								disabled: true
 							}
 						]}

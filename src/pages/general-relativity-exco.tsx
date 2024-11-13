@@ -78,13 +78,11 @@ function Embedding() {
 							},
 							{
 								text: 'Week 8 (10/30)',
-								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-08/main.pdf',
-								disabled: true
+								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-08/main.pdf'
 							},
 							{
 								text: 'Week 9 (11/06)',
-								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-09/main.pdf',
-								disabled: true
+								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-09/main.pdf'
 							},
 							{
 								text: 'Week 10 (11/13)',
@@ -114,8 +112,7 @@ function Embedding() {
 							},
 							{
 								text: 'Solutions to Quiz 1',
-								url: '',
-								disabled: true
+								url: 'https://iago-mendes.github.io/exco-general-relativity/quiz-1-solutions/main.pdf'
 							},
 							{
 								text: 'Quiz 2',
@@ -148,8 +145,15 @@ function Embedding() {
 							},
 							{
 								text: 'Kerr Geometry (Solution)',
-								url: 'https://iago-mendes.github.io/exco-general-relativity/mathematica/KerrGeometry_Ssolution.nb',
-								disabled: true
+								url: 'https://iago-mendes.github.io/exco-general-relativity/mathematica/KerrGeometry_Solution.nb'
+							},
+							{
+								text: 'Twin Paradox (.nb)',
+								url: 'https://iago-mendes.github.io/exco-general-relativity/mathematica/TwinParadox.nb'
+							},
+							{
+								text: 'Twin Paradox (.pdf)',
+								url: 'https://iago-mendes.github.io/exco-general-relativity/mathematica/TwinParadox.pdf'
 							}
 						]}
 					/>

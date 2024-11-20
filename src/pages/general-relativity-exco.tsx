@@ -90,13 +90,11 @@ function Embedding() {
 							},
 							{
 								text: 'Week 10 (11/13)',
-								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-10/main.pdf',
-								disabled: true
+								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-10/main.pdf'
 							},
 							{
 								text: 'Week 11 (11/20)',
-								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-11/main.pdf',
-								disabled: true
+								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-11/main.pdf'
 							},
 							{
 								text: 'Week 12 (12/04)',
@@ -120,8 +118,7 @@ function Embedding() {
 							},
 							{
 								text: 'Quiz 2',
-								url: '',
-								disabled: true
+								url: 'https://iago-mendes.github.io/exco-general-relativity/quiz-2/main.pdf'
 							},
 							{
 								text: 'Solutions to Quiz 2',
@@ -158,6 +155,15 @@ function Embedding() {
 							{
 								text: 'Twin Paradox (.pdf)',
 								url: 'https://iago-mendes.github.io/exco-general-relativity/mathematica/TwinParadox.pdf'
+							},
+							{
+								text: 'Extreme Time Dilation (Start)',
+								url: 'https://iago-mendes.github.io/exco-general-relativity/mathematica/ExtremeTimeDilation.nb'
+							},
+							{
+								text: 'Extreme Time Dilation (Solution)',
+								url: 'https://iago-mendes.github.io/exco-general-relativity/mathematica/ExtremeTimeDilation_Solution.nb',
+								disabled: true
 							}
 						]}
 					/>

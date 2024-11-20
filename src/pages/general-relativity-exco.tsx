@@ -40,6 +40,10 @@ function Embedding() {
 							{
 								text: 'Syllabus',
 								url: 'https://iago-mendes.github.io/exco-general-relativity/syllabus/main.pdf'
+							},
+							{
+								text: 'Presentation Sign-up',
+								url: 'https://docs.google.com/spreadsheets/d/1LCpr7j0UxqOjLimK5d2Cu3Tb_vFcZ6HaDeXVGvxyMwY/edit?usp=sharing'
 							}
 						]}
 					/>

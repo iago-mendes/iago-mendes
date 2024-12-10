@@ -98,8 +98,7 @@ function Embedding() {
 							},
 							{
 								text: 'Week 12 (12/04)',
-								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-12/main.pdf',
-								disabled: true
+								url: 'https://iago-mendes.github.io/exco-general-relativity/lecture-notes-12/main.pdf'
 							}
 						]}
 					/>
@@ -122,8 +121,7 @@ function Embedding() {
 							},
 							{
 								text: 'Solutions to Quiz 2',
-								url: '',
-								disabled: true
+								url: 'https://iago-mendes.github.io/exco-general-relativity/quiz-2-solutions/main.pdf'
 							}
 						]}
 					/>
@@ -162,8 +160,7 @@ function Embedding() {
 							},
 							{
 								text: 'Extreme Time Dilation (Solution)',
-								url: 'https://iago-mendes.github.io/exco-general-relativity/mathematica/ExtremeTimeDilation_Solution.nb',
-								disabled: true
+								url: 'https://iago-mendes.github.io/exco-general-relativity/mathematica/ExtremeTimeDilation_Solution.nb'
 							}
 						]}
 					/>
